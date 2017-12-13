@@ -1,32 +1,43 @@
-.App {
-  text-align: center;
+.app {
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.wrapper {
+  margin: 0 auto;
+  max-width: 325px;
+  padding: 0 2.5%;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.debug .wrapper {
+  box-shadow: 0 0 1px 1px red inset;
 }
 
-.App-title {
-  font-size: 1.5em;
+.container {
 }
 
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .wrapper {
+    max-width: 500px;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .wrapper {
+    max-width: 700px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .wrapper {
+    max-width: 900px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .wrapper {
+    max-width: 1000px;
   }
 }
