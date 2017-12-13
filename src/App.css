@@ -28,6 +28,10 @@ html {
 .container {
 }
 
+.menu {
+  display: none;
+}
+
 /* Position and sizing of burger button */
 .bm-burger-button {
   position: fixed;
@@ -76,6 +80,8 @@ html {
   background: rgba(0, 0, 0, 0.3);
 }
 
+/* ################ BREAKPOINTS ##################### */
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   .wrapper {
@@ -94,6 +100,14 @@ html {
 @media (min-width: 992px) {
   .wrapper {
     max-width: 900px;
+  }
+
+  .bm-burger-button {
+    display: none;
+  }
+
+  .menu {
+    display: inline-block;
   }
 }
 
