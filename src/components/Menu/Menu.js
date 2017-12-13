@@ -1,12 +1,9 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+
+import Nav from './Menu.Nav';
 
 export default () => (
   <div className="menu">
-    <ul>
-      <NavLink exact to="/" activeClassName="active">
-        Home
-      </NavLink>
-    </ul>
+    <Nav />
   </div>
 );
