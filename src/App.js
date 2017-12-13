@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import 'normalize.css';
-import { slide as MobileMenu } from 'react-burger-menu';
+import MobileMenu from 'react-burger-menu/lib/menus/slide';
 
 import './App.css';
 import Header from './components/Header/Header';
@@ -11,8 +11,8 @@ import Nav from './components/Menu/Menu.Nav';
 
 export default () => (
   <BrowserRouter>
-    <div className="app debug">
-      <MobileMenu pageWrapId="main">
+    <div id="app" className="app debug">
+      <MobileMenu pageWrapId="main" outerContainerId="app">
         <Nav />
       </MobileMenu>
       <Header />
