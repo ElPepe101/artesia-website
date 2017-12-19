@@ -6,5 +6,8 @@ export default () => (
     <p className="app-intro">
       To get started, edit <code>src/App.js</code> and save to reload.
     </p>
+    <p>
+      algomás <strong>así o qué pedo</strong> pesto,-
+    </p>
   </div>
 );

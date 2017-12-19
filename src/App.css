@@ -12,6 +12,19 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  font-family: 'Gotham A', 'Gotham B', Arial, Helvetica, sans-serif;
+  font-weight: 500;
+}
+
+.book {
+  font-weight: 400;
+}
+
+.light {
+  font-weight: 300;
+}
+
 .app {
 }
 
