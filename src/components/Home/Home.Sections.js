@@ -1,27 +1,27 @@
 import React from 'react';
-import { Button } from 'react-scroll';
-import className from './Home.module.css';
-import { header } from '../Header/Header.module.css';
+import PropTypes from 'prop-types';
 
-export default () => (
+import className from './Home.module.css';
+
+const HomeSections = ({ scrollTo }) => (
   <div className={className.home}>
     <h1 className={className.title}>Artesia Polanco</h1>
-    <section name="hero">
+    <section id="hero">
       <div className="wrapper">
         <p>
           Ubicado en la avenida más prestigiada de todo Polanco,
-          <strong>CAMPOS ELISEOS</strong>. {header.height}
+          <strong>CAMPOS ELISEOS</strong>.
         </p>
-        <Button
-          to="description"
-          smooth
-          duration={500}
-          value="Va pa bajo"
-          className="button"
-        />
+        <button
+          type="button"
+          onClick={scrollTo('description')}
+          name="description"
+        >
+          Go to description
+        </button>
       </div>
     </section>
-    <section name="description">
+    <section id="description">
       <div className="wrapper">
         <p>
           <strong>
@@ -44,3 +44,9 @@ export default () => (
     </section>
   </div>
 );
+
+HomeSections.propTypes = {
+  scrollTo: PropTypes.func.isRequired
+};
+
+export default HomeSections;
