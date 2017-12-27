@@ -1,12 +1,14 @@
 {
   "extends": [
     "react-app",
-    "airbnb"
+    "airbnb",
+    "plugin:css-modules/recommended"
   ],
   "parser": "babel-eslint",
   "plugins": [
     "react",
-    "import"
+    "import",
+    "css-modules"
   ],
   "rules": {
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
