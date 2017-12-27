@@ -25,6 +25,17 @@ body {
   font-weight: 300;
 }
 
+section {
+  height: calc(100vh - 54px) !important; /* .header: height */
+}
+
+button,
+.button {
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
 .app {
 }
 
@@ -38,25 +49,22 @@ body {
   box-shadow: 0 0 1px 1px red inset;
 }
 
-.container {
-}
-
 .menu {
   display: none;
 }
 
 /* Position and sizing of burger button */
 .bm-burger-button {
-  position: fixed;
+  position: relative;
   width: 36px;
   height: 30px;
-  left: 36px;
-  top: 36px;
+  left: 80vw;
+  top: 10px;
 }
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
-  background: #373a47;
+  background: #f8f8f8;
 }
 
 /* Position and sizing of clickable cross button */
@@ -75,6 +83,7 @@ body {
   background: #373a47;
   padding: 2.5em 1.5em 0;
   font-size: 1.15em;
+  left: 0;
 }
 
 /* Morph shape necessary with bubble or elastic */
