@@ -15,6 +15,7 @@ html {
 body {
   font-family: 'Gotham A', 'Gotham B', Arial, Helvetica, sans-serif;
   font-weight: 500;
+  font-size: 18px;
 }
 
 .book {
@@ -25,8 +26,18 @@ body {
   font-weight: 300;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
 section {
-  height: calc(100vh - 54px) !important; /* .header: height */
+  height: 100vh;
+}
+
+section:first-of-type {
+  height: calc(100vh - 54px); /* .header: height */
 }
 
 button,
@@ -36,13 +47,27 @@ button,
   cursor: pointer;
 }
 
-.app {
+.button-square {
+  padding: 15px 22.5px 12.5px;
+  border: 3px solid black;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.color-white {
+  color: white;
+}
+
+.remark {
+  color: rgb(231, 114, 36);
 }
 
 .wrapper {
   margin: 0 auto;
+  min-width: 300rrpx;
   max-width: 325px;
-  padding: 0 2.5%;
+  padding: 0 calc(5% + 10px) 0 5%;
 }
 
 .debug .wrapper {
@@ -52,6 +77,46 @@ button,
 .menu {
   display: none;
 }
+
+/* ###################################### */
+/* ############### FLEX ################# */
+
+.flex-column-end {
+  height: 100%;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
+.flex-column-end > * {
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+}
+
+/* ###################################### */
+/* ############ BURGER MENU ############# */
 
 /* Position and sizing of burger button */
 .bm-burger-button {
@@ -78,9 +143,15 @@ button,
   background: #bdc3c7;
 }
 
+.bm-menu-wrap {
+  width: 100% !important;
+}
+
 /* General sidebar styles */
 .bm-menu {
-  background: #373a47;
+  background: url('/img/artesia-menu-bg-mobile.jpg') no-repeat center center
+    fixed;
+  background-size: cover;
   padding: 2.5em 1.5em 0;
   font-size: 1.15em;
   left: 0;

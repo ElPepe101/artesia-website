@@ -1,0 +1,30 @@
+.footer {
+  background: url('/img/artesia-menu-bg-mobile.jpg') no-repeat center center
+    fixed;
+  background-size: cover;
+  text-align: justify;
+  text-justify: newspaper;
+}
+
+.footer > div {
+  overflow: auto;
+  padding: 10px 7% 30px;
+}
+
+.footer p,
+.footer a {
+  color: rgb(123, 123, 123);
+  font-size: 11px;
+  line-height: 160%;
+  margin: 0;
+}
+
+.footer hr {
+  margin: 25px 0;
+  border: 0.5px solid rgb(123, 123, 123);
+}
+
+.logo {
+  opacity: 0.55;
+  transform: translateX(-20px);
+}
