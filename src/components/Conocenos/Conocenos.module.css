@@ -1,0 +1,102 @@
+.conocenos {
+  font-size: 16px;
+}
+
+.conocenos button {
+  min-width: 70%;
+}
+
+.conocenos section[name='respaldo'] {
+  text-align: center;
+}
+
+.conocenos section[name='respaldo'] h1,
+.conocenos section[name='instalaciones'] h1 {
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.conocenos section[name='respaldo'] img {
+  display: inline-block;
+}
+
+.conocenos section[name='respaldo'] h2 {
+  font-size: 24px;
+}
+
+.conocenos section[name='respaldo'] h2:first-of-type {
+  font-size: 20px;
+}
+
+.conocenos section[name='respaldo'] p,
+.conocenos section[name='hendrix'] p {
+  font-size: 17px;
+  line-height: 160%;
+}
+
+.conocenos section[name='hendrix'] h3 {
+  font-size: 44px;
+  font-weight: 500;
+}
+
+.icons {
+  text-align: center;
+}
+
+.icons ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.icons ul li {
+  padding: 35px;
+  margin: 0;
+}
+
+.icons ul li span {
+  display: inline-block;
+  background-image: url('/img/artesia-sprite-1.png');
+  background-position: -297px 0;
+  background-repeat: no-repeat;
+}
+
+.icons ul li p:first-of-type {
+  text-transform: uppercase;
+}
+
+.icons ul li p {
+  font-weight: 700;
+}
+
+.icons span[name='acceso'] {
+  background-position: -297px 0;
+  width: 71px;
+  height: 55px;
+}
+
+.icons span[name='circuito'] {
+  background-position: -305px -131px;
+  width: 64px;
+  height: 54px;
+}
+
+.icons span[name='elevadores'] {
+  background-position: -303px -283px;
+  width: 71px;
+  height: 58px;
+}
+
+.icons span[name='acondicionado'] {
+  background-position: -295px -443px;
+  width: 73px;
+  height: 49px;
+}
+
+.icons span[name='montacargas'] {
+  background-position: -296px -582px;
+  width: 71px;
+  height: 58px;
+}
