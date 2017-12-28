@@ -1,6 +1,6 @@
 .hero {
   position: relative;
-  height: calc(84vh - 54px);
+  min-height: calc(84vh - 54px);
 }
 
 .hero picture,
