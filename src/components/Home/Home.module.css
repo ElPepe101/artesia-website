@@ -5,35 +5,6 @@
   display: none;
 }
 
-.home section[name='hero'] {
-  position: relative;
-  height: calc(95vh - 54px);
-}
-
-.home section[name='hero'] picture,
-.home section[name='hero'] > div {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 0;
-}
-
-.home section[name='hero'] > div {
-  z-index: 1;
-  padding-bottom: 50px;
-}
-
-.home section[name='hero'] p {
-  line-height: 120%;
-  font-weight: 300;
-  font-size: 19px;
-}
-
-.home section[name='hero'] p strong {
-  font-weight: 500;
-  line-height: 150%;
-}
-
 .home section[name='description'] {
   height: auto;
 }

@@ -1,42 +1,14 @@
 import React from 'react';
-import { Button } from 'react-scroll';
 import { Picture } from 'react-responsive-picture';
 import VisibilitySensor from 'react-visibility-sensor';
 
+import Hero from '../Hero/Hero';
 import className from './Home.module.css';
 
 export default () => (
   <div className={className.home}>
     <h1 className={className.title}>Artesia Polanco</h1>
-    <section name="hero">
-      <VisibilitySensor>
-        <Picture
-          sources={[
-            /* {
-              srcSet: ', /img/artesia-home-16-80.jpg',
-              media: '(min-width: 375px)',
-            }, */
-            {
-              srcSet: '/img/artesia-home-17-80.jpg'
-            }
-          ]}
-        />
-      </VisibilitySensor>
-      <div className="wrapper flex-column-end">
-        <p className="color-white">
-          Ubicado en la avenida más prestigiada de todo Polanco,{' '}
-          <strong>CAMPOS ELISEOS</strong>.
-        </p>
-        <Button
-          to="description"
-          smooth
-          readOnly
-          duration={350}
-          value="Va pa bajo"
-          className="button color-white"
-        />
-      </div>
-    </section>
+    <Hero image="/img/artesia-home-17-80.jpg" target="description" />
     <section name="description">
       <div className="wrapper">
         <p>
