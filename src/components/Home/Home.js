@@ -4,6 +4,7 @@ import VisibilitySensor from 'react-visibility-sensor';
 
 import Hero from '../Hero/Hero';
 import className from './Home.module.css';
+import Pano from '../Pano/Pano';
 
 export default () => (
   <div className={className.home}>
@@ -30,27 +31,11 @@ export default () => (
         </p>
         <button className="button-square">Conozca los pisos</button>
       </div>
-    </section>
-    <section name="_360">
       <VisibilitySensor>
-        <div>
-          <Picture
-            sources={[
-              {
-                srcSet: '/img/artesia-home-15-80.jpg'
-              }
-            ]}
-          />
-          <Picture
-            sources={[
-              {
-                srcSet: '/img/artesia-home-16-80.jpg'
-              }
-            ]}
-          />
-        </div>
+        <Picture sources={[{ srcSet: '/img/artesia-home-15-80.jpg' }]} />
       </VisibilitySensor>
     </section>
+    <Pano />
   </div>
 );
 

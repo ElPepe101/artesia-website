@@ -6,7 +6,7 @@
 }
 
 .home section[name='description'] {
-  height: auto;
+  min-height: auto;
 }
 
 .home section[name='description'] > div {
@@ -35,5 +35,5 @@
 }
 
 .home section[name='_360'] {
-  height: auto;
+  min-height: auto;
 }

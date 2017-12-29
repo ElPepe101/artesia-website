@@ -4,6 +4,7 @@ import VisibilitySensor from 'react-visibility-sensor';
 
 import Hero from '../Hero/Hero';
 import className from './Conocenos.module.css';
+import Pano from '../Pano/Pano';
 
 export default () => (
   <div className={className.conocenos}>
@@ -72,13 +73,9 @@ export default () => (
         <br />
       </div>
     </section>
-    <section name="_360">
-      <VisibilitySensor>
-        <Picture sources={[{ srcSet: '/img/artesia-conocenos-21-80.jpg' }]} />
-      </VisibilitySensor>
+    <Pano />
+    <section name="end">
       <div className="wrapper">
-        <br />
-        <br />
         <VisibilitySensor>
           <Picture sources={[{ srcSet: '/img/artesia-conocenos-20-80.jpg' }]} />
         </VisibilitySensor>

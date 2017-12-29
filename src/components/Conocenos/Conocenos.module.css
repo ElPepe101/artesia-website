@@ -100,3 +100,31 @@
   width: 71px;
   height: 58px;
 }
+
+.icons span[name='aire'] {
+  background-position: -155px -134px;
+  width: 58px;
+  height: 62px;
+}
+
+.icons span[name='agua'] {
+  background-position: -152px -274px;
+  width: 64px;
+  height: 57px;
+}
+
+.icons span[name='reciclado'] {
+  background-position: -157px -437px;
+  width: 62px;
+  height: 55px;
+}
+
+.icons span[name='energetica'] {
+  background-position: -164px -579px;
+  width: 47px;
+  height: 69px;
+}
+
+.conocenos section[name='end'] {
+  min-height: auto;
+}
