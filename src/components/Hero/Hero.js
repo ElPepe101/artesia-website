@@ -31,7 +31,7 @@ const Hero = ({ image, target }) => (
         smooth
         readOnly
         duration={350}
-        value="Va pa bajo"
+        value=""
         className="button color-white"
       />
     </div>

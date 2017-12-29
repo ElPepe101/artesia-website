@@ -12,7 +12,7 @@
 
 .hero > div {
   z-index: 1;
-  padding-bottom: 50px;
+  padding: 0 5% 50px;
 }
 
 .hero p {
@@ -24,4 +24,13 @@
 .hero p strong {
   font-weight: 500;
   line-height: 150%;
+}
+
+.hero input {
+  display: block;
+  margin: 0 auto;
+  width: 43px;
+  height: 44px;
+  overflow: hidden;
+  background: url('/img/artesia-sprite-1.png') no-repeat -163px 0;
 }
