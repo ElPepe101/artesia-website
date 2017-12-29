@@ -41,6 +41,10 @@
   font-weight: 500;
 }
 
+.conocenos section[name='instalaciones'] > div {
+  padding: 0 5%;
+}
+
 .icons {
   text-align: center;
 }
@@ -127,4 +131,13 @@
 
 .conocenos section[name='end'] {
   min-height: auto;
+}
+
+.proyecto h3 {
+  margin: 0;
+  line-height: 120%;
+}
+
+.proyecto p {
+  line-height: 140%;
 }

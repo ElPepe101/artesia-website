@@ -1,6 +1,4 @@
 import React from 'react';
-import { Picture } from 'react-responsive-picture';
-import VisibilitySensor from 'react-visibility-sensor';
 
 import Hero from '../Hero/Hero';
 import className from './Conocenos.module.css';
