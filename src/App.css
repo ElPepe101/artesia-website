@@ -13,7 +13,7 @@ html {
 }
 
 body {
-  font-family: 'Gotham A', 'Gotham B', Arial, Helvetica, sans-serif;
+  font-family: 'Gotham', sans-serif;
   font-size: 18px;
   color: rgb(67, 64, 65);
 }
@@ -24,6 +24,10 @@ body {
 
 .light {
   font-weight: 300;
+}
+
+strong {
+  font-weight: 700;
 }
 
 img {
@@ -61,6 +65,10 @@ button,
 
 .remark {
   color: rgb(231, 114, 36);
+}
+
+.hidden {
+  display: none;
 }
 
 .wrapper {
