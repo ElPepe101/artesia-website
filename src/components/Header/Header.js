@@ -18,7 +18,7 @@ export default () => (
       <Nav />
     </MenuMobile>
     <div className="wrapper">
-      <NavLink exact to="/">
+      <NavLink className={className.homeLink} exact to="/">
         <Picture
           alt="Artesia logo"
           sources={[{ srcSet: '/img/artesia-logo.jpg' }]}
