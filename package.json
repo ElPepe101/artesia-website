@@ -10,6 +10,7 @@
     "normalize.css": "^7.0.0",
     "prettier": "^1.9.1",
     "prop-types": "^15.6.0",
+    "query-string": "^5.0.1",
     "react": "^16.2.0",
     "react-burger-menu": "^2.1.11",
     "react-dom": "^16.2.0",

@@ -36,7 +36,7 @@ export default () => (
       </NavLink>
     </li>
     <li>
-      <NavLink exact to="/" className="menu-item" activeClassName="active">
+      <NavLink exact to="/pisos" className="menu-item" activeClassName="active">
         Pisos residenciales
       </NavLink>
     </li>

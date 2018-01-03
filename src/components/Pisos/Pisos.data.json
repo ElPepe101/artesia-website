@@ -1,0 +1,34 @@
+[
+  {
+    "value": 1,
+    "building": "Torre piedra",
+    "level": "piso 1",
+    "images": ["lvl1-front.jpg", "lvl1-upper.jpg"],
+    "description":
+      "Lorem ipsum dolor sit amet, ea feugait tincidunt mel, nonumes praesent vel id. Eam eu eius virtute labores. Wisi ridens an per. Nec sapientem repudiandae et ea feugait tincidunt mel, nonumes praesent vel id ea feugait tincidunt mel, nonumes praesent vel id.",
+    "features": [
+      "2 ó 3 recámaras",
+      "3.5 baños",
+      "Sala",
+      "Comedor",
+      "Cocina",
+      "Cuarto de servicio"
+    ],
+    "number": 101,
+    "squares": 254.36,
+    "bedrooms": "2 ó 3",
+    "pdf": ""
+  },
+  {
+    "value": 2,
+    "building": "Torre piedra",
+    "level": "piso 2",
+    "images": ["lvl1-front.jpg", "lvl1-upper.jpg"],
+    "description": "",
+    "features": [],
+    "number": 0,
+    "squares": 0,
+    "bedrooms": "",
+    "pdf": ""
+  }
+]
