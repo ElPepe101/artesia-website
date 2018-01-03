@@ -14,7 +14,7 @@ export default () => (
           sources={[{ srcSet: '/img/artesia-logo.jpg' }]}
         />
       </VisibilitySensor>
-      <p>Campos Elseso No. 200, Polanco. Ciudad de México</p>
+      <p>Campos Elseos No. 200, Polanco. Ciudad de México</p>
       <p>ventas@artesia.mx</p>
       <p>+52 (044) 55 5280 4764</p>
       <hr />
