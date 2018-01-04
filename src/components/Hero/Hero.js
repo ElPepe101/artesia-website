@@ -6,7 +6,7 @@ import VisibilitySensor from 'react-visibility-sensor';
 
 import className from './Hero.module.css';
 
-const Hero = ({ image, target }) => (
+const Hero = ({ image, target, children }) => (
   <section name="hero" className={className.hero}>
     <VisibilitySensor>
       <Picture
@@ -22,10 +22,7 @@ const Hero = ({ image, target }) => (
       />
     </VisibilitySensor>
     <div className="wrapper flex-column-end">
-      <p className="color-white">
-        Ubicado en la avenida más prestigiada de todo Polanco,{' '}
-        <strong>CAMPOS ELISEOS</strong>.
-      </p>
+      {children}
       <Button
         to={target}
         smooth
@@ -40,7 +37,17 @@ const Hero = ({ image, target }) => (
 
 Hero.propTypes = {
   image: PropTypes.string.isRequired,
-  target: PropTypes.string.isRequired
+  target: PropTypes.string.isRequired,
+  children: PropTypes.node
+};
+
+Hero.defaultProps = {
+  children: (
+    <p className="color-white">
+      Ubicado en la avenida más prestigiada de todo Polanco,{' '}
+      <strong>CAMPOS ELISEOS</strong>
+    </p>
+  )
 };
 
 export default Hero;
