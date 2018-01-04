@@ -9,7 +9,7 @@ import Pano from '../Pano/Pano';
 export default () => (
   <div className={className.home}>
     <h1 className={className.title}>Artesia Polanco</h1>
-    <Hero image="/img/artesia-home-17-80.jpg" target="description" />
+    <Hero image="/img/artesia-portrait-25.png" target="description" />
     <section name="description">
       <div className="wrapper">
         <p>
