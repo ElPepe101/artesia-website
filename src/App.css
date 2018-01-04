@@ -31,6 +31,7 @@ strong {
 }
 
 img {
+  width: 100%;
   max-width: 100%;
   height: auto;
   vertical-align: middle;
@@ -84,6 +85,10 @@ button,
 
 .menu {
   display: none;
+}
+
+.logo {
+  width: auto;
 }
 
 /* ###################################### */
@@ -190,7 +195,19 @@ button,
   right: 5px !important;
 }
 
+.slick-dots {
+  position: relative !important;
+  margin-bottom: 10px !important;
+  bottom: 0 !important;
+}
+
 /* ################ BREAKPOINTS ##################### */
+
+@media (min-width: 375px) {
+  .wrapper {
+    max-width: 400px;
+  }
+}
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {

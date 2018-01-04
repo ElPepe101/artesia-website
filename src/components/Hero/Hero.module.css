@@ -1,6 +1,6 @@
 .hero {
   position: relative;
-  min-height: calc(84vh - 54px);
+  min-height: calc(83vh - 54px);
 }
 
 .hero picture,
@@ -12,7 +12,7 @@
 
 .hero > div {
   z-index: 1;
-  padding: 0 5% 50px;
+  padding: 0 5% 40px;
 }
 
 .hero p {

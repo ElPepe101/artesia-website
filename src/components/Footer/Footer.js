@@ -8,7 +8,7 @@ export default () => (
   <footer className={className.footer}>
     <div className="wrapper">
       <Image
-        className={className.logo}
+        className={`logo ${className.logo}`}
         images={[{ path: '/img/artesia-logo.jpg', minWidth: 0 }]}
       />
       <p>Campos Elseos No. 200, Polanco. Ciudad de México</p>

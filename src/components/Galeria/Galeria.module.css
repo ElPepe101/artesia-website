@@ -1,2 +1,6 @@
 .galeria {
 }
+
+.galeria section[name='vistas'] {
+  min-height: fit-content;
+}

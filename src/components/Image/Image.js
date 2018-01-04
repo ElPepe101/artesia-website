@@ -2,20 +2,20 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import 'lazysizes';
 
-const Image = ({ images }) => {
+const Image = ({ images, className }) => {
   const ImageSizes = images
     .map(img => {
-      const width = img.minWidth ? `${img.minWidth}w` : '';
-      return `${img.path} ${width}`;
+      const width = img.minWidth ? ` ${img.minWidth}w` : '';
+      return `${img.path}${width}`;
     })
-    .join(',');
+    .join(', ');
 
   return (
     <img
       alt=""
       data-sizes="auto"
       data-srcset={ImageSizes}
-      className="lazyload"
+      className={`lazyload ${className}`}
     />
   );
 };
@@ -26,7 +26,12 @@ Image.propTypes = {
       path: PropTypes.string,
       minWidth: PropTypes.number
     })
-  ).isRequired
+  ).isRequired,
+  className: PropTypes.string
+};
+
+Image.defaultProps = {
+  className: ''
 };
 
 export default Image;

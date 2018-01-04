@@ -87,7 +87,7 @@ class Pisos extends React.Component {
   render() {
     return (
       <div className={className.pisos}>
-        <Hero image="/img/artesia-pisos-32-80.jpg " target="select" />
+        <Hero image="/img/artesia-pisos-32.png" target="select" />
         <section name="select">
           <div className="wrapper">
             <h1>Selecciona la planta</h1>
