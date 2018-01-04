@@ -1,9 +1,8 @@
 import React from 'react';
-import { Picture } from 'react-responsive-picture';
-import VisibilitySensor from 'react-visibility-sensor';
 
 import className from './Servicios.module.css';
 import Hero from '../Hero/Hero';
+import Image from '../Image/Image';
 
 export default () => (
   <div className={className.servicios}>
@@ -47,9 +46,9 @@ export default () => (
           carta&quot;
         </p>
       </div>
-      <VisibilitySensor>
-        <Picture sources={[{ srcSet: '/img/artesia-servicios-36.png' }]} />
-      </VisibilitySensor>
+      <Image
+        images={[{ path: '/img/artesia-servicios-36.png', minWidth: 0 }]}
+      />
       <div className="wrapper">
         <ul>
           <li>
@@ -78,9 +77,9 @@ export default () => (
           </li>
         </ul>
       </div>
-      <VisibilitySensor>
-        <Picture sources={[{ srcSet: '/img/artesia-servicios-37-80.jpg' }]} />
-      </VisibilitySensor>
+      <Image
+        images={[{ path: '/img/artesia-servicios-37-80.jpg', minWidth: 0 }]}
+      />
       <div className="wrapper">
         <h3 className="remark">Gym</h3>
         <p>
@@ -90,9 +89,9 @@ export default () => (
           vim, nec et sumo oratio legere. Est eu propriae assentior posidonium.
         </p>
       </div>
-      <VisibilitySensor>
-        <Picture sources={[{ srcSet: '/img/artesia-servicios-38-80.jpg' }]} />
-      </VisibilitySensor>
+      <Image
+        images={[{ path: '/img/artesia-servicios-38-80.jpg', minWidth: 0 }]}
+      />
       <div className="wrapper">
         <h3 className="remark">Sky lounge</h3>
         <p>
@@ -102,9 +101,9 @@ export default () => (
           vim, nec et sumo oratio legere. Est eu propriae assentior posidonium.
         </p>
       </div>
-      <VisibilitySensor>
-        <Picture sources={[{ srcSet: '/img/artesia-servicios-39-80.jpg' }]} />
-      </VisibilitySensor>
+      <Image
+        images={[{ path: '/img/artesia-servicios-39-80.jpg', minWidth: 0 }]}
+      />
       <div className="wrapper">
         <h3 className="remark">Lobby</h3>
         <p>
@@ -114,9 +113,9 @@ export default () => (
           vim, nec et sumo oratio legere. Est eu propriae assentior posidonium.
         </p>
       </div>
-      <VisibilitySensor>
-        <Picture sources={[{ srcSet: '/img/artesia-servicios-40-80.jpg' }]} />
-      </VisibilitySensor>
+      <Image
+        images={[{ path: '/img/artesia-servicios-40-80.jpg', minWidth: 0 }]}
+      />
       <div className="wrapper">
         <h3 className="remark">Foto nocturna</h3>
         <p>
@@ -126,9 +125,9 @@ export default () => (
           vim, nec et sumo oratio legere. Est eu propriae assentior posidonium.
         </p>
       </div>
-      <VisibilitySensor>
-        <Picture sources={[{ srcSet: '/img/artesia-servicios-41-80.jpg' }]} />
-      </VisibilitySensor>
+      <Image
+        images={[{ path: '/img/artesia-servicios-41-80.jpg', minWidth: 0 }]}
+      />
     </section>
   </div>
 );

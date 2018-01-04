@@ -1,8 +1,7 @@
 import React from 'react';
-import { Picture } from 'react-responsive-picture';
-import VisibilitySensor from 'react-visibility-sensor';
 
 import Hero from '../Hero/Hero';
+import Image from '../Image/Image';
 import className from './Conocenos.module.css';
 import Pano from '../Pano/Pano';
 
@@ -15,9 +14,9 @@ export default () => (
         <h1>El Respaldo</h1>
         <br />
         <br />
-        <VisibilitySensor>
-          <Picture sources={[{ srcSet: '/img/artesia-conocenos-23-80.png' }]} />
-        </VisibilitySensor>
+        <Image
+          images={[{ path: '/img/artesia-conocenos-23-80.png', minWidth: 0 }]}
+        />
         <br />
         <br />
         <br />
@@ -35,9 +34,9 @@ export default () => (
         <br />
         <br />
         <br />
-        <VisibilitySensor>
-          <Picture sources={[{ srcSet: '/img/artesia-conocenos-22-80.jpg' }]} />
-        </VisibilitySensor>
+        <Image
+          images={[{ path: '/img/artesia-conocenos-22-80.jpg', minWidth: 0 }]}
+        />
         <br />
         <h2>Jan Hendrix</h2>
         <p>
@@ -54,9 +53,9 @@ export default () => (
       </div>
     </section>
     <section name="hendrix">
-      <VisibilitySensor>
-        <Picture sources={[{ srcSet: '/img/artesia-conocenos-24-80.jpg' }]} />
-      </VisibilitySensor>
+      <Image
+        images={[{ path: '/img/artesia-conocenos-24-80.jpg', minWidth: 0 }]}
+      />
       <div className="wrapper">
         <h3 className="remark">Jan Hendrix</h3>
         <p>
@@ -76,9 +75,9 @@ export default () => (
     <Pano />
     <section name="end">
       <div className="wrapper">
-        <VisibilitySensor>
-          <Picture sources={[{ srcSet: '/img/artesia-conocenos-20-80.jpg' }]} />
-        </VisibilitySensor>
+        <Image
+          images={[{ path: '/img/artesia-conocenos-20-80.jpg', minWidth: 0 }]}
+        />
         <br />
         <br />
       </div>

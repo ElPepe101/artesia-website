@@ -51,8 +51,33 @@ export default () => (
       </NavLink>
     </li>
     <li>
-      <NavLink exact to="/" className="menu-item" activeClassName="active">
-        Galería
+      <NavLink
+        exact
+        to="/galeria/vistas"
+        className="menu-item"
+        activeClassName="active"
+      >
+        Vistas
+      </NavLink>
+    </li>
+    <li>
+      <NavLink
+        exact
+        to="/galeria/proyectos"
+        className="menu-item"
+        activeClassName="active"
+      >
+        Proyectos
+      </NavLink>
+    </li>
+    <li>
+      <NavLink
+        exact
+        to="/galeria/obra"
+        className="menu-item"
+        activeClassName="active"
+      >
+        Obra
       </NavLink>
     </li>
     <li>

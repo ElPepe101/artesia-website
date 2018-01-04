@@ -1,7 +1,6 @@
 import React from 'react';
-import { Picture } from 'react-responsive-picture';
-import VisibilitySensor from 'react-visibility-sensor';
 
+import Image from '../Image/Image';
 import Hero from '../Hero/Hero';
 import className from './Conocenos.module.css';
 import Pano from '../Pano/Pano';
@@ -27,9 +26,9 @@ export default () => (
         <br />
         <br />
       </div>
-      <VisibilitySensor>
-        <Picture sources={[{ srcSet: '/img/artesia-conocenos-28-80.jpg' }]} />
-      </VisibilitySensor>
+      <Image
+        images={[{ path: '/img/artesia-conocenos-28-80.jpg', minWidth: 0 }]}
+      />
     </section>
     <section name="polanco">
       <div className="wrapper">
@@ -44,9 +43,9 @@ export default () => (
         <br />
         <br />
       </div>
-      <VisibilitySensor>
-        <Picture sources={[{ srcSet: '/img/artesia-conocenos-29-80.jpg' }]} />
-      </VisibilitySensor>
+      <Image
+        images={[{ path: '/img/artesia-conocenos-29-80.jpg', minWidth: 0 }]}
+      />
     </section>
     <section name="certificaciones">
       <div className="wrapper">
@@ -63,9 +62,9 @@ export default () => (
           auditado para <strong>minimizar su impacto ambiental.</strong>
         </p>
       </div>
-      <VisibilitySensor>
-        <Picture sources={[{ srcSet: '/img/artesia-conocenos-29-80.jpg' }]} />
-      </VisibilitySensor>
+      <Image
+        images={[{ path: '/img/artesia-conocenos-29-80.jpg', minWidth: 0 }]}
+      />
     </section>
     <Pano />
   </div>

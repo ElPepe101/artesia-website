@@ -1,11 +1,11 @@
 import React from 'react';
-import { Picture } from 'react-responsive-picture';
 import { NavLink } from 'react-router-dom';
 import MenuMobile from 'react-burger-menu/lib/menus/slide';
 
 import Menu from '../Menu/Menu';
 import Nav from '../Menu/Menu.Nav';
 import className from './Header.module.css';
+import Image from '../Image/Image';
 
 export default class extends React.Component {
   state = {
@@ -30,10 +30,10 @@ export default class extends React.Component {
         </MenuMobile>
         <div className="wrapper">
           <NavLink className={className.homeLink} exact to="/">
-            <Picture
-              alt="Artesia logo"
-              sources={[{ srcSet: '/img/artesia-logo.jpg' }]}
+            <Image
               className="logo"
+              alt="Artesia logo"
+              images={[{ path: '/img/artesia-logo.jpg', minWidth: 0 }]}
             />
           </NavLink>
           <Menu />

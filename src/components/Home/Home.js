@@ -1,8 +1,7 @@
 import React from 'react';
-import { Picture } from 'react-responsive-picture';
-import VisibilitySensor from 'react-visibility-sensor';
 
 import Hero from '../Hero/Hero';
+import Image from '../Image/Image';
 import className from './Home.module.css';
 import Pano from '../Pano/Pano';
 
@@ -31,19 +30,8 @@ export default () => (
         </p>
         <button className="button-square">Conozca los pisos</button>
       </div>
-      <VisibilitySensor>
-        <Picture sources={[{ srcSet: '/img/artesia-home-15-80.jpg' }]} />
-      </VisibilitySensor>
+      <Image images={[{ path: '/img/artesia-home-15-80.jpg', minWidth: 0 }]} />
     </section>
     <Pano />
   </div>
 );
-
-/*
-<h2>Artesia Polanco</h2>
-      <p>
-        Sólo <strong>38 Pisos Residenciales</strong> divididos en dos torres,{' '}
-        Piedra y Cristal. <strong>Desde 25436m2 a 641.35m2</strong> satisfaciendo
-        a los clientes más exigentes y sofisticados.
-      </p>
-*/

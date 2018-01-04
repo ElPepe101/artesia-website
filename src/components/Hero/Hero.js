@@ -1,26 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Button } from 'react-scroll';
-import { Picture } from 'react-responsive-picture';
-import VisibilitySensor from 'react-visibility-sensor';
 
 import className from './Hero.module.css';
+import Image from '../Image/Image';
 
 const Hero = ({ image, target, children }) => (
   <section name="hero" className={className.hero}>
-    <VisibilitySensor>
-      <Picture
-        sources={[
-          /* {
-            srcSet: ', /img/artesia-home-16-80.jpg',
-            media: '(min-width: 375px)',
-          }, */
-          {
-            srcSet: image
-          }
-        ]}
-      />
-    </VisibilitySensor>
+    <Image images={[{ path: image, minWidth: 0 }]} />
     <div className="wrapper flex-column-end">
       {children}
       <Button

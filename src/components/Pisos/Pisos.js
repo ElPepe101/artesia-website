@@ -2,9 +2,8 @@
 import React from 'react';
 import queryString from 'query-string';
 import PropType from 'prop-types';
-import { Picture } from 'react-responsive-picture';
-import VisibilitySensor from 'react-visibility-sensor';
 
+import Image from '../Image/Image';
 import levels from './Pisos.data.json';
 import className from './Pisos.module.css';
 import Hero from '../Hero/Hero';
@@ -45,14 +44,10 @@ class Pisos extends React.Component {
   }) => (
     <div>
       <div className={`wrapper ${className.images}`}>
-        <VisibilitySensor>
-          <Picture sources={[{ srcSet: `/img/levels/${images[0]}` }]} />
-        </VisibilitySensor>
+        <Image images={[{ path: `/img/levels/${images[0]}`, minWidth: 0 }]} />
       </div>
       <div className={className.images}>
-        <VisibilitySensor>
-          <Picture sources={[{ srcSet: `/img/levels/${images[1]}` }]} />
-        </VisibilitySensor>
+        <Image images={[{ path: `/img/levels/${images[1]}`, minWidth: 0 }]} />
       </div>
       <div className={`wrapper ${className.description}`}>
         <h2>Información del departamento</h2>
