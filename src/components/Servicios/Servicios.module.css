@@ -1,0 +1,108 @@
+.servicios {
+}
+
+.servicios h1 {
+  font-size: 28px;
+  text-transform: uppercase;
+}
+
+.servicios p {
+  font-weight: 500;
+  line-height: 130%;
+}
+
+.servicios ul {
+  text-align: center;
+  list-style: none;
+  padding: 0 5%;
+  margin: 0;
+}
+
+.servicios ul li {
+  padding: 35px;
+  margin: 0;
+}
+
+.servicios ul li span {
+  display: inline-block;
+  background-image: url('/img/artesia-sprite-1.png');
+  background-position: -297px 0;
+  background-repeat: no-repeat;
+}
+
+.servicios ul li p:first-of-type {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.servicios ul li span[name='llaves'] {
+  background-position: -6px -2px;
+  width: 53px;
+  height: 53px;
+}
+
+.servicios ul li span[name='concierge'] {
+  background-position: -7px -137px;
+  width: 51px;
+  height: 43px;
+}
+
+.servicios ul li span[name='mantenimiento'] {
+  background-position: -7px -287px;
+  width: 51px;
+  height: 50px;
+}
+
+.servicios ul li span[name='carta'] {
+  background-position: -4px -446px;
+  width: 53px;
+  height: 44px;
+}
+
+.servicios ul li span[name='room'] {
+  background-position: -297px 0;
+  width: 71px;
+  height: 55px;
+}
+
+.servicios ul li span[name='valet'] {
+  background-position: -454px -13px;
+  width: 59px;
+  height: 40px;
+}
+
+.servicios ul li span[name='gym'] {
+  background-position: -582px -11px;
+  width: 65px;
+  height: 38px;
+}
+
+.servicios ul li span[name='nado'] {
+  background-position: -577px -142px;
+  width: 65px;
+  height: 39px;
+}
+
+.servicios ul li span[name='restaurant'] {
+  background-position: -593px -281px;
+  width: 33px;
+  height: 61px;
+}
+
+.servicios ul li span[name='business'] {
+  background-position: -581px -431px;
+  width: 57px;
+  height: 68px;
+}
+
+.servicios ul li span[name='sky'] {
+  background-position: -578px -577px;
+  width: 61px;
+  height: 67px;
+}
+
+.servicios ul li span[name='jacuzzi'] {
+  background-position: -576px -728px;
+  width: 65px;
+  height: 69px;
+}

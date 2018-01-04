@@ -6,6 +6,7 @@ import ConocenosProyectoComponent from './Conocenos/Conocenos.Proyecto';
 import ConocenosRespaldoComponent from './Conocenos/Conocenos.Respaldo';
 import ConocenosInstalacionesComponent from './Conocenos/Conocenos.Instalaciones';
 import PisosComponent from './Pisos/Pisos';
+import ServiciosComponent from './Servicios/Servicios';
 
 export default () => (
   <Switch>
@@ -17,6 +18,7 @@ export default () => (
       component={ConocenosInstalacionesComponent}
     />
     <Route path="/pisos/:search?" component={PisosComponent} />
+    <Route path="/servicios" component={ServiciosComponent} />
     {/* <Route component={Error404} /> */}
   </Switch>
 );
