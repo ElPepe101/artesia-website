@@ -13,10 +13,9 @@ const Hero = ({ image, target, children }) => {
     <section name="hero" className={className.hero}>
       <Image
         images={[
-          { path: `${path}${ext}`, minWidth: 0 },
-          { path: `${path}${ext}`, minWidth: 576 },
-          { path: `${path}@2x${ext}`, minWidth: 640 },
-          { path: `${path}@3x${ext}`, minWidth: 960 }
+          { path: `${path}@3x${ext}`, minWidth: 900 },
+          { path: `${path}@2x${ext}`, minWidth: 600 },
+          { path: `${path}${ext}`, minWidth: 400 }
         ]}
       />
       <div className="wrapper flex-column-end">
