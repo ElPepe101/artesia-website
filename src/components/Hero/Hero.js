@@ -14,7 +14,7 @@ const Hero = ({ image, target, children }) => {
       <Image
         images={[
           { path: `${path}${ext}`, minWidth: 0 },
-          { path: `${path}${ext}`, minWidth: 320 },
+          { path: `${path}${ext}`, minWidth: 576 },
           { path: `${path}@2x${ext}`, minWidth: 640 },
           { path: `${path}@3x${ext}`, minWidth: 960 }
         ]}
