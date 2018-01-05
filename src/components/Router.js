@@ -9,6 +9,7 @@ import ConocenosInstalacionesComponent from './Conocenos/Conocenos.Instalaciones
 import PisosComponent from './Pisos/Pisos';
 import ServiciosComponent from './Servicios/Servicios';
 import GaleriaVistasComponent from './Galeria/Galeria.Vistas';
+import GaleriaProyectosComponent from './Galeria/Galeria.Proyectos';
 
 export default () => (
   <Switch>
@@ -21,7 +22,11 @@ export default () => (
     />
     <Route path="/pisos/:search?" component={PisosComponent} />
     <Route path="/servicios" component={ServiciosComponent} />
-    <Route path="/galeria/vistas" component={GaleriaVistasComponent} />
+    <Route
+      path="/galeria/vistas/:building?/:level?"
+      component={GaleriaVistasComponent}
+    />
+    <Route path="/galeria/proyectos" component={GaleriaProyectosComponent} />
     {/* <Route component={Error404} /> */}
   </Switch>
 );

@@ -4,3 +4,35 @@
 .galeria section[name='vistas'] {
   min-height: fit-content;
 }
+
+.galeria section[name='vistas'] select {
+  display: inline-block;
+  width: 50vw;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border: 0;
+  margin: 0;
+  border-radius: 0;
+  box-shadow: 0 1px 0 1px black inset;
+}
+
+.galeria section[name='vistas'] select:first-of-type {
+  background-color: white;
+  color: black;
+}
+
+.galeria section[name='proyectos'] h2 {
+  font-weight: 400;
+  font-size: 28px;
+}
+
+.galeria section[name='proyectos'] p {
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.sectionText {
+  padding-top: 35px;
+  padding-bottom: 55px;
+}
