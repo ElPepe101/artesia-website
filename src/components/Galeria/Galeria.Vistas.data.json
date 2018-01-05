@@ -1,32 +1,56 @@
-[
-  [
-    {
-      "path": "/img/vistas/piedra-1.png",
-      "minWidth": 0
-    }
-  ],
-  [
-    {
-      "path": "/img/vistas/piedra-1.png",
-      "minWidth": 0
-    }
-  ],
-  [
-    {
-      "path": "/img/vistas/piedra-1.png",
-      "minWidth": 0
-    }
-  ],
-  [
-    {
-      "path": "/img/vistas/piedra-1.png",
-      "minWidth": 0
-    }
-  ],
-  [
-    {
-      "path": "/img/vistas/piedra-1.png",
-      "minWidth": 0
-    }
-  ]
-]
+{
+  "torre-piedra": {
+    "piso-1": [
+      [
+        {
+          "path": "/img/vistas/piedra-1.png",
+          "minWidth": 0
+        }
+      ],
+      [
+        {
+          "path": "/img/artesia-obra-49.png",
+          "minWidth": 0
+        }
+      ],
+      [
+        {
+          "path": "/img/artesia-obra-50.png",
+          "minWidth": 0
+        }
+      ],
+      [
+        {
+          "path": "/img/vistas/piedra-1.png",
+          "minWidth": 0
+        }
+      ]
+    ],
+    "piso-2": [
+      [
+        {
+          "path": "/img/artesia-obra-49@3x.png",
+          "minWidth": 900
+        },
+        {
+          "path": "/img/artesia-obra-49@2x.png",
+          "minWidth": 600
+        },
+        {
+          "path": "/img/artesia-obra-49.png",
+          "minWidth": 400
+        }
+      ]
+    ]
+  },
+  "torre-cristal": {
+    "piso-1": [
+      [
+        {
+          "path": "/img/artesia-obra-50.png",
+          "minWidth": 0
+        }
+      ]
+    ]
+  }
+}
