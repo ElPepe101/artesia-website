@@ -31,8 +31,8 @@ class Vistas extends React.Component {
 
   constructor({ match: { params: { building, level } } }) {
     super();
-    this.building = building;
-    this.level = level;
+    this.building = building || 'torre-piedra';
+    this.level = level || 'piso-1';
   }
 
   getBuildingOptions = () =>
