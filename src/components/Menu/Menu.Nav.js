@@ -81,7 +81,12 @@ export default () => (
       </NavLink>
     </li>
     <li>
-      <NavLink exact to="/" className="menu-item" activeClassName="active">
+      <NavLink
+        exact
+        to="/ubicacion"
+        className="menu-item"
+        activeClassName="active"
+      >
         Ubicación
       </NavLink>
     </li>

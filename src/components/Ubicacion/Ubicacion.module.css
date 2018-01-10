@@ -1,0 +1,13 @@
+.ubicacion {
+}
+
+.ubicacion iframe {
+  width: 100%;
+  height: 70vh;
+}
+
+@media screen and (orientation: landscape) {
+  .ubicacion iframe {
+    height: 100vh;
+  }
+}
