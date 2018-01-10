@@ -1,0 +1,13 @@
+.contacto {
+}
+
+.contacto iframe {
+  width: 100%;
+  height: 70vh;
+}
+
+@media screen and (orientation: landscape) {
+  .contacto iframe {
+    height: 100vh;
+  }
+}

@@ -12,6 +12,7 @@ import GaleriaVistasComponent from './Galeria/Galeria.Vistas';
 import GaleriaProyectosComponent from './Galeria/Galeria.Proyectos';
 import GaleriaObraComponent from './Galeria/Galeria.Obra';
 import UbicacionComponent from './Ubicacion/Ubicacion';
+import ContactoComponent from './Contacto/Contacto';
 
 export default () => (
   <Switch>
@@ -37,6 +38,8 @@ export default () => (
     />
     <Route exact path="/galeria/obra" component={GaleriaObraComponent} />
     <Route path="/ubicacion" component={UbicacionComponent} />
+
+    <Route path="/contacto" component={ContactoComponent} />
     {/* <Route component={Error404} /> */}
   </Switch>
 );
