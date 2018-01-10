@@ -11,7 +11,7 @@ import Router from './components/Router';
 
 export default () => (
   <BrowserRouter>
-    <div id="app" className="app debug">
+    <div id="app" className="app">
       <Header />
       <main id="main" className="main">
         <Router />

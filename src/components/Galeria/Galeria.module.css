@@ -36,3 +36,29 @@
   padding-top: 35px;
   padding-bottom: 55px;
 }
+
+.level {
+  background-color: black;
+  color: white;
+  overflow: auto;
+  text-align: center;
+}
+
+.level a {
+  display: block;
+  padding: 20px;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+}
+
+.obraDesc {
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
+
+.obraDesc p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 130%;
+}
