@@ -1,60 +1,54 @@
 @font-face {
   font-family: 'Gotham';
-  src: url('http://localhost:3000/font/hinted-Gotham-Medium.eot');
-  src: url('http://localhost:3000/font/hinted-Gotham-Medium.eot?#iefix')
-      format('embedded-opentype'),
-    url('http://localhost:3000/font/hinted-Gotham-Medium.woff2') format('woff2'),
-    url('http://localhost:3000/font/hinted-Gotham-Medium.woff') format('woff'),
-    url('http://localhost:3000/font/hinted-Gotham-Medium.ttf')
-      format('truetype');
+  src: url('/font/hinted-Gotham-Medium.eot');
+  src: url('/font/hinted-Gotham-Medium.eot?#iefix') format('embedded-opentype'),
+    url('/font/hinted-Gotham-Medium.woff2') format('woff2'),
+    url('/font/hinted-Gotham-Medium.woff') format('woff'),
+    url('/font/hinted-Gotham-Medium.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Gotham';
-  src: url('http://localhost:3000/font/hinted-Gotham-Light.eot');
-  src: url('http://localhost:3000/font/hinted-Gotham-Light.eot?#iefix')
-      format('embedded-opentype'),
-    url('http://localhost:3000/font/hinted-Gotham-Light.woff2') format('woff2'),
-    url('http://localhost:3000/font/hinted-Gotham-Light.woff') format('woff'),
-    url('http://localhost:3000/font/hinted-Gotham-Light.ttf') format('truetype');
+  src: url('/font/hinted-Gotham-Light.eot');
+  src: url('/font/hinted-Gotham-Light.eot?#iefix') format('embedded-opentype'),
+    url('/font/hinted-Gotham-Light.woff2') format('woff2'),
+    url('/font/hinted-Gotham-Light.woff') format('woff'),
+    url('/font/hinted-Gotham-Light.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Gotham';
-  src: url('http://localhost:3000/font/hinted-Gotham-Book.eot');
-  src: url('http://localhost:3000/font/hinted-Gotham-Book.eot?#iefix')
-      format('embedded-opentype'),
-    url('http://localhost:3000/font/hinted-Gotham-Book.woff2') format('woff2'),
-    url('http://localhost:3000/font/hinted-Gotham-Book.woff') format('woff'),
-    url('http://localhost:3000/font/hinted-Gotham-Book.ttf') format('truetype');
+  src: url('/font/hinted-Gotham-Book.eot');
+  src: url('/font/hinted-Gotham-Book.eot?#iefix') format('embedded-opentype'),
+    url('/font/hinted-Gotham-Book.woff2') format('woff2'),
+    url('/font/hinted-Gotham-Book.woff') format('woff'),
+    url('/font/hinted-Gotham-Book.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Gotham';
-  src: url('http://localhost:3000/font/hinted-Gotham-Black.eot');
-  src: url('http://localhost:3000/font/hinted-Gotham-Black.eot?#iefix')
-      format('embedded-opentype'),
-    url('http://localhost:3000/font/hinted-Gotham-Black.woff2') format('woff2'),
-    url('http://localhost:3000/font/hinted-Gotham-Black.woff') format('woff'),
-    url('http://localhost:3000/font/hinted-Gotham-Black.ttf') format('truetype');
+  src: url('/font/hinted-Gotham-Black.eot');
+  src: url('/font/hinted-Gotham-Black.eot?#iefix') format('embedded-opentype'),
+    url('/font/hinted-Gotham-Black.woff2') format('woff2'),
+    url('/font/hinted-Gotham-Black.woff') format('woff'),
+    url('/font/hinted-Gotham-Black.ttf') format('truetype');
   font-weight: 800;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Gotham';
-  src: url('http://localhost:3000/font/hinted-Gotham-Bold.eot');
-  src: url('http://localhost:3000/font/hinted-Gotham-Bold.eot?#iefix')
-      format('embedded-opentype'),
-    url('http://localhost:3000/font/hinted-Gotham-Bold.woff2') format('woff2'),
-    url('http://localhost:3000/font/hinted-Gotham-Bold.woff') format('woff'),
-    url('http://localhost:3000/font/hinted-Gotham-Bold.ttf') format('truetype');
+  src: url('/font/hinted-Gotham-Bold.eot');
+  src: url('/font/hinted-Gotham-Bold.eot?#iefix') format('embedded-opentype'),
+    url('/font/hinted-Gotham-Bold.woff2') format('woff2'),
+    url('/font/hinted-Gotham-Bold.woff') format('woff'),
+    url('/font/hinted-Gotham-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
 }
