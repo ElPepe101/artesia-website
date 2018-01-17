@@ -50,6 +50,11 @@ export default () => (
         images={[{ path: '/img/artesia-servicios-36.png', minWidth: 0 }]}
       />
       <div className="wrapper">
+        <h1>Amenidades</h1>
+        <p>
+          Espacios cuidadosamente diseñados para combionar lo práctico con el
+          confort y la elegancia.
+        </p>
         <ul>
           <li>
             <span name="gym" />

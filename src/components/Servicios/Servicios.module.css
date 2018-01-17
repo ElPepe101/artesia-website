@@ -11,6 +11,11 @@
   line-height: 130%;
 }
 
+.servicios h3 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
 .servicios ul {
   text-align: center;
   list-style: none;
@@ -28,6 +33,16 @@
   background-image: url('/img/artesia-sprite-1.png');
   background-position: -297px 0;
   background-repeat: no-repeat;
+}
+
+.servicios > section > div {
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+.servicios > section > div > p {
+  font-weight: 500;
+  font-size: 16px;
 }
 
 .servicios ul li p:first-of-type {

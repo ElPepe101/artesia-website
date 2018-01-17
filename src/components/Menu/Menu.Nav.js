@@ -5,42 +5,47 @@ import className from './Menu.Nav.module.css';
 
 export default () => (
   <ul className={className.list}>
-    <li>
-      <NavLink
-        exact
-        to="/conocenos/proyecto"
-        className="menu-item"
-        activeClassName="active"
-      >
-        Proyecto
-      </NavLink>
+    <li name="submenu-3">
+      <span>Conócenos</span>
+      <ul>
+        <li name="conocenos-proyecto">
+          <NavLink
+            exact
+            to="/conocenos/proyecto"
+            className="menu-item"
+            activeClassName="active"
+          >
+            Proyecto
+          </NavLink>
+        </li>
+        <li name="conocenos-instalaciones">
+          <NavLink
+            exact
+            to="/conocenos/instalaciones"
+            className="menu-item"
+            activeClassName="active"
+          >
+            Instalaciones
+          </NavLink>
+        </li>
+        <li name="conocenos-respaldo">
+          <NavLink
+            exact
+            to="/conocenos/respaldo"
+            className="menu-item"
+            activeClassName="active"
+          >
+            Respaldo
+          </NavLink>
+        </li>
+      </ul>
     </li>
-    <li>
-      <NavLink
-        exact
-        to="/conocenos/instalaciones"
-        className="menu-item"
-        activeClassName="active"
-      >
-        Instalaciones
-      </NavLink>
-    </li>
-    <li>
-      <NavLink
-        exact
-        to="/conocenos/respaldo"
-        className="menu-item"
-        activeClassName="active"
-      >
-        Respaldo
-      </NavLink>
-    </li>
-    <li>
+    <li name="pisos">
       <NavLink exact to="/pisos" className="menu-item" activeClassName="active">
         Pisos residenciales
       </NavLink>
     </li>
-    <li>
+    <li name="servicios">
       <NavLink
         exact
         to="/servicios"
@@ -50,37 +55,42 @@ export default () => (
         Servicios
       </NavLink>
     </li>
-    <li>
-      <NavLink
-        exact
-        to="/galeria/vistas"
-        className="menu-item"
-        activeClassName="active"
-      >
-        Vistas
-      </NavLink>
+    <li name="submenu-3">
+      <span>Galería</span>
+      <ul>
+        <li name="galeria-vistas">
+          <NavLink
+            exact
+            to="/galeria/vistas"
+            className="menu-item"
+            activeClassName="active"
+          >
+            Vistas
+          </NavLink>
+        </li>
+        <li name="galeria-proyectos">
+          <NavLink
+            exact
+            to="/galeria/proyectos"
+            className="menu-item"
+            activeClassName="active"
+          >
+            Proyectos
+          </NavLink>
+        </li>
+        <li name="galeria-obra">
+          <NavLink
+            exact
+            to="/galeria/obra"
+            className="menu-item"
+            activeClassName="active"
+          >
+            Obra
+          </NavLink>
+        </li>
+      </ul>
     </li>
-    <li>
-      <NavLink
-        exact
-        to="/galeria/proyectos"
-        className="menu-item"
-        activeClassName="active"
-      >
-        Proyectos
-      </NavLink>
-    </li>
-    <li>
-      <NavLink
-        exact
-        to="/galeria/obra"
-        className="menu-item"
-        activeClassName="active"
-      >
-        Obra
-      </NavLink>
-    </li>
-    <li>
+    <li name="ubicacion">
       <NavLink
         exact
         to="/ubicacion"
@@ -90,7 +100,7 @@ export default () => (
         Ubicación
       </NavLink>
     </li>
-    <li>
+    <li name="contacto">
       <NavLink
         exact
         to="/contacto"

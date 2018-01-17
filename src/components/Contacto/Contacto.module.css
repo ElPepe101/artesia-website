@@ -6,6 +6,67 @@
   height: 70vh;
 }
 
+.contacto form {
+  padding: 25px 0;
+}
+
+.contacto form input,
+.contacto form textarea {
+  border: 1px solid rgb(110, 110, 110);
+  color: rgb(110, 110, 110);
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 10px;
+  width: 100%;
+}
+
+.contacto form input[name='submit'] {
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 15px 0;
+  width: 100%;
+  font-size: 14px;
+  max-width: 400px;
+}
+
+.info {
+  margin: 30px 0 65px;
+}
+
+.info p {
+  display: block;
+  height: 60px;
+  font-weight: 300;
+  color: rgb(160, 160, 160);
+  font-size: 15px;
+  line-height: 130%;
+}
+
+.info p span {
+  display: inline-block;
+  float: left;
+  margin: 0 25px 0 10px;
+  width: 30px;
+  height: 60px;
+  background-image: url('/img/artesia-sprite-1.png');
+  background-position: -465px -148px;
+  background-repeat: no-repeat;
+}
+
+.info p span[name='phone'] {
+  background-position: -465px -148px;
+}
+
+.info p span[name='mail'] {
+  background-position: -465px -302px;
+}
+
+.info p span[name='marker'] {
+  background-position: -466px -447px;
+}
+
 @media screen and (orientation: landscape) {
   .contacto iframe {
     height: 100vh;

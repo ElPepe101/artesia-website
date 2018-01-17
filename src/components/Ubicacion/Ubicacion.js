@@ -16,9 +16,10 @@ export default () => (
       />
       <Image
         images={[
-          { path: '/img/artesia-ubicacion-52@3x.png', minWidth: 900 },
-          { path: '/img/artesia-ubicacion-52@2x.png', minWidth: 600 },
-          { path: '/img/artesia-ubicacion-52.png', minWidth: 400 }
+          { path: '/img/artesia-ubicacion-52@3x.png', minWidth: 968 },
+          { path: '/img/artesia-ubicacion-52@2x.png', minWidth: 640 },
+          { path: '/img/artesia-ubicacion-52.png', minWidth: 300 },
+          { path: '/img/artesia-ubicacion-52.png', minWidth: 0 }
         ]}
       />
     </section>

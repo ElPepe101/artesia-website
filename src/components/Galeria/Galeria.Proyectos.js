@@ -18,9 +18,10 @@ export default () => (
     <section name="proyectos">
       <Image
         images={[
-          { path: '/img/artesia-proyectos-55@3x.png', minWidth: 900 },
-          { path: '/img/artesia-proyectos-55@2x.png', minWidth: 600 },
-          { path: '/img/artesia-proyectos-55.png', minWidth: 400 }
+          { path: '/img/artesia-proyectos-55@3x.png', minWidth: 968 },
+          { path: '/img/artesia-proyectos-55@2x.png', minWidth: 640 },
+          { path: '/img/artesia-proyectos-55.png', minWidth: 300 },
+          { path: '/img/artesia-proyectos-55.png', minWidth: 0 }
         ]}
       />
       <div className={`wrapper ${className.sectionText}`}>
@@ -35,9 +36,10 @@ export default () => (
 
       <Image
         images={[
-          { path: '/img/artesia-proyectos-46@3x.png', minWidth: 900 },
-          { path: '/img/artesia-proyectos-46@2x.png', minWidth: 600 },
-          { path: '/img/artesia-proyectos-46.png', minWidth: 400 }
+          { path: '/img/artesia-proyectos-46@3x.png', minWidth: 968 },
+          { path: '/img/artesia-proyectos-46@2x.png', minWidth: 640 },
+          { path: '/img/artesia-proyectos-46.png', minWidth: 300 },
+          { path: '/img/artesia-proyectos-46.png', minWidth: 0 }
         ]}
       />
       <div className={`wrapper ${className.sectionText}`}>
@@ -52,9 +54,10 @@ export default () => (
 
       <Image
         images={[
-          { path: '/img/artesia-proyectos-47@3x.png', minWidth: 900 },
-          { path: '/img/artesia-proyectos-47@2x.png', minWidth: 600 },
-          { path: '/img/artesia-proyectos-47.png', minWidth: 400 }
+          { path: '/img/artesia-proyectos-47@3x.png', minWidth: 968 },
+          { path: '/img/artesia-proyectos-47@2x.png', minWidth: 640 },
+          { path: '/img/artesia-proyectos-47.png', minWidth: 300 },
+          { path: '/img/artesia-proyectos-47.png', minWidth: 0 }
         ]}
       />
       <div className={`wrapper ${className.sectionText}`}>
@@ -69,9 +72,10 @@ export default () => (
 
       <Image
         images={[
-          { path: '/img/artesia-proyectos-48@3x.png', minWidth: 900 },
-          { path: '/img/artesia-proyectos-48@2x.png', minWidth: 600 },
-          { path: '/img/artesia-proyectos-48.png', minWidth: 400 }
+          { path: '/img/artesia-proyectos-48@3x.png', minWidth: 968 },
+          { path: '/img/artesia-proyectos-48@2x.png', minWidth: 640 },
+          { path: '/img/artesia-proyectos-48.png', minWidth: 300 },
+          { path: '/img/artesia-proyectos-48.png', minWidth: 0 }
         ]}
       />
       <div className={`wrapper ${className.sectionText}`}>

@@ -10,9 +10,10 @@ export default () => (
     <section name="obra">
       <Image
         images={[
-          { path: '/img/artesia-obra-49@3x.png', minWidth: 900 },
-          { path: '/img/artesia-obra-49@2x.png', minWidth: 600 },
-          { path: '/img/artesia-obra-49.png', minWidth: 400 }
+          { path: '/img/artesia-obra-49@3x.png', minWidth: 968 },
+          { path: '/img/artesia-obra-49@2x.png', minWidth: 640 },
+          { path: '/img/artesia-obra-49.png', minWidth: 300 },
+          { path: '/img/artesia-obra-49.png', minWidth: 0 }
         ]}
       />
 
@@ -25,9 +26,10 @@ export default () => (
 
       <Image
         images={[
-          { path: '/img/artesia-obra-50@3x.png', minWidth: 900 },
-          { path: '/img/artesia-obra-50@2x.png', minWidth: 600 },
-          { path: '/img/artesia-obra-50.png', minWidth: 400 }
+          { path: '/img/artesia-obra-50@3x.png', minWidth: 968 },
+          { path: '/img/artesia-obra-50@2x.png', minWidth: 640 },
+          { path: '/img/artesia-obra-50.png', minWidth: 300 },
+          { path: '/img/artesia-obra-50.png', minWidth: 0 }
         ]}
       />
 
@@ -43,9 +45,10 @@ export default () => (
 
       <Image
         images={[
-          { path: '/img/artesia-obra-51@3x.png', minWidth: 900 },
-          { path: '/img/artesia-obra-51@2x.png', minWidth: 600 },
-          { path: '/img/artesia-obra-51.png', minWidth: 400 }
+          { path: '/img/artesia-obra-51@3x.png', minWidth: 968 },
+          { path: '/img/artesia-obra-51@2x.png', minWidth: 640 },
+          { path: '/img/artesia-obra-51.png', minWidth: 300 },
+          { path: '/img/artesia-obra-51.png', minWidth: 0 }
         ]}
       />
     </section>

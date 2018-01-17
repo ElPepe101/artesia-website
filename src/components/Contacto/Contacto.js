@@ -5,25 +5,70 @@ import Hero from '../Hero/Hero';
 
 export default () => (
   <div className={className.contacto}>
-    <Hero image="/img/artesia-portrait-45.png" target="contacto" />
+    <Hero image="/img/artesia-portrait-53.png" target="contacto" />
     <section name="contacto">
       <div className="wrapper">
-        <form method="get" action="">
-          <submit value="Enviar" />
+        <form id="form1" name="datos" method="post" action="enviar.php">
+          <input
+            name="Nombre"
+            type="text"
+            className="Estilo5"
+            id="Nombre"
+            size="40"
+            placeholder="Nombre"
+          />
+          <input
+            name="E-mail"
+            type="text"
+            className="Estilo5"
+            id="E-mail"
+            size="40"
+            placeholder="Correo electrónico"
+          />
+          <input
+            name="telefono"
+            type="phone"
+            className="Estilo5"
+            id="telefono"
+            size="40"
+            placeholder="Teléfono"
+          />
+          <textarea
+            name="Comentarios"
+            cols="34"
+            rows="8"
+            wrap="virtual"
+            className="Estilo5"
+            id="Comentarios"
+            placeholder="Mensaje"
+          />
+          <input
+            alt=""
+            name="submit"
+            onClick="MM_validateForm('Nombre','','R','E-mail','','RisEmail','Teléfono:','','RisNum','Comentarios','','R');return document.MM_returnValue"
+            src="contacto/enviar.jpg"
+            width="70"
+            height="31"
+            value="Enviar"
+          />
         </form>
-        <div>
+        <div className={className.info}>
           <p>
             <span name="phone" />
-            Teléfono<br />
+            <strong>Teléfono:</strong>
+            <br />
             (55) 5280 4764
           </p>
           <p>
-            Correo electrónico<br />
+            <span name="mail" />
+            <strong>Correo electrónico:</strong>
+            <br />
             ventas@artesia.mx
           </p>
           <p>
             <span name="marker" />
-            Dirección<br />
+            <strong>Dirección:</strong>
+            <br />
             Campos Eliseso No. 200, Polanco, Ciudad de México.
           </p>
         </div>

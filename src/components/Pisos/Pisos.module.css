@@ -1,6 +1,10 @@
 .pisos {
 }
 
+.pisos h1 {
+  text-transform: uppercase;
+}
+
 .pisos section[name='select'] {
   min-height: auto;
   padding-bottom: 10px;
@@ -64,13 +68,13 @@
   display: inline-block;
 }
 
-.description div p {
+.features p {
   font-size: 24px;
   color: rgb(208, 208, 208);
   line-height: 100%;
 }
 
-.description div p span {
+.features p span {
   display: inline-block;
   background-image: url('/img/artesia-sprite-1.png');
   background-position: -15px -747px;
@@ -80,13 +84,13 @@
   margin: 10px 12.5px -5px 0;
 }
 
-.description div p:nth-of-type(2) span {
+.features p:nth-of-type(2) span {
   background-position: -168px -750px;
   width: 33px;
   height: 33px;
 }
 
-.description div p:nth-of-type(3) span {
+.features p:nth-of-type(3) span {
   background-position: -308px -753px;
   width: 31px;
   height: 28px;
@@ -127,4 +131,38 @@
   background-position: -466px -755px;
   width: 27px;
   height: 28px;
+}
+
+@media (min-width: 992px) {
+  .pisos h1,
+  .description h2 {
+    font-size: 18px;
+  }
+
+  .description h3 {
+    font-size: 22px;
+  }
+
+  .description h4 {
+    margin: 0;
+  }
+
+  .column {
+    display: inline-block;
+    vertical-align: middle;
+    width: 33.33%;
+    padding: 0 15px;
+    height: 100%;
+  }
+
+  .features p {
+    display: inline-block;
+    font-size: 14px;
+  }
+
+  .pisos button {
+    font-size: 12px;
+    display: inline-block;
+    width: 50%;
+  }
 }

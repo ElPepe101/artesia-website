@@ -1,6 +1,6 @@
 .hero {
   position: relative;
-  min-height: calc(83vh - 54px);
+  min-height: unset;
 }
 
 .hero picture,
@@ -8,6 +8,10 @@
   position: absolute;
   top: 0;
   z-index: 0;
+}
+
+.hero picture {
+  position: relative;
 }
 
 .hero > div {
@@ -33,4 +37,16 @@
   height: 44px;
   overflow: hidden;
   background: url('/img/artesia-sprite-1.png') no-repeat -163px 0;
+}
+
+@media (min-device-width: 325px) and (orientation: landscape) {
+  .hero > div {
+    height: 50vw;
+  }
+}
+
+@media (min-width: 992px) {
+  .hero > div {
+    height: 50vw;
+  }
 }

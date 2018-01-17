@@ -2,25 +2,43 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import 'lazysizes';
 
-const Image = ({ images, className }) => {
-  const ImageSizes = images
+const Image = ({ images, className, sizes }) => {
+  let imagesnum = 0;
+  const sources = images
     .filter(img => {
       if (img.minWidth) {
         return true;
       }
       return false;
     })
-    .map(img => `${img.path} ${img.minWidth}w`)
-    .join(', ');
+    .sort((a, b) => b.minWidth - a.minWidth)
+    .map(img => {
+      let orientation = '';
+      if (img.landscape) {
+        orientation = ' and (orientation: landscape)';
+      } else if (img.portrait) {
+        orientation = ' and (orientation: portrait)';
+      }
+      imagesnum += 1;
+      return (
+        <source
+          key={`picture_source_${className}-${imagesnum}`}
+          data-srcset={img.path}
+          media={`(min-width: ${img.minWidth}px)${orientation}`}
+        />
+      );
+    });
+  // .join(', ');
 
   return (
-    <img
-      alt=""
-      data-src={!images[0].minWidth ? images[0].path : ''}
-      data-sizes="auto"
-      data-srcset={ImageSizes}
-      className={`lazyload ${className}`}
-    />
+    <picture>
+      {sources}
+      <img
+        alt=""
+        data-src={!images[0].minWidth ? images[0].path : ''}
+        className={`lazyload ${className}`}
+      />
+    </picture>
   );
 };
 
@@ -31,11 +49,13 @@ Image.propTypes = {
       minWidth: PropTypes.number
     })
   ).isRequired,
-  className: PropTypes.string
+  className: PropTypes.string,
+  sizes: PropTypes.oneOfType([PropTypes.string, PropTypes.bool])
 };
 
 Image.defaultProps = {
-  className: ''
+  className: '',
+  sizes: 'auto'
 };
 
 export default Image;

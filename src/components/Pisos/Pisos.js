@@ -32,23 +32,24 @@ class Pisos extends React.Component {
   GetLevel = () =>
     levels.find(level => Number(level.value) === Number(this.search.lvl));
 
-  DrawLevel = ({
+  DrawLevel = ({ images }) => (
+    <div className={className.column}>
+      <div className={className.images}>
+        <Image images={[{ path: `/img/levels/${images[1]}`, minWidth: 0 }]} />
+      </div>
+    </div>
+  );
+
+  DrawDescription = ({
     building,
     level,
-    images,
     description,
     features,
     number,
     squares,
     bedrooms
   }) => (
-    <div>
-      <div className={`wrapper ${className.images}`}>
-        <Image images={[{ path: `/img/levels/${images[0]}`, minWidth: 0 }]} />
-      </div>
-      <div className={className.images}>
-        <Image images={[{ path: `/img/levels/${images[1]}`, minWidth: 0 }]} />
-      </div>
+    <div className={className.column}>
       <div className={`wrapper ${className.description}`}>
         <h2>Información del departamento</h2>
         <h3>
@@ -56,10 +57,10 @@ class Pisos extends React.Component {
           <br />
           {level}
         </h3>
-        <p>{description}</p>
+        {/* <p>{description}</p> */}
         <ul>{features.map(feature => <li key={feature}>{feature}</li>)}</ul>
         <h4>Características</h4>
-        <div>
+        <div className={className.features}>
           <p>
             <span /> {number}
           </p>
@@ -85,22 +86,31 @@ class Pisos extends React.Component {
   );
 
   render() {
+    const level = this.GetLevel();
     return (
       <div className={className.pisos}>
-        <Hero image="/img/artesia-pisos-32.png" target="select" />
+        <Hero image="/img/artesia-portrait-32.png" target="select" />
         <section name="select">
-          <div className="wrapper">
-            <h1>Selecciona la planta</h1>
-            <select
-              readOnly
-              onChange={this.ChangeLevel}
-              value={this.search.lvl}
-            >
-              {this.GetOptions()}
-            </select>
+          <div className={className.column}>
+            <div className="wrapper">
+              <h1>Selecciona la planta</h1>
+              <select
+                readOnly
+                onChange={this.ChangeLevel}
+                value={this.search.lvl}
+              >
+                {this.GetOptions()}
+              </select>
+              <div className={className.images}>
+                <Image
+                  images={[{ path: '/img/levels/lvl1-front.jpg', minWidth: 0 }]}
+                />
+              </div>
+            </div>
           </div>
+          {this.DrawLevel(level)}
+          {this.DrawDescription(level)}
         </section>
-        <section name="images">{this.DrawLevel(this.GetLevel())}</section>
       </div>
     );
   }

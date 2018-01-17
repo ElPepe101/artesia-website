@@ -31,9 +31,16 @@ export default class extends React.Component {
         <div className="wrapper">
           <NavLink className={className.homeLink} exact to="/">
             <Image
+              sizes={false}
               className="logo"
               alt="Artesia logo"
-              images={[{ path: '/img/artesia-logo.jpg', minWidth: 0 }]}
+              images={[
+                { path: '/img/artesia-logo-transp.png', minWidth: 992 },
+                { path: '/img/artesia-logo.jpg', minWidth: 900 },
+                { path: '/img/artesia-logo.jpg', minWidth: 600 },
+                { path: '/img/artesia-logo.jpg', minWidth: 300 },
+                { path: '/img/artesia-logo.jpg', minWidth: 0 }
+              ]}
             />
           </NavLink>
           <Menu />

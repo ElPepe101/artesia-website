@@ -10,6 +10,28 @@
   margin: 0;
   height: calc(100vh / 8);
   display: block;
+  color: white;
+  font-size: 15px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.list li ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list li[name='submenu-3'] {
+  height: calc(100vh / 2.98);
+}
+
+.list li[name='submenu-3'] + li {
+  margin-top: 12.5%;
+}
+
+.list > li > span {
+  display: none;
 }
 
 .list li a {
@@ -21,4 +43,65 @@
   width: 100%;
   padding: 12.5% 0;
   border-bottom: 1px solid rgb(101, 101, 101);
+}
+
+@media (min-width: 992px) {
+  .list li {
+    height: auto;
+    padding: 0 8px;
+  }
+
+  .list li[name^='submenu'] ul {
+    background-color: rgba(11, 11, 11, 0.6);
+    padding: 0 0 10px;
+  }
+
+  .list li[name^='submenu'] + li {
+    margin-top: 0;
+  }
+
+  .list > li {
+    display: inline-block;
+  }
+
+  .list > li > span {
+    display: inline-block;
+  }
+
+  .list > li ul {
+    position: absolute;
+    display: none;
+  }
+
+  .list > li:hover ul {
+    display: block;
+    text-align: left;
+  }
+
+  .list > li > a {
+    border-bottom: none;
+  }
+
+  .list > li:hover > a,
+  .list > li:hover > span {
+    color: rgb(231, 114, 36);
+  }
+
+  .list li[name^='submenu'] li:hover > a {
+    color: rgb(231, 114, 36);
+  }
+
+  .list li[name='contacto'] {
+    background-color: rgb(231, 114, 36);
+  }
+
+  .list li[name='contacto']:hover a {
+    color: rgb(101, 101, 101);
+  }
+}
+
+@media (min-width: 1200px) {
+  .list li {
+    padding: 0 15px;
+  }
 }

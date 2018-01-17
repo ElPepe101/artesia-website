@@ -37,3 +37,32 @@
 .home section[name='_360'] {
   min-height: auto;
 }
+
+.column {
+  display: block;
+  width: 100%;
+}
+
+.column:first-of-type {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .home section[name='description'] > div {
+    padding-top: 60px;
+  }
+
+  .bottomImage {
+    display: none;
+  }
+
+  .column {
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+  }
+
+  .column:first-of-type {
+    display: inline-block;
+  }
+}

@@ -52,6 +52,11 @@ button,
   cursor: pointer;
 }
 
+button,
+input {
+  max-width: 100%;
+}
+
 .button-square {
   padding: 15px 22.5px 12.5px;
   border: 3px solid black;
@@ -74,7 +79,7 @@ button,
 
 .wrapper {
   margin: 0 auto;
-  min-width: 300rrpx;
+  min-width: 300px;
   max-width: 325px;
   padding: 0 calc(5% + 10px) 0 5%;
 }
@@ -89,6 +94,11 @@ button,
 
 .logo {
   width: auto;
+}
+
+#app {
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 /* ###################################### */
@@ -132,6 +142,13 @@ button,
 
 /* ###################################### */
 /* ############ BURGER MENU ############# */
+
+.menu-item {
+}
+
+.menu-item.active {
+  color: rgb(231, 114, 36);
+}
 
 /* Position and sizing of burger button */
 .bm-burger-button {
@@ -211,6 +228,12 @@ button,
   }
 }
 
+@media (min-device-width: 325px) and (orientation: landscape) {
+  section {
+    min-height: unset !important;
+  }
+}
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   .wrapper {
@@ -221,18 +244,32 @@ button,
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .wrapper {
-    max-width: 900px;
+    max-width: 980px;
+    padding: 0 calc(2% + 10px) 0 2%;
+  }
+
+  .bm-burger-button {
+    left: 90vw;
   }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  section {
+    min-height: unset !important;
+  }
+
   .wrapper {
     max-width: 1000px;
+    padding: 0 calc(1.5% + 10px) 0 1.5%;
   }
 
   .bm-burger-button {
     display: none;
+  }
+
+  .logo {
+    max-width: 200px;
   }
 
   .menu {
@@ -244,5 +281,6 @@ button,
 @media (min-width: 1200px) {
   .wrapper {
     max-width: 1800px;
+    padding: 0 calc(3.5% + 10px) 0 3.5%;
   }
 }
