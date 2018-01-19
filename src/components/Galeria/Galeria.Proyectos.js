@@ -7,7 +7,7 @@ import Image from '../Image/Image';
 
 export default () => (
   <div className={className.galeria}>
-    <Hero image="/img/artesia-portrait-43.png" target="proyectos">
+    <Hero image="/img/artesia-portrait-43.jpg" target="proyectos">
       <p className="color-white">
         <strong>VISTAS</strong>
         <br />
@@ -18,10 +18,10 @@ export default () => (
     <section name="proyectos">
       <Image
         images={[
-          { path: '/img/artesia-proyectos-55@3x.png', minWidth: 968 },
-          { path: '/img/artesia-proyectos-55@2x.png', minWidth: 640 },
-          { path: '/img/artesia-proyectos-55.png', minWidth: 300 },
-          { path: '/img/artesia-proyectos-55.png', minWidth: 0 }
+          { path: '/img/artesia-proyectos-55@3x.jpg', minWidth: 968 },
+          { path: '/img/artesia-proyectos-55@2x.jpg', minWidth: 640 },
+          { path: '/img/artesia-proyectos-55.jpg', minWidth: 300 },
+          { path: '/img/artesia-proyectos-55.jpg', minWidth: 0 }
         ]}
       />
       <div className={`wrapper ${className.sectionText}`}>
@@ -36,10 +36,10 @@ export default () => (
 
       <Image
         images={[
-          { path: '/img/artesia-proyectos-46@3x.png', minWidth: 968 },
-          { path: '/img/artesia-proyectos-46@2x.png', minWidth: 640 },
-          { path: '/img/artesia-proyectos-46.png', minWidth: 300 },
-          { path: '/img/artesia-proyectos-46.png', minWidth: 0 }
+          { path: '/img/artesia-proyectos-46@3x.jpg', minWidth: 968 },
+          { path: '/img/artesia-proyectos-46@2x.jpg', minWidth: 640 },
+          { path: '/img/artesia-proyectos-46.jpg', minWidth: 300 },
+          { path: '/img/artesia-proyectos-46.jpg', minWidth: 0 }
         ]}
       />
       <div className={`wrapper ${className.sectionText}`}>
@@ -54,10 +54,10 @@ export default () => (
 
       <Image
         images={[
-          { path: '/img/artesia-proyectos-47@3x.png', minWidth: 968 },
-          { path: '/img/artesia-proyectos-47@2x.png', minWidth: 640 },
-          { path: '/img/artesia-proyectos-47.png', minWidth: 300 },
-          { path: '/img/artesia-proyectos-47.png', minWidth: 0 }
+          { path: '/img/artesia-proyectos-47@3x.jpg', minWidth: 968 },
+          { path: '/img/artesia-proyectos-47@2x.jpg', minWidth: 640 },
+          { path: '/img/artesia-proyectos-47.jpg', minWidth: 300 },
+          { path: '/img/artesia-proyectos-47.jpg', minWidth: 0 }
         ]}
       />
       <div className={`wrapper ${className.sectionText}`}>
@@ -72,10 +72,10 @@ export default () => (
 
       <Image
         images={[
-          { path: '/img/artesia-proyectos-48@3x.png', minWidth: 968 },
-          { path: '/img/artesia-proyectos-48@2x.png', minWidth: 640 },
-          { path: '/img/artesia-proyectos-48.png', minWidth: 300 },
-          { path: '/img/artesia-proyectos-48.png', minWidth: 0 }
+          { path: '/img/artesia-proyectos-48@3x.jpg', minWidth: 968 },
+          { path: '/img/artesia-proyectos-48@2x.jpg', minWidth: 640 },
+          { path: '/img/artesia-proyectos-48.jpg', minWidth: 300 },
+          { path: '/img/artesia-proyectos-48.jpg', minWidth: 0 }
         ]}
       />
       <div className={`wrapper ${className.sectionText}`}>

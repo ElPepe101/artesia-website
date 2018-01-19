@@ -89,7 +89,7 @@ class Pisos extends React.Component {
     const level = this.GetLevel();
     return (
       <div className={className.pisos}>
-        <Hero image="/img/artesia-portrait-32.png" target="select" />
+        <Hero image="/img/artesia-portrait-32.jpg" target="select" />
         <section name="select">
           <div className={className.column}>
             <div className="wrapper">

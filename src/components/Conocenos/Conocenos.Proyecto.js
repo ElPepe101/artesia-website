@@ -7,7 +7,7 @@ import Pano from '../Pano/Pano';
 
 export default () => (
   <div className={`${className.conocenos} ${className.proyecto}`}>
-    <Hero image="/img/artesia-portrait-30.png" target="proyecto" />
+    <Hero image="/img/artesia-portrait-30.jpg" target="proyecto" />
     <section name="proyecto">
       <div className="wrapper">
         <br />

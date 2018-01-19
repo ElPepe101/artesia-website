@@ -6,7 +6,7 @@ import Image from '../Image/Image';
 
 export default () => (
   <div className={className.ubicacion}>
-    <Hero image="/img/artesia-portrait-45.png" target="ubicacion" />
+    <Hero image="/img/artesia-portrait-45.jpg" target="ubicacion" />
     <section name="ubicacion">
       <iframe
         title="maps"
@@ -16,10 +16,10 @@ export default () => (
       />
       <Image
         images={[
-          { path: '/img/artesia-ubicacion-52@3x.png', minWidth: 968 },
-          { path: '/img/artesia-ubicacion-52@2x.png', minWidth: 640 },
-          { path: '/img/artesia-ubicacion-52.png', minWidth: 300 },
-          { path: '/img/artesia-ubicacion-52.png', minWidth: 0 }
+          { path: '/img/artesia-ubicacion-52@3x.jpg', minWidth: 968 },
+          { path: '/img/artesia-ubicacion-52@2x.jpg', minWidth: 640 },
+          { path: '/img/artesia-ubicacion-52.jpg', minWidth: 300 },
+          { path: '/img/artesia-ubicacion-52.jpg', minWidth: 0 }
         ]}
       />
     </section>

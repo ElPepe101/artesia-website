@@ -6,14 +6,14 @@ import Image from '../Image/Image';
 
 export default () => (
   <div className={className.galeria}>
-    <Hero image="/img/artesia-portrait-43.png" target="obra" />
+    <Hero image="/img/artesia-portrait-43.jpg" target="obra" />
     <section name="obra">
       <Image
         images={[
-          { path: '/img/artesia-obra-49@3x.png', minWidth: 968 },
-          { path: '/img/artesia-obra-49@2x.png', minWidth: 640 },
-          { path: '/img/artesia-obra-49.png', minWidth: 300 },
-          { path: '/img/artesia-obra-49.png', minWidth: 0 }
+          { path: '/img/artesia-obra-49@3x.jpg', minWidth: 968 },
+          { path: '/img/artesia-obra-49@2x.jpg', minWidth: 640 },
+          { path: '/img/artesia-obra-49.jpg', minWidth: 300 },
+          { path: '/img/artesia-obra-49.jpg', minWidth: 0 }
         ]}
       />
 
@@ -26,10 +26,10 @@ export default () => (
 
       <Image
         images={[
-          { path: '/img/artesia-obra-50@3x.png', minWidth: 968 },
-          { path: '/img/artesia-obra-50@2x.png', minWidth: 640 },
-          { path: '/img/artesia-obra-50.png', minWidth: 300 },
-          { path: '/img/artesia-obra-50.png', minWidth: 0 }
+          { path: '/img/artesia-obra-50@3x.jpg', minWidth: 968 },
+          { path: '/img/artesia-obra-50@2x.jpg', minWidth: 640 },
+          { path: '/img/artesia-obra-50.jpg', minWidth: 300 },
+          { path: '/img/artesia-obra-50.jpg', minWidth: 0 }
         ]}
       />
 
@@ -45,10 +45,10 @@ export default () => (
 
       <Image
         images={[
-          { path: '/img/artesia-obra-51@3x.png', minWidth: 968 },
-          { path: '/img/artesia-obra-51@2x.png', minWidth: 640 },
-          { path: '/img/artesia-obra-51.png', minWidth: 300 },
-          { path: '/img/artesia-obra-51.png', minWidth: 0 }
+          { path: '/img/artesia-obra-51@3x.jpg', minWidth: 968 },
+          { path: '/img/artesia-obra-51@2x.jpg', minWidth: 640 },
+          { path: '/img/artesia-obra-51.jpg', minWidth: 300 },
+          { path: '/img/artesia-obra-51.jpg', minWidth: 0 }
         ]}
       />
     </section>

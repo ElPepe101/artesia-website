@@ -36,8 +36,6 @@
 }
 
 .servicios > section > div {
-  padding-top: 20px;
-  padding-bottom: 50px;
 }
 
 .servicios > section > div > p {
@@ -120,4 +118,87 @@
   background-position: -576px -728px;
   width: 65px;
   height: 69px;
+}
+
+@media (min-width: 992px) {
+  .servicios {
+    text-align: left;
+  }
+
+  .firstLimit {
+    background-color: rgb(244, 244, 242);
+  }
+
+  h1 {
+    font-size: 14px;
+    margin: 0;
+  }
+
+  p {
+    margin: 5px 0;
+    font-size: 16px;
+  }
+
+  .column {
+    display: inline-block;
+    vertical-align: middle;
+    width: 50%;
+  }
+
+  .columnToLeft {
+    width: 61%;
+  }
+
+  .columnToLeft:first-of-type {
+    width: 39%;
+  }
+
+  .columnToRight {
+    width: 39%;
+  }
+
+  .columnToRight:first-of-type {
+    width: 61%;
+  }
+
+  .columnPadding {
+    padding: 50px 50px 50px 15px;
+  }
+
+  .columnPadding:first-of-type {
+    padding: 50px 15px 50px 50px;
+  }
+
+  .columnFloatLeft {
+    float: left;
+    margin-top: 30px;
+  }
+
+  .columnText {
+    padding: 50px;
+  }
+
+  .columnLimitDistance {
+    margin-top: 35px;
+  }
+
+  .servicios ul {
+    padding: 20px 0;
+  }
+
+  .servicios ul li {
+    display: inline-block;
+    vertical-align: top;
+    width: 33.33%;
+    padding: 25px 45px 25px 0;
+    text-align: left;
+  }
+
+  .servicios ul li p:first-of-type {
+    font-size: 14px;
+  }
+
+  .hide {
+    display: none;
+  }
 }

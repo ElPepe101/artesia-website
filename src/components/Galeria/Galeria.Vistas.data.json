@@ -3,25 +3,25 @@
     "piso-1": [
       [
         {
-          "path": "/img/vistas/piedra-1.png",
+          "path": "/img/vistas/piedra-1.jpg",
           "minWidth": 0
         }
       ],
       [
         {
-          "path": "/img/artesia-obra-49.png",
+          "path": "/img/artesia-obra-49.jpg",
           "minWidth": 0
         }
       ],
       [
         {
-          "path": "/img/artesia-obra-50.png",
+          "path": "/img/artesia-obra-50.jpg",
           "minWidth": 0
         }
       ],
       [
         {
-          "path": "/img/vistas/piedra-1.png",
+          "path": "/img/vistas/piedra-1.jpg",
           "minWidth": 0
         }
       ]
@@ -29,15 +29,15 @@
     "piso-2": [
       [
         {
-          "path": "/img/artesia-obra-49@3x.png",
+          "path": "/img/artesia-obra-49@3x.jpg",
           "minWidth": 900
         },
         {
-          "path": "/img/artesia-obra-49@2x.png",
+          "path": "/img/artesia-obra-49@2x.jpg",
           "minWidth": 600
         },
         {
-          "path": "/img/artesia-obra-49.png",
+          "path": "/img/artesia-obra-49.jpg",
           "minWidth": 400
         }
       ]
@@ -47,7 +47,7 @@
     "piso-1": [
       [
         {
-          "path": "/img/artesia-obra-50.png",
+          "path": "/img/artesia-obra-50.jpg",
           "minWidth": 0
         }
       ]

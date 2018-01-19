@@ -131,6 +131,7 @@
 
 .conocenos section[name='end'] {
   min-height: auto;
+  margin: 25px 0;
 }
 
 .proyecto h3 {
@@ -140,4 +141,68 @@
 
 .proyecto p {
   line-height: 140%;
+}
+
+.column {
+  margin: 50px 0 70px;
+}
+
+.column > * {
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+@media (min-width: 992px) {
+  section[name='instalaciones'] {
+    margin: 75px 0;
+    text-align: center;
+  }
+
+  section[name='instalaciones'] h1 {
+    display: inline-block;
+  }
+
+  section[name='instalaciones'] h1 + p {
+    display: block;
+    margin: 10px auto 25px;
+    width: 55%;
+  }
+
+  .conocenos section[name='end'] {
+    margin: 100px 0;
+  }
+
+  .icons ul {
+    margin: 75px 0;
+  }
+
+  .icons ul li {
+    display: inline-block;
+    width: 20%;
+    margin: 15px 0;
+    vertical-align: middle;
+  }
+
+  .column {
+    display: inline-block;
+    vertical-align: baseline;
+    width: 33.33%;
+    padding: 0 25px;
+    height: 100%;
+    border-right: 1px rgb(232, 233, 235) solid;
+  }
+
+  .column img {
+    width: 30%;
+  }
+
+  .column2 {
+    display: inline-block;
+    vertical-align: middle;
+    width: 50%;
+  }
+
+  .column2:nth-of-type(2) {
+    padding: 0 5%;
+  }
 }

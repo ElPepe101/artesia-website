@@ -8,12 +8,12 @@ import Pano from '../Pano/Pano';
 export default () => (
   <div className={className.home}>
     <h1 className={className.title}>Artesia Polanco</h1>
-    <Hero image="/img/artesia-portrait-25.png" target="description" />
+    <Hero image="/img/artesia-portrait-25.jpg" target="description" />
     <section name="description">
       <div className="wrapper columns">
         <div className={`column-2 ${className.column}`}>
           <Image
-            images={[{ path: '/img/artesia-home-18.png', minWidth: 986 }]}
+            images={[{ path: '/img/artesia-home-18.jpg', minWidth: 986 }]}
           />
         </div>
         <div className={`column-2 ${className.column}`}>

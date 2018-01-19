@@ -87,7 +87,7 @@ class Vistas extends React.Component {
   render() {
     return (
       <div className={className.galeria}>
-        <Hero image="/img/artesia-portrait-54.png" target="vistas">
+        <Hero image="/img/artesia-portrait-54.jpg" target="vistas">
           <p className="color-white">
             <strong>VISTAS</strong>
             <br />
