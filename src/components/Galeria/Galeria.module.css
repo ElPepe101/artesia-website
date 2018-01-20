@@ -62,3 +62,20 @@
   font-size: 16px;
   line-height: 130%;
 }
+
+@media (min-width: 992px) {
+  .column {
+    display: inline-block;
+    vertical-align: middle;
+    width: 50%;
+  }
+
+  .columnFloatLeft {
+    float: left;
+    margin-top: 30px;
+  }
+
+  .sectionText {
+    padding: 50px 95px;
+  }
+}

@@ -71,7 +71,7 @@ export default () => (
           ]}
         />
       </div>
-      <div className={className.column2}>
+      <div className={`${className.column2} ${className.column2Text}`}>
         <div className="wrapper">
           <h3 className="remark">Jan Hendrix</h3>
           <p>
