@@ -18,7 +18,10 @@ export default () => (
   <Switch>
     <Route exact path="/" component={HomeComponent} />
     <Route path="/conocenos/proyecto" component={ConocenosProyectoComponent} />
-    <Route path="/conocenos/respaldo" component={ConocenosRespaldoComponent} />
+    <Route
+      path="/conocenos/disenadores"
+      component={ConocenosRespaldoComponent}
+    />
     <Route
       exact
       path="/conocenos/instalaciones"
@@ -33,7 +36,7 @@ export default () => (
     />
     <Route
       exact
-      path="/galeria/proyectos"
+      path="/galeria/interiores"
       component={GaleriaProyectosComponent}
     />
     <Route exact path="/galeria/obra" component={GaleriaObraComponent} />

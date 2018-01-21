@@ -44,6 +44,10 @@
   text-align: center;
 }
 
+.level h3 {
+  text-transform: uppercase;
+}
+
 .level a {
   display: block;
   padding: 20px;
@@ -76,6 +80,21 @@
   }
 
   .sectionText {
-    padding: 50px 95px;
+    padding: 10% 95px 0;
+  }
+
+  .sectionTextSmall {
+    padding: 0 95px 0;
+  }
+
+  .level {
+    border: 0;
+    position: absolute;
+    transform: translateY(-100%);
+  }
+
+  .level h3,
+  .level a {
+    font-size: 12px;
   }
 }

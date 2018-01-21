@@ -30,6 +30,20 @@
   line-height: 150%;
 }
 
+.hero {
+  color: white;
+}
+
+.hero p,
+.hero h2 {
+  margin: 0;
+  line-height: 140%;
+}
+
+.hero h2 {
+  text-transform: uppercase;
+}
+
 .hero input {
   display: block;
   margin: 0 auto;
@@ -37,6 +51,10 @@
   height: 44px;
   overflow: hidden;
   background: url('/img/artesia-sprite-1.png') no-repeat -163px 0;
+}
+
+.overlay {
+  width: 100%;
 }
 
 @media (min-device-width: 325px) and (orientation: landscape) {
@@ -47,6 +65,6 @@
 
 @media (min-width: 992px) {
   .hero > div {
-    height: 50vw;
+    height: 55vw;
   }
 }

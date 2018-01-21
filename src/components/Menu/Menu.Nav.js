@@ -31,11 +31,11 @@ export default () => (
         <li name="conocenos-respaldo">
           <NavLink
             exact
-            to="/conocenos/respaldo"
+            to="/conocenos/disenadores"
             className="menu-item"
             activeClassName="active"
           >
-            Respaldo
+            Diseñadores
           </NavLink>
         </li>
       </ul>
@@ -71,11 +71,11 @@ export default () => (
         <li name="galeria-proyectos">
           <NavLink
             exact
-            to="/galeria/proyectos"
+            to="/galeria/interiores"
             className="menu-item"
             activeClassName="active"
           >
-            Proyectos
+            Interiores
           </NavLink>
         </li>
         <li name="galeria-obra">

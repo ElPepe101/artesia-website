@@ -6,14 +6,23 @@ import Pano from '../Pano/Pano';
 
 export default () => (
   <div className={className.conocenos}>
-    <Hero image="/img/artesia-portrait-27.jpg" target="instalaciones" />
+    <Hero image="/img/artesia-portrait-27.jpg" target="instalaciones">
+      <div>
+        <p>Operación que lo acompaña</p>
+        <p>en su vida social y privada</p>
+        <h2>Campos Eliseos.</h2>
+        <a className="button button-square-white" href="/conocenos/proyecto">
+          Conocer más
+        </a>
+      </div>
+    </Hero>
     <section name="instalaciones">
       <div className="wrapper">
         <br />
         <h1>Instalaciones</h1>
         <p>
-          El edificio ha sido cuidadosamente diseñado por experto para ofrecer
-          tecnología de punta en seguridad, telecomunicaciones, instalaciones
+          El edificio ha sido cuidadosamente diseñado por expertos para ofrecer
+          tecnología de punta en seguridad, telecomunicaciones e instalaciones
           como son:
         </p>
         <div className={className.icons}>
@@ -21,7 +30,7 @@ export default () => (
             <li>
               <span name="acceso" />
               <p>Acceso</p>
-              <p>Accesos controlados con tarjetas</p>
+              <p>Accesos controlados con tarjetas y biométricos</p>
             </li>
             <li>
               <span name="circuito" />
@@ -34,14 +43,14 @@ export default () => (
               <p>Elevadores de alta velocidad</p>
             </li>
             <li>
-              <span name="acondicionado" />
-              <p>AC</p>
-              <p>Instalaciones de aire acondicionado</p>
-            </li>
-            <li>
               <span name="montacargas" />
               <p>Montacargas</p>
               <p>Servicio de montaccargas</p>
+            </li>
+            <li>
+              <span name="acondicionado" />
+              <p>Seguridad</p>
+              <p>Vigilancia y operación las 24 horas</p>
             </li>
             <li>
               <span name="aire" />

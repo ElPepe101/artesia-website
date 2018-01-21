@@ -40,6 +40,12 @@ class Pisos extends React.Component {
     </div>
   );
 
+  DrawFronLevel = ({ images }) => (
+    <div className={className.images}>
+      <Image images={[{ path: `/img/levels/${images[0]}`, minWidth: 0 }]} />
+    </div>
+  );
+
   DrawDescription = ({
     building,
     level,
@@ -89,7 +95,19 @@ class Pisos extends React.Component {
     const level = this.GetLevel();
     return (
       <div className={className.pisos}>
-        <Hero image="/img/artesia-portrait-32.jpg" target="select" />
+        <Hero image="/img/artesia-portrait-32.jpg" target="select">
+          <div>
+            <p>Ubicado en la avenida más</p>
+            <p>prestigiada de todo Polanco,</p>
+            <h2>Campos Eliseos.</h2>
+            <a
+              className="button button-square-white"
+              href="/conocenos/proyecto"
+            >
+              Conocer más
+            </a>
+          </div>
+        </Hero>
         <section name="select">
           <div className={className.column}>
             <div className="wrapper">
@@ -101,11 +119,7 @@ class Pisos extends React.Component {
               >
                 {this.GetOptions()}
               </select>
-              <div className={className.images}>
-                <Image
-                  images={[{ path: '/img/levels/lvl1-front.jpg', minWidth: 0 }]}
-                />
-              </div>
+              {this.DrawFronLevel(level)}
             </div>
           </div>
           {this.DrawLevel(level)}

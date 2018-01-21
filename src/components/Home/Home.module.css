@@ -52,6 +52,19 @@
     padding-top: 60px;
   }
 
+  .bigTitle {
+    vertical-align: middle;
+  }
+
+  .bigTitle p {
+    margin: 25px 0;
+  }
+
+  .bigTitle p:first-child {
+    font-size: 32px !important;
+    margin: 0 0 45px -75px;
+  }
+
   .bottomImage {
     display: none;
   }

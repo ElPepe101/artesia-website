@@ -165,6 +165,14 @@
     padding: 50px 50px 50px 15px;
   }
 
+  .columnText {
+    padding: 50px 50px 0;
+  }
+
+  .columnTextArea {
+    padding: 15px calc(4% + 10px) 0 4%;
+  }
+
   .columnPadding:first-of-type {
     padding: 50px 15px 50px 50px;
   }
@@ -172,10 +180,6 @@
   .columnFloatLeft {
     float: left;
     margin-top: 30px;
-  }
-
-  .columnText {
-    padding: 50px;
   }
 
   .columnLimitDistance {
@@ -190,15 +194,36 @@
     display: inline-block;
     vertical-align: top;
     width: 33.33%;
-    padding: 25px 45px 25px 0;
+    padding: 15px 35px 15px 0;
     text-align: left;
   }
 
+  .columnTextArea p,
+  .columnTextArea h1 {
+    font-size: 0.8rem;
+  }
+
   .servicios ul li p:first-of-type {
-    font-size: 14px;
+    font-size: 0.5rem;
   }
 
   .hide {
     display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .columnTextArea p,
+  .servicios ul li p:first-of-type,
+  .columnTextArea h1 {
+    font-size: 1rem;
+  }
+
+  .servicios ul li {
+    padding: 25px 45px 25px 0;
+  }
+
+  .columnTextArea {
+    padding: 15px calc(5% + 20px) 0 5%;
   }
 }

@@ -6,7 +6,16 @@ import Image from '../Image/Image';
 
 export default () => (
   <div className={className.ubicacion}>
-    <Hero image="/img/artesia-portrait-45.jpg" target="ubicacion" />
+    <Hero image="/img/artesia-portrait-45.jpg" target="ubicacion">
+      <div>
+        <p>Comfort y vida urbana</p>
+        <p>en una misma área</p>
+        <h2>Campos Eliseos.</h2>
+        <a className="button button-square-white" href="/conocenos/proyecto">
+          Conocer más
+        </a>
+      </div>
+    </Hero>
     <section name="ubicacion">
       <div className="wrapper">
         <br />

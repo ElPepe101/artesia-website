@@ -26,16 +26,18 @@ const Hero = ({ image, target, children }) => {
           { path: `${path}${ext}`, minWidth: 0 }
         ]}
       />
-      <div className="wrapper flex-column-end">
-        {children}
-        <Button
-          to={target}
-          smooth
-          readOnly
-          duration={350}
-          value=""
-          className="button color-white"
-        />
+      <div className={className.overlay}>
+        <div className="wrapper flex-column-end">
+          {children}
+          <Button
+            to={target}
+            smooth
+            readOnly
+            duration={350}
+            value=""
+            className="button color-white"
+          />
+        </div>
       </div>
     </section>
   );

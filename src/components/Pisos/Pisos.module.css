@@ -148,9 +148,9 @@
   }
 
   .column {
-    display: inline-block;
+    display: table-cell;
     vertical-align: top;
-    width: 33.33%;
+    width: 28%;
     padding: 0 15px;
     height: 100%;
   }
@@ -160,17 +160,32 @@
   }
 
   .column:nth-of-type(2) {
+    width: 36%;
+    vertical-align: middle;
     background-color: rgb(239, 238, 236);
+  }
+
+  .column:nth-of-type(3) {
+    width: 36%;
+  }
+
+  .features {
+    text-align: center;
   }
 
   .features p {
     display: inline-block;
     font-size: 14px;
+    margin: 25px 3.5%;
   }
 
   .pisos button {
     font-size: 12px;
     display: inline-block;
     width: 50%;
+  }
+
+  .pisos select {
+    margin: 25px auto 10px;
   }
 }

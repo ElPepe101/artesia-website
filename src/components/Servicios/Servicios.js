@@ -6,10 +6,23 @@ import Image from '../Image/Image';
 
 export default () => (
   <div className={className.servicios}>
-    <Hero image="/img/artesia-portrait-42.jpg" target="servicios" />
+    <Hero image="/img/artesia-portrait-42.jpg" target="servicios">
+      <div>
+        <p>Operación de Hotel que</p>
+        <p>cubre cualquier necesidad</p>
+        <h2>Campos Eliseos.</h2>
+        <a className="button button-square-white" href="/conocenos/proyecto">
+          Conocer más
+        </a>
+      </div>
+    </Hero>
     <section name="servicios">
       <div className={`column-limit ${className.firstLimit}`}>
-        <div className={`${className.column} ${className.columnToLeft}`}>
+        <div
+          className={`${className.column} ${className.columnTextArea} ${
+            className.columnToLeft
+          }`}
+        >
           <div className="wrapper">
             <h1>Servicios</h1>
             <p>
@@ -95,12 +108,16 @@ export default () => (
             ]}
           />
         </div>
-        <div className={`${className.column} ${className.columnToRight}`}>
+        <div
+          className={`${className.column} ${className.columnTextArea} ${
+            className.columnToRight
+          }`}
+        >
           <div className="wrapper">
             <h1>Amenidades</h1>
             <p>
-              Espacios cuidadosamente diseñados para combionar lo práctico con
-              el confort y la elegancia.
+              Espacios cuidadosamente diseñados para combinar lo práctico con el
+              confort y la elegancia.
             </p>
             <ul>
               <li>
@@ -146,11 +163,8 @@ export default () => (
           <div className="wrapper">
             <h3 className="remark">Gym</h3>
             <p>
-              Lorem ipsum dolor sit amet, eos no tale posse vocent, partiendo
-              salutandi id ius, ius facer laudem id. Lorem tibique sadipscing
-              pro id, quod noluisse mei te. In epicuri albucius nec, laudem
-              aeterno ad vim, nec et sumo oratio legere. Est eu propriae
-              assentior posidonium.
+              Gimnasio completamente equipado. Baños con vapor y alberca con
+              carril de nado contra corriente.
             </p>
           </div>
         </div>
@@ -166,11 +180,8 @@ export default () => (
           <div className="wrapper">
             <h3 className="remark">Sky lounge</h3>
             <p>
-              Lorem ipsum dolor sit amet, eos no tale posse vocent, partiendo
-              salutandi id ius, ius facer laudem id. Lorem tibique sadipscing
-              pro id, quod noluisse mei te. In epicuri albucius nec, laudem
-              aeterno ad vim, nec et sumo oratio legere. Est eu propriae
-              assentior posidonium.
+              Dos terrazas a 90 metros de altura, una cuenta con jacuzzi.
+              Equipadas con todos los servicios.
             </p>
           </div>
         </div>
@@ -190,11 +201,7 @@ export default () => (
           <div className="wrapper">
             <h3 className="remark">Lobby</h3>
             <p>
-              Lorem ipsum dolor sit amet, eos no tale posse vocent, partiendo
-              salutandi id ius, ius facer laudem id. Lorem tibique sadipscing
-              pro id, quod noluisse mei te. In epicuri albucius nec, laudem
-              aeterno ad vim, nec et sumo oratio legere. Est eu propriae
-              assentior posidonium.
+              Concierge 24 horas. Valet parking y 7 sotanos de estacionamientos.
             </p>
           </div>
         </div>

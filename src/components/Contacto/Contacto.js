@@ -5,7 +5,16 @@ import Hero from '../Hero/Hero';
 
 export default () => (
   <div className={className.contacto}>
-    <Hero image="/img/artesia-portrait-53.jpg" target="contacto" />
+    <Hero image="/img/artesia-portrait-53.jpg" target="contacto">
+      <div>
+        <p>38 Departamentos,</p>
+        <p>19 por Torre</p>
+        <h2>Campos Eliseos.</h2>
+        <a className="button button-square-white" href="/conocenos/proyecto">
+          Conocer más
+        </a>
+      </div>
+    </Hero>
     <section name="contacto">
       <div className="wrapper">
         <div className="column-limit">

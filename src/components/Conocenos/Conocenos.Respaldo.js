@@ -7,14 +7,27 @@ import Pano from '../Pano/Pano';
 
 export default () => (
   <div className={className.conocenos}>
-    <Hero image="/img/artesia-portrait-19.jpg" target="respaldo" />
+    <Hero image="/img/artesia-portrait-19.jpg" target="respaldo">
+      <div>
+        <p>Diseño que transmite</p>
+        <p>Comfort y exclusividad</p>
+        <h2>Campos Eliseos.</h2>
+        <a className="button button-square-white" href="/conocenos/proyecto">
+          Conocer más
+        </a>
+      </div>
+    </Hero>
     <section name="respaldo">
       <div className="wrapper">
-        <h1>El Respaldo</h1>
+        <h1>Diseñadores</h1>
         <div className={className.column}>
-          <Image
-            images={[{ path: '/img/artesia-conocenos-23-80.jpg', minWidth: 0 }]}
-          />
+          <div className={className.portrait}>
+            <Image
+              images={[
+                { path: '/img/artesia-conocenos-23-80.jpg', minWidth: 0 }
+              ]}
+            />
+          </div>
           <h2>Grupo Sordo Madaleno</h2>
           <p>
             La firma Sordo Madaleno se remonta a 1937. Actualmente está
@@ -22,21 +35,55 @@ export default () => (
             Bringas y cuenta con un equipo de más de 120 profesionales en
             diversas disciplinas.
           </p>
-          <button className="button-square">Conocer más</button>
+          <a
+            className="button-square"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="http://www.sordomadaleno.com/"
+          >
+            Conocer más
+          </a>
         </div>
         <div className={className.column}>
-          <Image
-            images={[{ path: '/img/artesia-conocenos-22-80.jpg', minWidth: 0 }]}
-          />
+          <div className={className.portrait}>
+            <Image
+              images={[
+                { path: '/img/artesia-conocenos-22-80.jpg', minWidth: 0 }
+              ]}
+            />
+          </div>
           <h2>Jan Hendrix</h2>
           <p>
             Es un artista holandés que ha vivido y trabajado en México desde
             1978. Hendrix recibió la Orden Mexicana del Águila Azteca por parte
             del Gobierno mexicano por su trabajo en el arte y la arquitectura.
           </p>
-          <button className="button-square">Conocer más</button>
+          <a
+            className="button-square"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="http://janhendrix.com.mx/2016/es/"
+          >
+            Conocer más
+          </a>
         </div>
-        <div className={className.column} />
+        <div className={className.column}>
+          <div className={className.portrait} />
+          <h2>Grupo RIOBÓO</h2>
+          <p>
+            Con una trayectoria de 30 años, comenzó su actividad profesional con
+            el objetivo de desarrollar el diseño estrucutral para proyectos de
+            construcción de obras de ingeniería civil.
+          </p>
+          <a
+            className="button-square"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="http://www.gruporioboo.com/espan.htm"
+          >
+            Conocer más
+          </a>
+        </div>
       </div>
     </section>
     <section name="hendrix">

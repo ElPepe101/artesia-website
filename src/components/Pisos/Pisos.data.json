@@ -2,33 +2,141 @@
   {
     "value": 1,
     "building": "Torre piedra",
-    "level": "piso 1",
-    "images": ["lvl1-front.jpg", "lvl1-upper.jpg"],
-    "description":
-      "Lorem ipsum dolor sit amet, ea feugait tincidunt mel, nonumes praesent vel id. Eam eu eius virtute labores. Wisi ridens an per. Nec sapientem repudiandae et ea feugait tincidunt mel, nonumes praesent vel id ea feugait tincidunt mel, nonumes praesent vel id.",
+    "level": "piso 2",
+    "images": ["Piedra-Piso_2f.png", "Piedra-Piso_2.png"],
     "features": [
-      "2 ó 3 recámaras",
-      "3.5 baños",
+      "3 Recámaras",
+      "3.5 Baños",
       "Sala",
       "Comedor",
       "Cocina",
       "Cuarto de servicio"
     ],
-    "number": 101,
+    "number": 102,
     "squares": 254.36,
-    "bedrooms": "2 ó 3",
+    "bedrooms": 3,
     "pdf": ""
   },
   {
     "value": 2,
     "building": "Torre piedra",
-    "level": "piso 2",
-    "images": ["lvl1-front.jpg", "lvl1-upper.jpg"],
+    "level": "piso 3",
+    "images": ["Piedra-Piso_3f.png", "Piedra-Piso_3.png"],
     "description": "",
-    "features": [],
-    "number": 0,
-    "squares": 0,
-    "bedrooms": "",
+    "features": [
+      "3 Recámaras",
+      "3.5 Baños",
+      "Sala",
+      "Comedor",
+      "Cocina",
+      "Cuarto de servicio"
+    ],
+    "number": 103,
+    "squares": 254.36,
+    "bedrooms": 3,
+    "pdf": ""
+  },
+  {
+    "value": 3,
+    "building": "Torre piedra",
+    "level": "piso 14 y 15",
+    "images": ["Piedra-Piso_15f.png", "Piedra-Piso_15.png"],
+    "description": "",
+    "features": [
+      "2 Recámaras",
+      "2.5 Baños",
+      "Sala",
+      "Comedor",
+      "Bar",
+      "Biblioteca",
+      "Family",
+      "Cocina",
+      "Cuarto de servicio"
+    ],
+    "number": 115,
+    "squares": 254.36,
+    "bedrooms": 2,
+    "pdf": ""
+  },
+  {
+    "value": 4,
+    "building": "Torre cristal",
+    "level": "piso 4",
+    "images": ["Cristal-Piso_4f.png", "Cristal-Piso_4.png"],
+    "description": "",
+    "features": [
+      "3 Recámaras",
+      "3.5 Baños",
+      "Sala",
+      "Comedor",
+      "Family",
+      "Cocina",
+      "Cuarto de servicio"
+    ],
+    "number": 104,
+    "squares": 342.8,
+    "bedrooms": 3,
+    "pdf": ""
+  },
+  {
+    "value": 5,
+    "building": "Torre cistal",
+    "level": "piso 6",
+    "images": ["Cristal-Piso_6f.png", "Cristal-Piso_6.png"],
+    "description": "",
+    "features": [
+      "3 Recámaras",
+      "3.5 Baños",
+      "Sala",
+      "Comedor",
+      "Cocina",
+      "Cuarto de servicio"
+    ],
+    "number": 106,
+    "squares": 346.05,
+    "bedrooms": 3,
+    "pdf": ""
+  },
+  {
+    "value": 6,
+    "building": "Torre cristal",
+    "level": "piso 8",
+    "images": ["Cristal-Piso_8f.png", "Cristal-Piso_8.png"],
+    "description": "",
+    "features": [
+      "2 Recámaras",
+      "2.5 Baños",
+      "Sala",
+      "Comedor",
+      "Bar",
+      "Family",
+      "Cocina",
+      "Cuarto de servicio"
+    ],
+    "number": 108,
+    "squares": 349.29,
+    "bedrooms": 2,
+    "pdf": ""
+  },
+  {
+    "value": 7,
+    "building": "Torre cristal",
+    "level": "piso 14 y 15",
+    "images": ["Cristal-Piso_15f.png", "Cristal-Piso_15.png"],
+    "description": "",
+    "features": [
+      "3 Recámaras",
+      "3.5 Baños",
+      "Sala",
+      "Comedor",
+      "Estudio",
+      "Bodega",
+      "Cocina",
+      "Cuarto de servicio"
+    ],
+    "number": 115,
+    "squares": 595.66,
+    "bedrooms": 3,
     "pdf": ""
   }
 ]

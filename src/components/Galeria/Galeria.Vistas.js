@@ -88,11 +88,16 @@ class Vistas extends React.Component {
     return (
       <div className={className.galeria}>
         <Hero image="/img/artesia-portrait-54.jpg" target="vistas">
-          <p className="color-white">
-            <strong>VISTAS</strong>
-            <br />
-            Selecciona el piso para poder ver su vista
-          </p>
+          <div>
+            <p className="color-white">
+              <strong>VISTAS</strong>
+              <br />
+              Selecciona el piso para poder ver su vista
+            </p>
+            <a className="button button-square-white" href="/pisos">
+              Conocer más
+            </a>
+          </div>
         </Hero>
         <section name="vistas">
           <Slider {...sliderSettings}>{this.Images()}</Slider>

@@ -6,7 +6,16 @@ import Image from '../Image/Image';
 
 export default () => (
   <div className={className.galeria}>
-    <Hero image="/img/artesia-portrait-43.jpg" target="obra" />
+    <Hero image="/img/artesia-portrait-43.jpg" target="obra">
+      <div>
+        <p>Caprichoso diseño que</p>
+        <p>transmite una experiencia única,</p>
+        <h2>Campos Eliseos.</h2>
+        <a className="button button-square-white" href="/conocenos/proyecto">
+          Conocer más
+        </a>
+      </div>
+    </Hero>
     <section name="obra">
       <Image
         images={[
@@ -18,29 +27,47 @@ export default () => (
       />
 
       <div className={className.level}>
-        <div className="wrapper">
-          <h3>Torre piedra - Piso 10</h3>
+        <div className={`${className.column}`}>
+          <div className="wrapper">
+            <h3>Torre piedra - Piso 10</h3>
+          </div>
         </div>
-        <a href="#a">CONOCE LOS PLANOS &gt;</a>
+
+        <div className={`${className.column}`}>
+          <a href="#a">CONOCE LOS PLANOS &gt;</a>
+        </div>
       </div>
 
-      <Image
-        images={[
-          { path: '/img/artesia-obra-50@3x.jpg', minWidth: 968 },
-          { path: '/img/artesia-obra-50@2x.jpg', minWidth: 640 },
-          { path: '/img/artesia-obra-50.jpg', minWidth: 300 },
-          { path: '/img/artesia-obra-50.jpg', minWidth: 0 }
-        ]}
-      />
+      <div className="column-limit">
+        <div className={className.column}>
+          <Image
+            images={[
+              { path: '/img/artesia-obra-50@3x.jpg', minWidth: 968 },
+              { path: '/img/artesia-obra-50@2x.jpg', minWidth: 640 },
+              { path: '/img/artesia-obra-50.jpg', minWidth: 300 },
+              { path: '/img/artesia-obra-50.jpg', minWidth: 0 }
+            ]}
+          />
+        </div>
 
-      <div className={`wrapper ${className.obraDesc}`}>
-        <h2 className="remark">Proceso de Obra</h2>
-        <p>
-          Lorem ipsum dolor sit amet, eos no tale posse vocent, partiendo
-          salutandi id ius, ius facer laudem id. Lorem tibique sadipscing pro
-          id, quod noluisse mei te. In epicuri albucius nec, laudem aeterno ad
-          vim, nec et sumo oratio legere. Est eu propriae assentior posidonium.
-        </p>
+        <div
+          className={`${className.column} ${className.sectionTextSmall} ${
+            className.columnFloatLeft
+          }`}
+        >
+          <div className={`wrapper ${className.obraDesc}`}>
+            <h2 className="remark">Proceso de Obra</h2>
+            <p>
+              Terreno de 1,000 m2, 23,000 m2 de construcción, 4 años y medio de
+              obra, edificio con cerrificación ambiental PCES (Programa de
+              Certificación de Edificios Sustentables).
+            </p>
+            <p>
+              25 niveles de altura, planta de tratamientos de agua. 157 cajones
+              de estacionamiento.
+            </p>
+          </div>
+        </div>
       </div>
 
       <Image
