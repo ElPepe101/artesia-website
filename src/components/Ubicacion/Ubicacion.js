@@ -18,8 +18,6 @@ export default () => (
     </Hero>
     <section name="ubicacion">
       <div className="wrapper">
-        <br />
-        <br />
         <iframe
           title="maps"
           frameBorder="0"
@@ -30,19 +28,16 @@ export default () => (
       </div>
 
       <div className="wrapper">
-        <br />
-        <br />
-        <Image
-          images={[
-            { path: '/img/artesia-ubicacion-52@3x.jpg', minWidth: 968 },
-            { path: '/img/artesia-ubicacion-52@2x.jpg', minWidth: 640 },
-            { path: '/img/artesia-ubicacion-52.jpg', minWidth: 300 },
-            { path: '/img/artesia-ubicacion-52.jpg', minWidth: 0 }
-          ]}
+        <iframe
+          title="streetview"
+          width="924"
+          height="611"
+          frameborder="0"
+          scrolling="no"
+          marginheight="0"
+          marginwidth="0"
+          src="https://maps.google.com.mx/maps?q=artesia&amp;ie=UTF8&amp;client=safari&amp;oe=UTF-8&amp;fb=1&amp;gl=mx&amp;hq=artesia&amp;hnear=0x85ce0026db097507:0x54061076265ee841,Ciudad+de+M%C3%A9xico,+D.F.&amp;cid=0,0,5186115998131151379&amp;t=m&amp;ll=19.429403,-99.192016&amp;spn=0.0103,0.01929&amp;layer=c&amp;cbll=19.428223,-99.192066&amp;panoid=55qsxvrLSy6xLCi0Y9Uc7g&amp;cbp=12,157.66,,0,11.9&amp;source=embed&amp;output=svembed"
         />
-        <br />
-        <br />
-        <br />
       </div>
     </section>
   </div>

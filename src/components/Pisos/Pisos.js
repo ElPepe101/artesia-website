@@ -16,6 +16,15 @@ class Pisos extends React.Component {
     this.search = queryString.parse(location.search || '?lvl=1');
   }
 
+  componentDidMount() {
+    if (location.search) {
+      setTimeout(() => {
+        const target = document.querySelector(`.${className.column}`).offsetTop;
+        document.scrollingElement.scrollTop = target;
+      }, 300);
+    }
+  }
+
   search = '';
 
   GetOptions = () =>
@@ -53,11 +62,12 @@ class Pisos extends React.Component {
     features,
     number,
     squares,
-    bedrooms
+    bedrooms,
+    pdf
   }) => (
     <div className={className.column}>
       <div className={`wrapper ${className.description}`}>
-        <h2>Información del departamento</h2>
+        <h5>Información del departamento</h5>
         <h3>
           <span>{building}</span>
           <br />
@@ -79,14 +89,33 @@ class Pisos extends React.Component {
         </div>
       </div>
       <div className="wrapper">
-        <button className={`button-square ${className.btnPrint}`}>
+        <br />
+        <p>
+          Los departamentos se entregan en obra negra para tener la oportunidad
+          de generar el proyecto que más le satisfaga.
+        </p>
+      </div>
+      <div className="wrapper">
+        <a
+          href={`/pdf/${pdf}`}
+          target="_blank"
+          className={`button button-square ${className.pdf} ${
+            className.btnPrint
+          }`}
+        >
           <span />
           Imprimir
-        </button>
-        <button className={`button-square ${className.btnDownload}`}>
+        </a>
+        <a
+          href={`/pdf/${pdf}`}
+          target="_blank"
+          className={`button button-square ${className.pdf} ${
+            className.btnDownload
+          }`}
+        >
           <span />
           Descargar
-        </button>
+        </a>
       </div>
     </div>
   );
@@ -111,7 +140,7 @@ class Pisos extends React.Component {
         <section name="select">
           <div className={className.column}>
             <div className="wrapper">
-              <h1>Selecciona la planta</h1>
+              <h5>Selecciona la planta</h5>
               <select
                 readOnly
                 onChange={this.ChangeLevel}

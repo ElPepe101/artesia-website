@@ -7,9 +7,6 @@
 */
 import React from 'react';
 import PropType from 'prop-types';
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
 
 import data from './Galeria.Vistas.data.json';
 import Hero from '../Hero/Hero';
@@ -18,21 +15,13 @@ import className from './Galeria.module.css';
 
 const capitalize = string => string.charAt(0).toUpperCase() + string.slice(1);
 
-const sliderSettings = {
-  dots: true,
-  infinite: true,
-  speed: 500,
-  slidesToShow: 1,
-  slidesToScroll: 1
-};
-
 class Vistas extends React.Component {
   static propTypes;
 
   constructor({ match: { params: { building, level } } }) {
     super();
     this.building = building || 'torre-piedra';
-    this.level = level || 'piso-1';
+    this.level = level || 'piso-2';
   }
 
   getBuildingOptions = () =>
@@ -84,6 +73,13 @@ class Vistas extends React.Component {
     return [];
   };
 
+  getLevelOptionsPlain = building =>
+    Object.keys(data[building]).map(key => (
+      <a key={key} href={key}>
+        {capitalize(key.replace('-', ' '))}
+      </a>
+    ));
+
   render() {
     return (
       <div className={className.galeria}>
@@ -100,7 +96,61 @@ class Vistas extends React.Component {
           </div>
         </Hero>
         <section name="vistas">
-          <Slider {...sliderSettings}>{this.Images()}</Slider>
+          <div className={className.options}>
+            <div className="column-limit">
+              <div className={className.column}>
+                <Image
+                  images={[
+                    {
+                      path: '/img/artesia-vistas-02_horizontal.jpg',
+                      minWidth: 0
+                    }
+                  ]}
+                />
+              </div>
+              <div className={className.column}>
+                <Image
+                  images={[
+                    {
+                      path: '/img/artesia-vistas-01_horizontal.jpg',
+                      minWidth: 0
+                    }
+                  ]}
+                />
+              </div>
+            </div>
+            <div className="column-limit">
+              <div className={className.column}>
+                <div className="wrapper">
+                  {this.getLevelOptionsPlain('torre-piedra')}
+                </div>
+              </div>
+              <div className={className.column}>
+                <div className="wrapper">
+                  {this.getLevelOptionsPlain('torre-cristal')}
+                </div>
+              </div>
+            </div>
+          </div>
+          {this.Images()}
+
+          <div className={className.optionButtons}>
+            <div className={className.column}>
+              <div className="wrapper">
+                <span>
+                  {this.building} - {this.level}
+                </span>
+              </div>
+            </div>
+            <div className={className.column}>
+              <div className="wrapper">
+                <a href={data[this.building][this.level].link}>
+                  Conoce los planos
+                </a>
+              </div>
+            </div>
+          </div>
+
           <div className="flex-column-end">
             <div>
               <select

@@ -32,11 +32,11 @@ export default () => (
               <span className="remark">con operación de Hotel</span>
             </strong>
           </p>
-          <p>
+          <p className="sub">
             Sólo <strong>38 Pisos Residenciales</strong> divididos en dos
             torres, una forrada de granito y la otra cubierta de cristal.
           </p>
-          <p>
+          <p className="sub">
             Desde <strong>254.36m2</strong> a <strong>641.32m2</strong>{' '}
             satisfaciendo a los clientes más exigentes y sofisticados.
           </p>

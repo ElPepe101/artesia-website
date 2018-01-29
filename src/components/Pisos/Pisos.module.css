@@ -30,27 +30,22 @@
   background-color: white;
 }
 
-.description h2 {
+.pisos h5,
+.pisos h3 {
   text-transform: uppercase;
-}
-
-.description h3 {
-  text-transform: uppercase;
-  font-size: 32px;
 }
 
 .description h3 span {
-  font-size: 16px;
   color: rgb(187, 187, 187);
 }
 
 .description p {
-  font-size: 17px;
   line-height: 120%;
 }
 
 .description ul {
   padding: 0 0 0 20px;
+  margin: 0;
 }
 
 .description ul li {
@@ -64,7 +59,6 @@
 }
 
 .features p {
-  font-size: 24px;
   color: rgb(208, 208, 208);
   line-height: 100%;
 }
@@ -91,8 +85,7 @@
   height: 28px;
 }
 
-.pisos button {
-  font-size: 14px;
+.pdf {
   letter-spacing: 1px;
   display: block;
   width: 75%;
@@ -101,7 +94,7 @@
   padding-bottom: 20px;
 }
 
-.pisos button span {
+.pdf span {
   display: inline-block;
   margin: 0 12.5px -10px 0;
 }
@@ -131,11 +124,7 @@
 @media (min-width: 992px) {
   .pisos h1,
   .description h2 {
-    font-size: 18px;
-  }
-
-  .description h3 {
-    font-size: 22px;
+    /* font-size: 18px; */
   }
 
   .description h4 {
@@ -145,6 +134,8 @@
   section[name='select'] {
     padding: 90px 0 0;
     margin-bottom: 50px;
+    display: table;
+    width: 100%;
   }
 
   .column {
@@ -175,14 +166,13 @@
 
   .features p {
     display: inline-block;
-    font-size: 14px;
     margin: 25px 3.5%;
   }
 
-  .pisos button {
-    font-size: 12px;
+  .pdf {
     display: inline-block;
-    width: 50%;
+    width: 45%;
+    margin: 0 2%;
   }
 
   .pisos select {

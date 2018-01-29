@@ -2,6 +2,8 @@ html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  font-size: 44px;
+  font-size: 11vw;
 }
 
 *,
@@ -14,7 +16,7 @@ html {
 
 body {
   font-family: 'Gotham', sans-serif;
-  font-size: 18px;
+  font-size: 1rem;
   color: rgb(67, 64, 65);
 }
 
@@ -40,6 +42,17 @@ img {
 section {
   min-height: 100vh;
 }
+section > div {
+  margin: 12.5% 0;
+}
+
+section:last-of-type > div {
+  margin: 12.5% 0 0;
+}
+
+section:first-of-type > div {
+  margin: 0;
+}
 
 /*section:first-of-type {
   height: calc(100vh - 54px); /* .header: height *
@@ -52,17 +65,60 @@ button,
   cursor: pointer;
 }
 
+select {
+  font-size: 0.4rem;
+  text-transform: uppercase;
+}
+
 button,
 input {
   max-width: 100%;
+  font-size: 0.3rem;
+}
+
+p,
+li,
+span,
+a {
+  font-size: 0.4rem;
+  font-weight: 500;
+}
+
+.sub {
+  font-size: 0.45rem;
+}
+
+h1 {
+  font-size: 0.7rem;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 0.64rem;
+  margin-top: 0;
+}
+
+h3 {
+  font-size: 0.6rem;
+  margin-top: 0;
+}
+
+h4 {
+  font-size: 0.5rem;
+  margin-top: 0;
+}
+
+h5 {
+  font-size: 0.45rem;
+  margin-top: 0;
 }
 
 .button-square {
-  padding: 15px 22.5px 12.5px;
+  padding: 20px 30px 18px;
   border: 3px solid black;
   color: black;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 0.3rem;
   font-weight: 600;
   display: inline-block;
   text-decoration: none;
@@ -71,11 +127,11 @@ input {
 
 .button-square-white {
   display: inline-block;
-  padding: 15px 22.5px 12.5px;
+  padding: 20px 30px 18px;
   border: 3px solid white;
   color: white;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 0.3rem;
   font-weight: 600;
   text-decoration: none;
   margin: 15px 0;
@@ -87,6 +143,10 @@ input {
 
 .remark {
   color: rgb(231, 114, 36);
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
 
 .hidden {
@@ -166,18 +226,24 @@ input {
   color: rgb(231, 114, 36);
 }
 
+.menu-item[href='/contacto'].active {
+  font-weight: 700;
+  color: white;
+}
+
 /* Position and sizing of burger button */
 .bm-burger-button {
   position: relative;
-  width: 36px;
-  height: 30px;
+  width: 32px;
+  height: 28px;
   left: 80vw;
-  top: 10px;
+  top: 13px;
 }
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
   background: #f8f8f8;
+  height: 14% !important;
 }
 
 /* Position and sizing of clickable cross button */
@@ -200,8 +266,8 @@ input {
   background: url('/img/artesia-menu-bg-mobile.jpg') no-repeat center center
     fixed;
   background-size: cover;
-  padding: 2.5em 1.5em 0;
-  font-size: 1.15em;
+  padding: 1em 1.5em 0;
+  font-size: 1.15rem;
   left: 0;
 }
 
@@ -259,6 +325,11 @@ input {
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  html {
+    font-size: 80px;
+    font-size: 7.5vw;
+  }
+
   .wrapper {
     max-width: 980px;
     padding: 0 calc(2% + 10px) 0 2%;
@@ -285,7 +356,7 @@ input {
   }
 
   .logo {
-    max-width: 200px;
+    /* max-width: 240px; */
   }
 
   .menu {
@@ -295,8 +366,65 @@ input {
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+  html {
+    font-size: 100px;
+    font-size: 5.5vw;
+  }
+
+  select {
+    font-size: 0.2rem;
+  }
+
+  button,
+  input {
+    max-width: 100%;
+    font-size: 0.2rem;
+  }
+
+  p,
+  li,
+  span,
+  a {
+    font-size: 0.24rem;
+    font-weight: 500;
+  }
+
+  .sub {
+    font-size: 0.28rem;
+  }
+
+  h1 {
+    font-size: 0.6rem;
+    margin-top: 0;
+  }
+
+  h2 {
+    font-size: 0.5rem;
+    margin-top: 0;
+  }
+
+  h3 {
+    font-size: 0.4rem;
+    margin-top: 0;
+  }
+
+  h4 {
+    font-size: 0.3rem;
+    margin-top: 0;
+  }
+
+  h5 {
+    font-size: 0.25rem;
+    margin-top: 0;
+  }
+
+  .button-square,
+  .button-square-white {
+    font-size: 0.15rem;
+  }
+
   .wrapper {
-    max-width: 1800px;
-    padding: 0 calc(3.5% + 10px) 0 3.5%;
+    max-width: 1900px;
+    padding: 0 calc(2.5% + 10px) 0 2.5%;
   }
 }

@@ -17,11 +17,9 @@ export default () => (
         }`}
       >
         <div className="wrapper">
-          <br />
-          <br />
           <h1 className="hidden">Proyecto</h1>
           <h3 className="remark">En el corazón de Polanco...</h3>
-          <p className="light">
+          <p className="light sub">
             Esta ha sido una de las <strong>calles más emblemáticas</strong> de
             la zona gracias a que representa la puerta de entrada a Polanco y al
             mismo tiempo una <strong>ventana al Bosque de Chapultepec</strong>
@@ -30,9 +28,6 @@ export default () => (
           <a className="button-square" href="/pisos">
             Conozca los pisos
           </a>
-          <br />
-          <br />
-          <br />
         </div>
       </div>
 
@@ -53,15 +48,11 @@ export default () => (
     <section name="polanco">
       <div className={`${className.column2} ${className.column2Text}`}>
         <div className="wrapper">
-          <br />
           <h2 className="remark">Artesia</h2>
           <p className="light">
             Más de 90 metros de altura. Ubicación única en la Ciudad de México.{' '}
             <strong>Con vistas espectaculares.</strong>
           </p>
-          <br />
-          <br />
-          <br />
         </div>
       </div>
 

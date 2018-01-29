@@ -1,6 +1,10 @@
 .galeria {
 }
 
+.galeria section > div {
+  margin: 0;
+}
+
 .galeria section[name='vistas'] {
   min-height: fit-content;
 }
@@ -30,6 +34,23 @@
 .galeria section[name='proyectos'] p {
   font-weight: 300;
   font-size: 16px;
+}
+
+.options {
+  display: none;
+  text-align: center;
+}
+
+.optionButtons {
+  display: none;
+}
+
+.options a {
+  vertical-align: middle;
+  color: rgb(100, 100, 100);
+  display: inline-block;
+  padding: 25px 35px;
+  font-weight: 700;
 }
 
 .sectionText {
@@ -72,6 +93,51 @@
     display: inline-block;
     vertical-align: middle;
     width: 50%;
+  }
+
+  .optionButtons {
+    display: block;
+    position: absolute;
+    transform: translateY(-100%);
+    width: 45%;
+    z-index: 2;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .optionButtons > div {
+    background-color: black;
+    color: white;
+  }
+
+  .optionButtons > div:nth-of-type(2) {
+    background-color: white;
+    color: black;
+  }
+
+  .optionButtons > div span,
+  .optionButtons > div a {
+    vertical-align: middle;
+  }
+
+  .options {
+    display: block;
+  }
+
+  .options img {
+    display: block;
+  }
+
+  .options > div > div {
+    vertical-align: top;
+  }
+
+  .options > div:nth-of-type(2) > div {
+    border: 1px solid rgb(180, 180, 180);
+  }
+
+  .galeria div[class='flex-column-end'] {
+    display: none;
   }
 
   .columnFloatLeft {

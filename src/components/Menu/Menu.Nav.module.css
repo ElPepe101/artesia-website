@@ -11,7 +11,7 @@
   height: calc(100vh / 8);
   display: block;
   color: white;
-  font-size: 15px;
+  font-size: 0.35rem;
   text-transform: uppercase;
   position: relative;
 }
@@ -34,10 +34,14 @@
   display: none;
 }
 
+.list li span {
+  font-size: 0.35rem;
+}
+
 .list li a {
   text-transform: uppercase;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 0.35rem;
   color: white;
   display: inline-block;
   width: 100%;
@@ -80,6 +84,7 @@
 
   .list > li > a {
     border-bottom: none;
+    padding: 5px;
   }
 
   .list > li:hover > a,
@@ -91,8 +96,10 @@
     color: rgb(231, 114, 36);
   }
 
-  .list li[name='contacto'] {
+  .rounded {
     background-color: rgb(231, 114, 36);
+    padding: 7px 15px;
+    border-radius: 6px;
   }
 
   .list li[name='contacto']:hover a {
@@ -103,5 +110,11 @@
 @media (min-width: 1200px) {
   .list li {
     padding: 0 15px;
+  }
+
+  .list li,
+  .list li span,
+  .list li a {
+    font-size: 0.15rem;
   }
 }

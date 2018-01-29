@@ -24,7 +24,7 @@ export default () => (
           }`}
         >
           <div className="wrapper">
-            <h1>Servicios</h1>
+            <h3 className="uppercase">Servicios</h3>
             <p>
               Artesia contará con toda una gama de servicios de hotel para
               comodidad de los que aquí vivan*:
@@ -114,7 +114,7 @@ export default () => (
           }`}
         >
           <div className="wrapper">
-            <h1>Amenidades</h1>
+            <h3 className="uppercase">Amenidades</h3>
             <p>
               Espacios cuidadosamente diseñados para combinar lo práctico con el
               confort y la elegancia.

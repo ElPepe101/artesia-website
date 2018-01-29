@@ -17,7 +17,7 @@
 
 .home section[name='description'] p {
   font-weight: 300;
-  font-size: 16px;
+  /* font-size: 16px; */
   line-height: 120%;
 }
 
@@ -26,7 +26,7 @@
 }
 
 .home section[name='description'] p:first-of-type {
-  font-size: 18px;
+  /* font-size: 18px; */
   line-height: 120%;
 }
 
@@ -61,7 +61,7 @@
   }
 
   .bigTitle p:first-child {
-    font-size: 32px !important;
+    font-size: 0.75rem !important;
     margin: 0 0 45px -75px;
   }
 

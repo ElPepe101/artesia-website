@@ -28,7 +28,7 @@ export default () => (
               ]}
             />
           </div>
-          <h2>Grupo Sordo Madaleno</h2>
+          <h5>Grupo Sordo Madaleno</h5>
           <p>
             La firma Sordo Madaleno se remonta a 1937. Actualmente está
             encabezada por el arquitecto y diseñador Javier Sordo Madaleno
@@ -52,7 +52,7 @@ export default () => (
               ]}
             />
           </div>
-          <h2>Jan Hendrix</h2>
+          <h5>Jan Hendrix</h5>
           <p>
             Es un artista holandés que ha vivido y trabajado en México desde
             1978. Hendrix recibió la Orden Mexicana del Águila Azteca por parte
@@ -69,7 +69,7 @@ export default () => (
         </div>
         <div className={className.column}>
           <div className={className.portrait} />
-          <h2>Grupo RIOBÓO</h2>
+          <h5>Grupo RIOBÓO</h5>
           <p>
             Con una trayectoria de 30 años, comenzó su actividad profesional con
             el objetivo de desarrollar el diseño estrucutral para proyectos de
@@ -91,6 +91,11 @@ export default () => (
         <Image
           images={[
             {
+              path: '/img/artesia-conocenos-24-80.jpg',
+              minWidth: 0,
+              orientation: 'portrait'
+            },
+            {
               path: '/img/artesia-conocenos-24_horizontal@3x.jpg',
               minWidth: 900,
               orientation: 'landscape'
@@ -107,12 +112,7 @@ export default () => (
             },
             {
               path: '/img/artesia-conocenos-24-80.jpg',
-              minWidth: 300,
-              orientation: 'portrait'
-            },
-            {
-              path: '/img/artesia-conocenos-24-80.jpg',
-              minWidth: 0,
+              minWidth: 301,
               orientation: 'portrait'
             }
           ]}
@@ -131,8 +131,6 @@ export default () => (
             incorporó algunas de sus monumentales y únicas instalaciones creadas{' '}
             para estos espacios de manera permanente.
           </p>
-          <br />
-          <br />
         </div>
       </div>
     </section>

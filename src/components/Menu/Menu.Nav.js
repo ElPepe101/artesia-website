@@ -85,7 +85,7 @@ export default () => (
             className="menu-item"
             activeClassName="active"
           >
-            Obra
+            Proceso de obra
           </NavLink>
         </li>
       </ul>
@@ -107,7 +107,7 @@ export default () => (
         className="menu-item"
         activeClassName="active"
       >
-        Contáctanos
+        <span className={className.rounded}>Contáctanos</span>
       </NavLink>
     </li>
   </ul>

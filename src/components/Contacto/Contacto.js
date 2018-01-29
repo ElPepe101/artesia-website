@@ -63,6 +63,7 @@ export default () => (
                 width="70"
                 height="31"
                 value="Enviar"
+                readOnly
               />
             </div>
             <div className={`${className.column}`}>
@@ -83,7 +84,7 @@ export default () => (
                   <span name="marker" />
                   <strong>Dirección:</strong>
                   <br />
-                  Campos Eliseso No. 200, Polanco, Ciudad de México.
+                  Campos Eliseso No. 200,<br /> Polanco, Ciudad de México.
                 </p>
               </div>
             </div>
