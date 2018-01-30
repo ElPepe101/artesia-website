@@ -6,6 +6,10 @@
   height: 70vh;
 }
 
+.ubicacion section:last-of-type > div {
+  margin: 4% 0;
+}
+
 @media screen and (orientation: landscape) {
   .ubicacion iframe {
     height: 100vh;

@@ -57,7 +57,7 @@ export default () => (
     </li>
     <li name="submenu-3">
       <span>Galería</span>
-      <ul>
+      <ul className={className.wideSubmenu}>
         <li name="galeria-vistas">
           <NavLink
             exact

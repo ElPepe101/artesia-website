@@ -102,6 +102,10 @@
     border-radius: 6px;
   }
 
+  .wideSubmenu {
+    width: 200%;
+  }
+
   .list li[name='contacto']:hover a {
     color: rgb(101, 101, 101);
   }

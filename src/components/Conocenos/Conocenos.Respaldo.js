@@ -68,7 +68,11 @@ export default () => (
           </a>
         </div>
         <div className={className.column}>
-          <div className={className.portrait} />
+          <div className={className.portrait}>
+            <Image
+              images={[{ path: '/img/artesia-grupo-roiboo.png', minWidth: 0 }]}
+            />
+          </div>
           <h5>Grupo RIOBÓO</h5>
           <p>
             Con una trayectoria de 30 años, comenzó su actividad profesional con
@@ -140,15 +144,21 @@ export default () => (
         <Image
           images={[
             {
-              path: '/img/artesia-conocenos-20_horizontal@0.75x.jpg',
+              path: '/img/artesia-disenadores_horizontal.jpg',
               minWidth: 960
             },
             {
-              path: '/img/artesia-conocenos-20_horizontal@0.5x.jpg',
+              path: '/img/artesia-disenadores_horizontal@0.75x.jpg',
               minWidth: 600
             },
-            { path: '/img/artesia-conocenos-20-80.jpg', minWidth: 300 },
-            { path: '/img/artesia-conocenos-20-80.jpg', minWidth: 0 }
+            {
+              path: '/img/artesia-disenadores_horizontal@0.5x.jpg',
+              minWidth: 300
+            },
+            {
+              path: '/img/artesia-disenadores_horizontal@0.5x.jpg',
+              minWidth: 0
+            }
           ]}
         />
       </div>

@@ -20,6 +20,7 @@ const sliderSettings = {
 
 class Obra extends React.Component {
   static propTypes;
+  SomeMethod = () => {};
 
   render() {
     return (
@@ -38,7 +39,7 @@ class Obra extends React.Component {
           </div>
         </Hero>
         <section name="obra">
-          <div>
+          <div className={className.sliderWrapper}>
             <Slider {...sliderSettings}>
               {data.obra1.map(x => (
                 <div key={x.path}>
@@ -57,9 +58,7 @@ class Obra extends React.Component {
 
           <div className={className.level}>
             <div className={`${className.column}`}>
-              <div className="wrapper">
-                <h3>Torre piedra - Piso 10</h3>
-              </div>
+              <h3>Torre piedra - Piso 10</h3>
             </div>
 
             <div className={`${className.column}`}>
@@ -67,7 +66,7 @@ class Obra extends React.Component {
             </div>
           </div>
 
-          <div className="column-limit">
+          <div className={`column-limit ${className.process}`}>
             <div className={className.column}>
               <Image
                 images={[
@@ -95,24 +94,35 @@ class Obra extends React.Component {
                   25 niveles de altura, planta de tratamientos de agua. 157
                   cajones de estacionamiento.
                 </p>
+                <p>
+                  <span className="float-right">
+                    <img
+                      className="no-resize"
+                      src="/img/artesia-certificacion.png"
+                      alt="certificado"
+                    />
+                  </span>
+                </p>
               </div>
             </div>
           </div>
 
-          <Slider {...sliderSettings}>
-            {data.obra2.map(x => (
-              <div key={x.path}>
-                <Image
-                  images={[
-                    {
-                      path: `/img/Galeria-Proceso_de_obra-2/${x.path}`,
-                      minWidth: x.minWidth
-                    }
-                  ]}
-                />
-              </div>
-            ))}
-          </Slider>
+          <div className={className.sliderWrapper}>
+            <Slider {...sliderSettings}>
+              {data.obra2.map(x => (
+                <div key={x.path}>
+                  <Image
+                    images={[
+                      {
+                        path: `/img/Galeria-Proceso_de_obra-2/${x.path}`,
+                        minWidth: x.minWidth
+                      }
+                    ]}
+                  />
+                </div>
+              ))}
+            </Slider>
+          </div>
         </section>
       </div>
     );

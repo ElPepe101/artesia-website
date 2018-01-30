@@ -144,6 +144,10 @@
 }
 
 @media (min-width: 992px) {
+  section > div {
+    margin: 0;
+  }
+
   section[name='instalaciones'] {
     margin: 75px 0;
     text-align: center;
@@ -165,7 +169,8 @@
   }
 
   .conocenos section[name='hendrix'] h3 {
-    font-size: inherit;
+    font-size: 0.5rem;
+    font-weight: 700;
   }
 
   .conocenos section[name='end'] {
@@ -266,6 +271,6 @@
 
   .conocenos section[name='respaldo'] img {
     display: inline-block;
-    width: 100%;
+    /* width: 100%; */
   }
 }

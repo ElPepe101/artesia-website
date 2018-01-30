@@ -78,11 +78,17 @@
   width: 53px;
   height: 59px;
 }
-
+/*
 .servicios ul li span[name='room'] {
   background-position: -297px 0;
   width: 71px;
   height: 70px;
+}
+*/
+.servicios ul li span[name='room'] {
+  background-position: 0 -584px;
+  width: 57px;
+  height: 64px;
 }
 
 .servicios ul li span[name='valet'] {

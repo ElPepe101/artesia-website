@@ -50,7 +50,7 @@ class Pisos extends React.Component {
   );
 
   DrawFronLevel = ({ images }) => (
-    <div className={className.images}>
+    <div className={className.towers}>
       <Image images={[{ path: `/img/levels/${images[0]}`, minWidth: 0 }]} />
     </div>
   );
@@ -87,14 +87,12 @@ class Pisos extends React.Component {
             <span /> {bedrooms}
           </p>
         </div>
-      </div>
-      <div className="wrapper">
-        <br />
         <p>
           Los departamentos se entregan en obra negra para tener la oportunidad
           de generar el proyecto que más le satisfaga.
         </p>
       </div>
+
       <div className="wrapper">
         <a
           href={`/pdf/${pdf}`}

@@ -88,6 +88,28 @@
   line-height: 130%;
 }
 
+.sliderWrapper {
+  height: 100vh;
+  max-height: 900px;
+  overflow: hidden;
+}
+
+.sliderWrapper > div,
+.sliderWrapper > div > div {
+  height: 100% !important;
+}
+
+.sliderWrapper img {
+  max-height: 100%;
+  max-width: 100%;
+  height: auto;
+  width: auto;
+}
+
+.process {
+  padding: 10% 0;
+}
+
 @media (min-width: 992px) {
   .column {
     display: inline-block;
@@ -157,6 +179,21 @@
     border: 0;
     position: absolute;
     transform: translateY(-100%);
+    margin: 0;
+    padding: 0;
+    height: 53px;
+    width: 30%;
+    overflow: hidden;
+  }
+
+  .level div {
+    vertical-align: top;
+    height: 53px;
+  }
+
+  .level div * {
+    height: 53px;
+    padding: 20px 0 0;
   }
 
   .level h3,

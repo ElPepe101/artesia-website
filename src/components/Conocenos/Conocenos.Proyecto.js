@@ -24,7 +24,6 @@ export default () => (
             la zona gracias a que representa la puerta de entrada a Polanco y al
             mismo tiempo una <strong>ventana al Bosque de Chapultepec</strong>
           </p>
-          <br />
           <a className="button-square" href="/pisos">
             Conozca los pisos
           </a>
@@ -90,6 +89,13 @@ export default () => (
             como residual, y todos los equipos de agua{' '}
             <strong>son de bajo consumo</strong>. Todo el proceso de obra ha
             sido auditado para <strong>minimizar su impacto ambiental.</strong>
+            <span className="float-right">
+              <img
+                className="no-resize"
+                src="/img/artesia-certificacion.png"
+                alt="certificado"
+              />
+            </span>
           </p>
         </div>
       </div>

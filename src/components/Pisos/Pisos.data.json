@@ -80,7 +80,7 @@
   },
   {
     "value": 5,
-    "building": "Torre cistal",
+    "building": "Torre cristal",
     "level": "piso 6",
     "images": ["Cristal-Piso_6f.png", "Cristal-Piso_6.png"],
     "description": "",

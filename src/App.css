@@ -39,6 +39,11 @@ img {
   vertical-align: middle;
 }
 
+img.no-resize {
+  width: auto;
+  max-width: unset;
+}
+
 section {
   min-height: 100vh;
 }
@@ -111,6 +116,15 @@ h4 {
 h5 {
   font-size: 0.45rem;
   margin-top: 0;
+}
+
+.float-right {
+  display: block;
+  overflow: auto;
+}
+
+.float-right > * {
+  float: right;
 }
 
 .button-square {
@@ -222,13 +236,13 @@ h5 {
 .menu-item {
 }
 
-.menu-item.active {
-  color: rgb(231, 114, 36);
+.active {
+  color: rgb(231, 114, 36) !important;
 }
 
 .menu-item[href='/contacto'].active {
   font-weight: 700;
-  color: white;
+  color: white !important;
 }
 
 /* Position and sizing of burger button */

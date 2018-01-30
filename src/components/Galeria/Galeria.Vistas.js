@@ -24,6 +24,15 @@ class Vistas extends React.Component {
     this.level = level || 'piso-2';
   }
 
+  componentDidMount() {
+    if (location.pathname.split('/').length > 4) {
+      setTimeout(() => {
+        const target = document.querySelector(`.${className.column}`).offsetTop;
+        document.scrollingElement.scrollTop = target;
+      }, 300);
+    }
+  }
+
   getBuildingOptions = () =>
     Object.keys(data).map(key => (
       <option key={key} value={key}>
@@ -74,11 +83,15 @@ class Vistas extends React.Component {
   };
 
   getLevelOptionsPlain = building =>
-    Object.keys(data[building]).map(key => (
-      <a key={key} href={key}>
-        {capitalize(key.replace('-', ' '))}
-      </a>
-    ));
+    Object.keys(data[building]).map(key => {
+      const path = `/galeria/vistas/${building}/${key}`;
+      const active = location.pathname === path ? 'active' : '';
+      return (
+        <a key={key} href={path} className={active}>
+          {capitalize(key.replace('-', ' '))}
+        </a>
+      );
+    });
 
   render() {
     return (
@@ -138,7 +151,8 @@ class Vistas extends React.Component {
             <div className={className.column}>
               <div className="wrapper">
                 <span>
-                  {this.building} - {this.level}
+                  {this.building.replace('-', ' ')} -{' '}
+                  {this.level.replace('-', ' ')}
                 </span>
               </div>
             </div>

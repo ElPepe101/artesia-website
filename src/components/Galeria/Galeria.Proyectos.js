@@ -7,7 +7,7 @@ import Image from '../Image/Image';
 
 export default () => (
   <div className={className.galeria}>
-    <Hero image="/img/artesia-portrait-43.jpg" target="proyectos">
+    <Hero image="/img/artesia-portrait-instalaciones.jpg" target="proyectos">
       <div>
         <p>38 Departamentos de</p>
         <p>254 m2 hasta 700m2</p>
