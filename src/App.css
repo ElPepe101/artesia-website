@@ -307,13 +307,18 @@ h5 {
 }
 
 .slick-next {
-  right: 5px !important;
+  right: 65px !important;
 }
 
 .slick-dots {
   position: relative !important;
   margin-bottom: 10px !important;
   bottom: 0 !important;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 80px !important;
 }
 
 /* ################ BREAKPOINTS ##################### */

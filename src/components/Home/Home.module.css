@@ -65,6 +65,10 @@
     margin: 0 0 45px -75px;
   }
 
+  .bigTitle p:first-child span {
+    font-size: 0.75rem !important;
+  }
+
   .bottomImage {
     display: none;
   }

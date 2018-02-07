@@ -27,7 +27,7 @@ export default () => (
             <h3 className="uppercase">Servicios</h3>
             <p>
               Artesia contará con toda una gama de servicios de hotel para
-              comodidad de los que aquí vivan*:
+              comodidad de los que aquí vivan:
             </p>
             <ul>
               <li>
@@ -152,7 +152,12 @@ export default () => (
       <div className={`column-limit ${className.columnLimitDistance}`}>
         <div className={`${className.column}`}>
           <Image
-            images={[{ path: '/img/artesia-servicios-37-80.jpg', minWidth: 0 }]}
+            images={[
+              { path: '/img/artesia-servicios-37-80@3x.jpg', minWidth: 900 },
+              { path: '/img/artesia-servicios-37-80@2x.jpg', minWidth: 600 },
+              { path: '/img/artesia-servicios-37-80.jpg', minWidth: 300 },
+              { path: '/img/artesia-servicios-37-80.jpg', minWidth: 0 }
+            ]}
           />
         </div>
         <div
@@ -173,7 +178,12 @@ export default () => (
       <div className="column-limit">
         <div className={`${className.column}`}>
           <Image
-            images={[{ path: '/img/artesia-servicios-38-80.jpg', minWidth: 0 }]}
+            images={[
+              { path: '/img/artesia-servicios-38-80@3x.jpg', minWidth: 900 },
+              { path: '/img/artesia-servicios-38-80@2x.jpg', minWidth: 600 },
+              { path: '/img/artesia-servicios-38-80.jpg', minWidth: 300 },
+              { path: '/img/artesia-servicios-38-80.jpg', minWidth: 0 }
+            ]}
           />
         </div>
         <div className={`${className.column} ${className.columnText}`}>
@@ -190,7 +200,12 @@ export default () => (
       <div className="column-limit">
         <div className={`${className.column}`}>
           <Image
-            images={[{ path: '/img/artesia-servicios-39-80.jpg', minWidth: 0 }]}
+            images={[
+              { path: '/img/artesia-servicios-39-80@3x.jpg', minWidth: 900 },
+              { path: '/img/artesia-servicios-39-80@2x.jpg', minWidth: 600 },
+              { path: '/img/artesia-servicios-39-80.jpg', minWidth: 300 },
+              { path: '/img/artesia-servicios-39-80.jpg', minWidth: 0 }
+            ]}
           />
         </div>
         <div
@@ -210,12 +225,17 @@ export default () => (
       <div className="column-limit">
         <div className={`${className.column}`}>
           <Image
-            images={[{ path: '/img/artesia-servicios-40-80.jpg', minWidth: 0 }]}
+            images={[
+              { path: '/img/artesia-servicios-40-80@3x.jpg', minWidth: 900 },
+              { path: '/img/artesia-servicios-40-80@2x.jpg', minWidth: 600 },
+              { path: '/img/artesia-servicios-40-80.jpg', minWidth: 300 },
+              { path: '/img/artesia-servicios-40-80.jpg', minWidth: 0 }
+            ]}
           />
         </div>
         <div className={`${className.column} ${className.columnText}`}>
           <div className="wrapper">
-            <h3 className="remark">Foto nocturna</h3>
+            <h3 className="remark">Acceso con cristal blindado</h3>
             <p>
               Lorem ipsum dolor sit amet, eos no tale posse vocent, partiendo
               salutandi id ius, ius facer laudem id. Lorem tibique sadipscing

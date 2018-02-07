@@ -22,6 +22,11 @@
   margin: 10px 0;
   font-size: 0.2rem;
   width: 100%;
+  vertical-align: top;
+}
+
+.contacto form input {
+  margin: 10px 0 22px;
 }
 
 .contacto form input[name='submit'] {

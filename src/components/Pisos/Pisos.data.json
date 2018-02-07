@@ -5,7 +5,7 @@
     "level": "piso 2",
     "images": ["Piedra-Piso_2f.png", "Piedra-Piso_2.png"],
     "features": [
-      "3 Recámaras",
+      "2 - 3 Recámaras",
       "3.5 Baños",
       "Sala",
       "Comedor",
@@ -14,7 +14,7 @@
     ],
     "number": 102,
     "squares": 254.36,
-    "bedrooms": 3,
+    "bedrooms": "2 - 3",
     "pdf": "piedra102.pdf"
   },
   {
@@ -24,7 +24,7 @@
     "images": ["Piedra-Piso_3f.png", "Piedra-Piso_3.png"],
     "description": "",
     "features": [
-      "3 Recámaras",
+      "2 - 3 Recámaras",
       "3.5 Baños",
       "Sala",
       "Comedor",
@@ -33,7 +33,7 @@
     ],
     "number": 103,
     "squares": 254.36,
-    "bedrooms": 3,
+    "bedrooms": "2 - 3",
     "pdf": "piedra103.pdf"
   },
   {
@@ -65,7 +65,7 @@
     "images": ["Cristal-Piso_4f.png", "Cristal-Piso_4.png"],
     "description": "",
     "features": [
-      "3 Recámaras",
+      "2 - 3 Recámaras",
       "3.5 Baños",
       "Sala",
       "Comedor",
@@ -75,7 +75,7 @@
     ],
     "number": 104,
     "squares": 342.8,
-    "bedrooms": 3,
+    "bedrooms": "2 - 3",
     "pdf": "cristal104.pdf"
   },
   {
@@ -85,7 +85,7 @@
     "images": ["Cristal-Piso_6f.png", "Cristal-Piso_6.png"],
     "description": "",
     "features": [
-      "3 Recámaras",
+      "2 - 3 Recámaras",
       "3.5 Baños",
       "Sala",
       "Comedor",
@@ -94,7 +94,7 @@
     ],
     "number": 106,
     "squares": 346.05,
-    "bedrooms": 3,
+    "bedrooms": "2 - 3",
     "pdf": "cristal106.pdf"
   },
   {
@@ -104,18 +104,19 @@
     "images": ["Cristal-Piso_8f.png", "Cristal-Piso_8.png"],
     "description": "",
     "features": [
-      "2 Recámaras",
+      "2 - 3 Recámaras",
       "2.5 Baños",
       "Sala",
       "Comedor",
       "Bar",
       "Family",
       "Cocina",
-      "Cuarto de servicio"
+      "Cuarto de servicio",
+      "Family"
     ],
     "number": 108,
     "squares": 349.29,
-    "bedrooms": 2,
+    "bedrooms": "2 - 3",
     "pdf": "cristal108.pdf"
   },
   {
@@ -125,18 +126,44 @@
     "images": ["Cristal-Piso_15f.png", "Cristal-Piso_15.png"],
     "description": "",
     "features": [
-      "3 Recámaras",
+      "2 - 3 Recámaras",
       "3.5 Baños",
       "Sala",
       "Comedor",
       "Estudio",
       "Bodega",
       "Cocina",
-      "Cuarto de servicio"
+      "Cuarto de servicio",
+      "Biblioteca",
+      "Family"
     ],
     "number": 115,
     "squares": 595.66,
-    "bedrooms": 3,
+    "bedrooms": "2 - 3",
     "pdf": "cristal115.pdf"
+  },
+  {
+    "value": 8,
+    "building": "Torre cristal",
+    "level": "piso 25",
+    "images": ["Cristal-Piso_25f.png", "Cristal-Piso_25.png"],
+    "description": "",
+    "features": [
+      "4 Recámaras",
+      "4.5 Baños",
+      "Sala",
+      "Comedor",
+      "Bar",
+      "Estudio",
+      "Sala TV",
+      "Biblioteca",
+      "Cocina",
+      "Cuarto de lavado",
+      "Patio de Servicio"
+    ],
+    "number": "PH",
+    "squares": 641.35,
+    "bedrooms": "4",
+    "pdf": "cristalph.pdf"
   }
 ]

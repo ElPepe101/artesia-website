@@ -257,6 +257,11 @@
   .column2FloatRight div {
     padding: 14% 0 0;
   }
+
+  .column2FloatRightFirst div {
+    padding: 50% 0 0;
+    transform: translateY(-25%);
+  }
 }
 
 @media (min-width: 1200px) {

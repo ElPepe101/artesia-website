@@ -10,7 +10,7 @@ export default () => (
     <Hero image="/img/artesia-portrait-19.jpg" target="respaldo">
       <div>
         <p>Diseño que transmite</p>
-        <p>Comfort y exclusividad</p>
+        <p>comfort y exclusividad</p>
         <h2>Campos Eliseos.</h2>
         <a className="button button-square-white" href="/conocenos/proyecto">
           Conocer más

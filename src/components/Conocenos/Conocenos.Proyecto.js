@@ -12,9 +12,12 @@ export default () => (
     </Hero>
     <section name="proyecto">
       <div
-        className={`${className.column2} ${className.column2TextLean} ${
-          className.column2FloatRight
-        }`}
+        className={`
+          ${className.column2} 
+          ${className.column2TextLean} 
+          ${className.column2FloatRight}
+          ${className.column2FloatRightFirst}
+        `}
       >
         <div className="wrapper">
           <h1 className="hidden">Proyecto</h1>

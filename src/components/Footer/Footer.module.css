@@ -1,5 +1,5 @@
 .footer {
-  background: url('/img/artesia-menu-bg-mobile.jpg') no-repeat center center
+  background: url('/img/artesia-footer-bg-mobile.jpg') no-repeat center center
     fixed;
   background-size: cover;
   text-align: justify;
@@ -8,7 +8,9 @@
 
 .footer > div {
   overflow: auto;
-  padding: 10px 7% 30px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  vertical-align: top;
 }
 
 .footer p,
@@ -26,5 +28,73 @@
 
 .logo {
   opacity: 0.55;
-  transform: translateX(-20px);
+  /* transform: translateX(-20px); */
+}
+
+.contact {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.nav {
+  display: none;
+}
+
+.twitter {
+  margin-top: 15px !important;
+}
+
+@media (min-width: 768px) {
+  hr {
+    display: none;
+  }
+
+  .contact {
+    width: 30%;
+  }
+
+  .nav {
+    width: 70%;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .list {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 20px 35px;
+    width: 100%;
+  }
+
+  .list,
+  .list li ul {
+    list-style: none;
+    margin: 0;
+    padding: 12px 0 0 0;
+  }
+
+  .list > li {
+    vertical-align: top;
+    display: table-cell;
+    padding: 6px 1% 0 0;
+    border-top: 1px solid rgb(183, 183, 183);
+  }
+
+  .list li a,
+  .list li span {
+    text-decoration: none;
+    color: rgb(183, 183, 183);
+    font-size: 0.14rem;
+  }
+
+  .list > li > a,
+  .list > li > span {
+    text-transform: uppercase;
+  }
+
+  .wideSubmenu {
+  }
+
+  .rounded {
+  }
 }

@@ -132,7 +132,7 @@ class Vistas extends React.Component {
                 />
               </div>
             </div>
-            <div className="column-limit">
+            <div className="column-limit" style={{ height: '80px' }}>
               <div className={className.column}>
                 <div className="wrapper">
                   {this.getLevelOptionsPlain('torre-piedra')}
@@ -158,8 +158,12 @@ class Vistas extends React.Component {
             </div>
             <div className={className.column}>
               <div className="wrapper">
-                <a href={data[this.building][this.level].link}>
-                  Conoce los planos
+                <a
+                  href={`/pisos?lvl=${
+                    data[this.building][this.level][0][0].link
+                  }`}
+                >
+                  Conoce los planos &gt;
                 </a>
               </div>
             </div>

@@ -14,7 +14,12 @@ class Pisos extends React.Component {
   constructor({ location }) {
     super();
     this.search = queryString.parse(location.search || '?lvl=1');
+    this.state.level = Number(this.search.lvl);
   }
+
+  state = {
+    level: 0
+  };
 
   componentDidMount() {
     if (location.search) {
@@ -46,12 +51,6 @@ class Pisos extends React.Component {
       <div className={className.images}>
         <Image images={[{ path: `/img/levels/${images[1]}`, minWidth: 0 }]} />
       </div>
-    </div>
-  );
-
-  DrawFronLevel = ({ images }) => (
-    <div className={className.towers}>
-      <Image images={[{ path: `/img/levels/${images[0]}`, minWidth: 0 }]} />
     </div>
   );
 
@@ -87,7 +86,7 @@ class Pisos extends React.Component {
             <span /> {bedrooms}
           </p>
         </div>
-        <p>
+        <p className={className.disclaimer}>
           Los departamentos se entregan en obra negra para tener la oportunidad
           de generar el proyecto que más le satisfaga.
         </p>
@@ -119,7 +118,11 @@ class Pisos extends React.Component {
   );
 
   render() {
+    const { images } = levels.find(
+      level => Number(level.value) === this.state.level
+    );
     const level = this.GetLevel();
+    console.log(images);
     return (
       <div className={className.pisos}>
         <Hero image="/img/artesia-portrait-32.jpg" target="select">
@@ -146,7 +149,43 @@ class Pisos extends React.Component {
               >
                 {this.GetOptions()}
               </select>
-              {this.DrawFronLevel(level)}
+              <div className={className.towers}>
+                <img src={`/img/levels/${images[0]}`} alt="" />
+                <div className={className.interactive}>
+                  <div className="piedra">
+                    {levels
+                      .filter(l => l.building === 'Torre piedra')
+                      .sort((a, b) => b.value - a.value)
+                      .map(l => (
+                        <a
+                          key={l.value}
+                          href={`?lvl=${l.value}`}
+                          className={l.level.replace(' ', '-')}
+                          onMouseOver={() => this.setState({ level: l.value })}
+                          onFocus=""
+                        >
+                          {l.level}
+                        </a>
+                      ))}
+                  </div>
+                  <div className="cristal">
+                    {levels
+                      .filter(l => l.building === 'Torre cristal')
+                      .sort((a, b) => b.value - a.value)
+                      .map(l => (
+                        <a
+                          key={l.value}
+                          href={`?lvl=${l.value}`}
+                          className={l.level.replace(' ', '-')}
+                          onMouseOver={() => this.setState({ level: l.value })}
+                          onFocus=""
+                        >
+                          {l.level}
+                        </a>
+                      ))}
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           {this.DrawLevel(level)}

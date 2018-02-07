@@ -1,8 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+
+window.lazySizesConfig = window.lazySizesConfig || {};
+// page is optimized for fast onload event
+window.lazySizesConfig.loadMode = 1;
+window.lazySizesConfig.expand = 750;
+// eslint-disable-next-line
 import 'lazysizes';
 
-const Image = ({ images, className, sizes }) => {
+const Image = ({ images, className, sizes, preload }) => {
   let imagesnum = 0;
   const sources = images
     .filter(img => {
@@ -22,7 +28,9 @@ const Image = ({ images, className, sizes }) => {
       imagesnum += 1;
       return (
         <source
-          key={`picture_source_${className}-${imagesnum}`}
+          key={`picture_source_${className}-${imagesnum}${
+            preload ? ' lazypreload' : ''
+          }`}
           data-srcset={img.path}
           media={`(min-width: ${img.minWidth}px)${orientation}`}
         />
@@ -50,12 +58,14 @@ Image.propTypes = {
     })
   ).isRequired,
   className: PropTypes.string,
-  sizes: PropTypes.oneOfType([PropTypes.string, PropTypes.bool])
+  sizes: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
+  preload: PropTypes.bool
 };
 
 Image.defaultProps = {
   className: '',
-  sizes: 'auto'
+  sizes: 'auto',
+  preload: false
 };
 
 export default Image;

@@ -3,8 +3,8 @@ import { NavLink } from 'react-router-dom';
 
 import className from './Menu.Nav.module.css';
 
-export default () => (
-  <ul className={className.list}>
+export default ({ list, wideSubmenu, rounded }) => (
+  <ul className={list || className.list}>
     <li name="submenu-3">
       <span>Conócenos</span>
       <ul>
@@ -57,7 +57,7 @@ export default () => (
     </li>
     <li name="submenu-3">
       <span>Galería</span>
-      <ul className={className.wideSubmenu}>
+      <ul className={wideSubmenu || className.wideSubmenu}>
         <li name="galeria-vistas">
           <NavLink
             exact
@@ -107,7 +107,7 @@ export default () => (
         className="menu-item"
         activeClassName="active"
       >
-        <span className={className.rounded}>Contáctanos</span>
+        <span className={rounded || className.rounded}>Contáctanos</span>
       </NavLink>
     </li>
   </ul>

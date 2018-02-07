@@ -35,7 +35,7 @@ export default () => (
             <li>
               <span name="circuito" />
               <p>Circuito</p>
-              <p>Circuito cerra de TV en áreas públicas</p>
+              <p>Circuito cerrado de TV en áreas públicas</p>
             </li>
             <li>
               <span name="elevadores" />
@@ -45,7 +45,7 @@ export default () => (
             <li>
               <span name="montacargas" />
               <p>Montacargas</p>
-              <p>Servicio de montaccargas</p>
+              <p>Servicio de montacargas</p>
             </li>
             <li>
               <span name="acondicionado" />
@@ -55,7 +55,7 @@ export default () => (
             <li>
               <span name="aire" />
               <p>Aire limpio</p>
-              <p>Detección y extracción aire en los estacionamientos</p>
+              <p>Detección y extracción de aire en los estacionamientos</p>
             </li>
             <li>
               <span name="agua" />

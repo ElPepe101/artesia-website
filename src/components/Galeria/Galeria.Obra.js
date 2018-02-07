@@ -50,6 +50,7 @@ class Obra extends React.Component {
                         minWidth: x.minWidth
                       }
                     ]}
+                    preload
                   />
                 </div>
               ))}
@@ -62,7 +63,7 @@ class Obra extends React.Component {
             </div>
 
             <div className={`${className.column}`}>
-              <a href="#a">CONOCE LOS PLANOS &gt;</a>
+              <a href="/pisos">CONOCE LOS PLANOS &gt;</a>
             </div>
           </div>
 
@@ -118,6 +119,7 @@ class Obra extends React.Component {
                         minWidth: x.minWidth
                       }
                     ]}
+                    preload
                   />
                 </div>
               ))}
