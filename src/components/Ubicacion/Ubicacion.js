@@ -2,7 +2,7 @@ import React from 'react';
 
 import className from './Ubicacion.module.css';
 import Hero from '../Hero/Hero';
-import Image from '../Image/Image';
+// import Image from '../Image/Image';
 
 export default () => (
   <div className={className.ubicacion}>

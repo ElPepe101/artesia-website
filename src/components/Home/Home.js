@@ -29,7 +29,7 @@ export default () => (
           <p>
             <strong>
               Edificios residenciales{' '}
-              <span className="remark">con operación de Hotel</span>
+              <span className="remark">con operación de hotel</span>
             </strong>
           </p>
           <p className="sub">

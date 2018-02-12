@@ -121,8 +121,13 @@
   padding: 10% 0;
 }
 
+.superText {
+  display: none;
+}
+
 @media (min-width: 992px) {
   .column {
+    position: relative;
     display: inline-block;
     vertical-align: middle;
     width: 50%;
@@ -216,5 +221,35 @@
   .level h3,
   .level a {
     font-size: 12px;
+  }
+
+  .columnLimit {
+    height: 80px;
+  }
+
+  .superText {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.3rem;
+    font-weight: 700;
+    margin: 0;
+  }
+}
+
+@media (min-width: 1440px) {
+  .columnLimit {
+    height: auto;
+    max-height: 120px;
+  }
+
+  .optionButtons > div {
+    height: auto;
+    max-height: 105px;
   }
 }

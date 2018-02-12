@@ -235,14 +235,8 @@ export default () => (
         </div>
         <div className={`${className.column} ${className.columnText}`}>
           <div className="wrapper">
-            <h3 className="remark">Acceso con cristal blindado</h3>
-            <p>
-              Lorem ipsum dolor sit amet, eos no tale posse vocent, partiendo
-              salutandi id ius, ius facer laudem id. Lorem tibique sadipscing
-              pro id, quod noluisse mei te. In epicuri albucius nec, laudem
-              aeterno ad vim, nec et sumo oratio legere. Est eu propriae
-              assentior posidonium.
-            </p>
+            <h3 className="remark">Seguridad</h3>
+            <p>Acceso con cristal blindado.</p>
           </div>
         </div>
       </div>

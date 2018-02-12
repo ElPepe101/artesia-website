@@ -36,11 +36,7 @@ export default () => (
       <div className={`${className.column2} ${className.column2Padding}`}>
         <Image
           images={[
-            { path: '/img/artesia-conocenos-31_horizontal.jpg', minWidth: 900 },
-            {
-              path: '/img/artesia-conocenos-31_horizontal@0.75x.jpg',
-              minWidth: 600
-            },
+            { path: '/img/artesia-conocenos-31_horizontal.png', minWidth: 600 },
             { path: '/img/artesia-conocenos-28-80.jpg', minWidth: 300 },
             { path: '/img/artesia-conocenos-28-80.jpg', minWidth: 0 }
           ]}

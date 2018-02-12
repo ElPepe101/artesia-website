@@ -122,7 +122,7 @@ class Pisos extends React.Component {
       level => Number(level.value) === this.state.level
     );
     const level = this.GetLevel();
-    console.log(images);
+
     return (
       <div className={className.pisos}>
         <Hero image="/img/artesia-portrait-32.jpg" target="select">
@@ -162,7 +162,7 @@ class Pisos extends React.Component {
                           href={`?lvl=${l.value}`}
                           className={l.level.replace(' ', '-')}
                           onMouseOver={() => this.setState({ level: l.value })}
-                          onFocus=""
+                          onFocus={() => {}}
                         >
                           {l.level}
                         </a>
@@ -178,7 +178,7 @@ class Pisos extends React.Component {
                           href={`?lvl=${l.value}`}
                           className={l.level.replace(' ', '-')}
                           onMouseOver={() => this.setState({ level: l.value })}
-                          onFocus=""
+                          onFocus={() => {}}
                         >
                           {l.level}
                         </a>

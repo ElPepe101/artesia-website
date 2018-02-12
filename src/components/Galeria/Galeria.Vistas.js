@@ -120,6 +120,7 @@ class Vistas extends React.Component {
                     }
                   ]}
                 />
+                <p className={className.superText}>Torre piedra</p>
               </div>
               <div className={className.column}>
                 <Image
@@ -130,9 +131,10 @@ class Vistas extends React.Component {
                     }
                   ]}
                 />
+                <p className={className.superText}>Torre cristal</p>
               </div>
             </div>
-            <div className="column-limit" style={{ height: '80px' }}>
+            <div className={`column-limit ${className.columnLimit}`}>
               <div className={className.column}>
                 <div className="wrapper">
                   {this.getLevelOptionsPlain('torre-piedra')}

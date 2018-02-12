@@ -361,6 +361,11 @@ h5 {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  .bm-overlay {
+    /* Some issues with this and firefox */
+    display: none;
+  }
+
   section {
     min-height: unset !important;
   }
