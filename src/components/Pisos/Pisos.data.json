@@ -3,7 +3,7 @@
     "value": 1,
     "building": "Torre piedra",
     "level": "piso 2",
-    "images": ["Piedra-Piso_2f.png", "Piedra-Piso_2.png"],
+    "images": ["Piedra-Piso_2f.jpg", "Piedra-Piso_2.png"],
     "features": [
       "2 - 3 Recámaras",
       "3.5 Baños",
@@ -21,7 +21,7 @@
     "value": 2,
     "building": "Torre piedra",
     "level": "piso 3",
-    "images": ["Piedra-Piso_3f.png", "Piedra-Piso_3.png"],
+    "images": ["Piedra-Piso_3f.jpg", "Piedra-Piso_3.png"],
     "description": "",
     "features": [
       "2 - 3 Recámaras",
@@ -40,7 +40,7 @@
     "value": 3,
     "building": "Torre piedra",
     "level": "piso 14 y 15",
-    "images": ["Piedra-Piso_15f.png", "Piedra-Piso_15.png"],
+    "images": ["Piedra-Piso_15f.jpg", "Piedra-Piso_15.png"],
     "description": "",
     "features": [
       "2 Recámaras",
@@ -62,7 +62,7 @@
     "value": 4,
     "building": "Torre cristal",
     "level": "piso 4",
-    "images": ["Cristal-Piso_4f.png", "Cristal-Piso_4.png"],
+    "images": ["Cristal-Piso_4f.jpg", "Cristal-Piso_4.png"],
     "description": "",
     "features": [
       "2 - 3 Recámaras",
@@ -82,7 +82,7 @@
     "value": 5,
     "building": "Torre cristal",
     "level": "piso 6",
-    "images": ["Cristal-Piso_6f.png", "Cristal-Piso_6.png"],
+    "images": ["Cristal-Piso_6f.jpg", "Cristal-Piso_6.png"],
     "description": "",
     "features": [
       "2 - 3 Recámaras",
@@ -101,7 +101,7 @@
     "value": 6,
     "building": "Torre cristal",
     "level": "piso 8",
-    "images": ["Cristal-Piso_8f.png", "Cristal-Piso_8.png"],
+    "images": ["Cristal-Piso_8f.jpg", "Cristal-Piso_8.png"],
     "description": "",
     "features": [
       "2 - 3 Recámaras",
@@ -123,7 +123,7 @@
     "value": 7,
     "building": "Torre cristal",
     "level": "piso 14 y 15",
-    "images": ["Cristal-Piso_15f.png", "Cristal-Piso_15.png"],
+    "images": ["Cristal-Piso_15f.jpg", "Cristal-Piso_15.png"],
     "description": "",
     "features": [
       "2 - 3 Recámaras",
@@ -146,7 +146,7 @@
     "value": 8,
     "building": "Torre cristal",
     "level": "piso 25",
-    "images": ["Cristal-Piso_25f.png", "Cristal-Piso_25.png"],
+    "images": ["Cristal-Piso_25f.jpg", "Cristal-Piso_25.png"],
     "description": "",
     "features": [
       "4 Recámaras",
