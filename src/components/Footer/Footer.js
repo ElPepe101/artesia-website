@@ -15,7 +15,7 @@ export default () => (
         />
         <p>Campos Elseos No. 200, Polanco. Ciudad de México</p>
         <p>ventas@artesia.mx</p>
-        <p>+52 (044) 55 5280 4764</p>
+        <a href="tel:01525552804764">01 52 55 5280 4764</a>
         <hr />
         <p>Copyright Artesia 2017. Todos los derechos reservados</p>
         <p className={className.twitter}>

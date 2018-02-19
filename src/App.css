@@ -301,6 +301,20 @@ h5 {
   background: rgba(0, 0, 0, 0.3);
 }
 
+/* ################ SLICK ##################### */
+
+.slick-track {
+  display: table !important;
+  height: 100% !important;
+}
+
+.slick-initialized .slick-slide {
+  display: table-cell !important;
+  height: 100% !important;
+  text-align: center !important;
+  vertical-align: middle !important;
+}
+
 .slick-prev {
   left: 5px !important;
   z-index: 1;

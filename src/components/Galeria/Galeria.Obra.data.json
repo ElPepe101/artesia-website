@@ -51,6 +51,15 @@
   ],
   "obra2": [
     { "path": "1.jpg", "minWidth": 0 },
+    { "path": "2.jpg", "minWidth": 0 },
+    { "path": "3.jpg", "minWidth": 0 },
+    { "path": "4.jpg", "minWidth": 0 },
+    { "path": "5.jpg", "minWidth": 0 },
+    { "path": "6.jpg", "minWidth": 0 },
+    { "path": "7.jpg", "minWidth": 0 },
+    { "path": "8.jpg", "minWidth": 0 },
+    { "path": "9.jpg", "minWidth": 0 },
+
     { "path": "10.jpg", "minWidth": 0 },
     { "path": "11.jpg", "minWidth": 0 },
     { "path": "12.jpg", "minWidth": 0 },
@@ -61,7 +70,7 @@
     { "path": "17.jpg", "minWidth": 0 },
     { "path": "18.jpg", "minWidth": 0 },
     { "path": "19.jpg", "minWidth": 0 },
-    { "path": "2.jpg", "minWidth": 0 },
+
     { "path": "20.jpg", "minWidth": 0 },
     { "path": "21.jpg", "minWidth": 0 },
     { "path": "22.jpg", "minWidth": 0 },
@@ -72,7 +81,7 @@
     { "path": "27.jpg", "minWidth": 0 },
     { "path": "28.jpg", "minWidth": 0 },
     { "path": "29.jpg", "minWidth": 0 },
-    { "path": "3.jpg", "minWidth": 0 },
+
     { "path": "30.jpg", "minWidth": 0 },
     { "path": "31.jpg", "minWidth": 0 },
     { "path": "32.JPG", "minWidth": 0 },
@@ -83,7 +92,7 @@
     { "path": "37.JPG", "minWidth": 0 },
     { "path": "38.JPG", "minWidth": 0 },
     { "path": "39.JPG", "minWidth": 0 },
-    { "path": "4.jpg", "minWidth": 0 },
+
     { "path": "40.JPG", "minWidth": 0 },
     { "path": "41.JPG", "minWidth": 0 },
     { "path": "42.JPG", "minWidth": 0 },
@@ -94,7 +103,7 @@
     { "path": "47.JPG", "minWidth": 0 },
     { "path": "48.jpg", "minWidth": 0 },
     { "path": "49.JPG", "minWidth": 0 },
-    { "path": "5.jpg", "minWidth": 0 },
+
     { "path": "50.JPG", "minWidth": 0 },
     { "path": "51.jpg", "minWidth": 0 },
     { "path": "52.jpg", "minWidth": 0 },
@@ -102,10 +111,6 @@
     { "path": "54.jpg", "minWidth": 0 },
     { "path": "55.JPG", "minWidth": 0 },
     { "path": "56.JPG", "minWidth": 0 },
-    { "path": "57.JPG", "minWidth": 0 },
-    { "path": "6.jpg", "minWidth": 0 },
-    { "path": "7.jpg", "minWidth": 0 },
-    { "path": "8.jpg", "minWidth": 0 },
-    { "path": "9.jpg", "minWidth": 0 }
+    { "path": "57.JPG", "minWidth": 0 }
   ]
 }

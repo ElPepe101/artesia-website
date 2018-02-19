@@ -6,7 +6,7 @@ import Image from '../Image/Image';
 
 export default () => (
   <div className={className.servicios}>
-    <Hero image="/img/artesia-portrait-42.jpg" target="servicios">
+    <Hero image="/img/artesia-portrait-42.jpg" target="servicios_t">
       <div>
         <p>Operación de Hotel que</p>
         <p>cubre cualquier necesidad</p>
@@ -16,7 +16,7 @@ export default () => (
         </a>
       </div>
     </Hero>
-    <section name="servicios">
+    <section name="servicios_t">
       <div className={`column-limit ${className.firstLimit}`}>
         <div
           className={`${className.column} ${className.columnTextArea} ${
@@ -236,7 +236,7 @@ export default () => (
         <div className={`${className.column} ${className.columnText}`}>
           <div className="wrapper">
             <h3 className="remark">Seguridad</h3>
-            <p>Acceso con cristal blindado.</p>
+            <p>Acceso con cristal blindado y seguridad las 24 horas.</p>
           </div>
         </div>
       </div>

@@ -5,7 +5,7 @@ import Hero from '../Hero/Hero';
 
 export default () => (
   <div className={className.contacto}>
-    <Hero image="/img/artesia-portrait-53.jpg" target="contacto">
+    <Hero image="/img/artesia-portrait-53.jpg" target="contacto_t">
       <div>
         <p>38 Departamentos,</p>
         <p>19 por Torre</p>
@@ -15,7 +15,7 @@ export default () => (
         </a>
       </div>
     </Hero>
-    <section name="contacto">
+    <section name="contacto_t">
       <div className="wrapper">
         <div className="column-limit">
           <form id="form1" name="datos" method="post" action="enviar.php">

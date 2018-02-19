@@ -101,7 +101,6 @@ class Pisos extends React.Component {
           }`}
         >
           <span />
-          Imprimir
         </a>
         <a
           href={`/pdf/${pdf}`}
@@ -111,7 +110,6 @@ class Pisos extends React.Component {
           }`}
         >
           <span />
-          Descargar
         </a>
       </div>
     </div>
