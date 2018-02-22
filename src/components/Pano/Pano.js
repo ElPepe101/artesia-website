@@ -5,8 +5,15 @@ import { Pannellum } from '360-react-pannellum';
 import className from './Pano.module.css';
 import Image from '../Image/Image';
 
+let instanceNumber = 0;
+
 class PanoWrapper extends React.Component {
   static defaultProps;
+
+  constructor() {
+    super();
+    this.guid = `pano-id-${instanceNumber++}`;
+  }
 
   state = {
     viewer: false
@@ -19,7 +26,8 @@ class PanoWrapper extends React.Component {
 
     if (!this.state.viewer) {
       setTimeout(() => {
-        const target = document.querySelector(`.${className.pano}`).offsetTop;
+        const target = document.querySelector(`.${className.pano}.${this.guid}`)
+          .offsetTop;
         document.scrollingElement.scrollTop = target;
       }, 100);
     }
@@ -53,7 +61,7 @@ class PanoWrapper extends React.Component {
 
   render() {
     return (
-      <section className={className.pano} name="_360">
+      <section className={`${className.pano} ${this.guid}`} name="_360">
         {this.SetContent()}
       </section>
     );
