@@ -1,3 +1,21 @@
 .pano {
   min-height: auto;
 }
+
+.pano button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-decoration: none;
+  display: block;
+}
+
+.panoWrapper {
+  width: 100vw;
+  height: 100vh;
+}
+
+.panoWrapper div[class*='bnwwju'] {
+  padding: 5px !important;
+  font-size: 0.4rem;
+}

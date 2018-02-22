@@ -3,6 +3,7 @@
   "version": "0.5.0",
   "private": true,
   "dependencies": {
+    "360-react-pannellum": "0.0.3",
     "eslint-plugin-css-modules": "^2.7.5",
     "glamor": "^2.20.40",
     "husky": "^0.14.3",
