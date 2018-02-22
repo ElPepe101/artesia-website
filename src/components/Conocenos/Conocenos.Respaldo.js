@@ -138,7 +138,9 @@ export default () => (
         </div>
       </div>
     </section>
-    <Pano />
+
+    <Pano pano="artesia-pano-25_03.jpg" />
+
     <section name="end">
       <div className="wrapper">
         <Image

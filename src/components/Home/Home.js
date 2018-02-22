@@ -50,6 +50,7 @@ export default () => (
         images={[{ path: '/img/artesia-home-15-80.jpg', minWidth: 0 }]}
       />
     </section>
-    <Pano />
+
+    <Pano pano="artesia-pano-29_03.jpg" />
   </div>
 );

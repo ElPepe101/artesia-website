@@ -114,6 +114,6 @@ export default () => (
       </div>
     </section>
 
-    <Pano />
+    <Pano pano="artesia-pano-77_03.jpg" />
   </div>
 );
