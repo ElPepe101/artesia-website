@@ -52,9 +52,29 @@ class PanoWrapper extends React.Component {
       );
     }
 
+    const path = `/img/pano/portraits/${this.props.portrait.replace(
+      /\.[a-zA-Z]*$/,
+      ''
+    )}`;
+    const ext = this.props.portrait.match(/\.[a-zA-Z]*$/);
+
     return (
       <button onClick={() => this.ToggleViewer()}>
-        <Image images={this.props.portrait} />
+        <Image
+          images={[
+            { path: `${path}_horizontal@3x.jpg`, minWidth: 1200 },
+            { path: `${path}_horizontal@0.75x.jpg`, minWidth: 968 },
+            { path: `${path}@3x${ext}`, minWidth: 640, portrait: true },
+            { path: `${path}@2x${ext}`, minWidth: 360, portrait: true },
+            {
+              path: `${path}_horizontal@0.5x.jpg`,
+              minWidth: 300,
+              landscape: true
+            },
+            { path: `${path}${ext}`, minWidth: 300, portrait: true },
+            { path: `${path}${ext}`, minWidth: 0 }
+          ]}
+        />
       </button>
     );
   }
@@ -70,22 +90,12 @@ class PanoWrapper extends React.Component {
 
 PanoWrapper.propTypes = {
   pano: PropTypes.string,
-  portrait: PropTypes.arrayOf(
-    PropTypes.shape({
-      path: PropTypes.string,
-      minWidth: PropTypes.number
-    })
-  )
+  portrait: PropTypes.string
 };
 
 PanoWrapper.defaultProps = {
   pano: 'artesia-pano-25_03.jpg',
-  portrait: [
-    { path: '/img/artesia-home-16_horizontal@3x.jpg', minWidth: 968 },
-    { path: '/img/artesia-home-16_horizontal@0.75x.jpg', minWidth: 640 },
-    { path: '/img/artesia-home-16_horizontal@0.5x.jpg', minWidth: 300 },
-    { path: '/img/artesia-home-16-80.jpg', minWidth: 0 }
-  ]
+  portrait: '/img/artesia-home-16-80.jpg'
 };
 
 export default PanoWrapper;

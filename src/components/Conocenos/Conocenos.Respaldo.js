@@ -139,7 +139,7 @@ export default () => (
       </div>
     </section>
 
-    <Pano pano="artesia-pano-25_03.jpg" />
+    <Pano pano="artesia-pano-25_03.jpg" portrait="artesia-360-04.jpg" />
 
     <section name="end">
       <div className="wrapper">

@@ -18,7 +18,7 @@ export default () => (
       </div>
     </Hero>
 
-    <Pano pano="artesia-pano-37_03.jpg" />
+    <Pano pano="artesia-pano-37_03.jpg" portrait="artesia-360-06.jpg" />
 
     <section name="proyectos">
       <div className="column-limit">
@@ -122,7 +122,7 @@ export default () => (
       </div>
     </section>
 
-    <Pano pano="artesia-pano-80_03.jpg" />
-    <Pano pano="artesia-pano-33_03.jpg" />
+    <Pano pano="artesia-pano-80_03.jpg" portrait="artesia-360-01.jpg" />
+    <Pano pano="artesia-pano-33_03.jpg" portrait="artesia-360-07.jpg" />
   </div>
 );

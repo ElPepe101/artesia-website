@@ -80,7 +80,7 @@ export default () => (
       </div>
     </section>
 
-    <Pano pano="artesia-pano-61_03.jpg" />
-    <Pano pano="artesia-pano-52_03.jpg" />
+    <Pano pano="artesia-pano-61_03.jpg" portrait="artesia-360-05.jpg" />
+    <Pano pano="artesia-pano-52_03.jpg" portrait="artesia-360-08.jpg" />
   </div>
 );
