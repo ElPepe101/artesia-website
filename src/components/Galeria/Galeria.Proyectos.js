@@ -34,14 +34,10 @@ export default () => (
         </div>
         <div className={`${className.column} ${className.columnFloatLeft}`}>
           <div className={`wrapper ${className.sectionText}`}>
-            <h2 className="remark">Sala comedor</h2>
-            <p>
-              Lorem ipsum dolor sit amet, eos no tale posse vocent, partiendo
-              salutandi id ius, ius facer laudem id. Lorem tibique sadipscing
-              pro id, quod noluisse mei te. In epicuri albucius nec, laudem
-              aeterno ad vim, nec et sumo oratio legere. Est eu propriae
-              assentior posidonium.
-            </p>
+            <h2 className="remark">
+              Amplias áreas para el diseño de su estilo de vida, social y
+              privada.
+            </h2>
           </div>
         </div>
       </div>
@@ -59,14 +55,7 @@ export default () => (
         </div>
         <div className={className.column}>
           <div className={`wrapper ${className.sectionText}`}>
-            <h2 className="remark">Cocina</h2>
-            <p>
-              Lorem ipsum dolor sit amet, eos no tale posse vocent, partiendo
-              salutandi id ius, ius facer laudem id. Lorem tibique sadipscing
-              pro id, quod noluisse mei te. In epicuri albucius nec, laudem
-              aeterno ad vim, nec et sumo oratio legere. Est eu propriae
-              assentior posidonium.
-            </p>
+            <h2 className="remark">Generosos espacios para sus servicios</h2>
           </div>
         </div>
       </div>
@@ -84,14 +73,7 @@ export default () => (
         </div>
         <div className={`${className.column} ${className.columnFloatLeft}`}>
           <div className={`wrapper ${className.sectionText}`}>
-            <h2 className="remark">Vestidor</h2>
-            <p>
-              Lorem ipsum dolor sit amet, eos no tale posse vocent, partiendo
-              salutandi id ius, ius facer laudem id. Lorem tibique sadipscing
-              pro id, quod noluisse mei te. In epicuri albucius nec, laudem
-              aeterno ad vim, nec et sumo oratio legere. Est eu propriae
-              assentior posidonium.
-            </p>
+            <h2 className="remark">Su deseo listo para hacerse realidad</h2>
           </div>
         </div>
       </div>
@@ -109,14 +91,9 @@ export default () => (
         </div>
         <div className={className.column}>
           <div className={`wrapper ${className.sectionText}`}>
-            <h2 className="remark">Recámara</h2>
-            <p>
-              Lorem ipsum dolor sit amet, eos no tale posse vocent, partiendo
-              salutandi id ius, ius facer laudem id. Lorem tibique sadipscing
-              pro id, quod noluisse mei te. In epicuri albucius nec, laudem
-              aeterno ad vim, nec et sumo oratio legere. Est eu propriae
-              assentior posidonium.
-            </p>
+            <h2 className="remark">
+              Inspiradoras vistas que se complementan con diseño
+            </h2>
           </div>
         </div>
       </div>

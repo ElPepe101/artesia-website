@@ -111,6 +111,14 @@
     { "path": "54.jpg", "minWidth": 0 },
     { "path": "55.JPG", "minWidth": 0 },
     { "path": "56.JPG", "minWidth": 0 },
-    { "path": "57.JPG", "minWidth": 0 }
+    { "path": "57.JPG", "minWidth": 0 },
+
+    { "path": "58.JPG", "minWidth": 0 },
+    { "path": "59.jpg", "minWidth": 0 },
+    { "path": "60.jpg", "minWidth": 0 },
+    { "path": "61.jpg", "minWidth": 0 },
+    { "path": "62.jpg", "minWidth": 0 },
+    { "path": "63.jpg", "minWidth": 0 },
+    { "path": "64.jpg", "minWidth": 0 }
   ]
 }

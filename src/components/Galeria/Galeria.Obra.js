@@ -15,7 +15,9 @@ const sliderSettings = {
   slidesToShow: 1,
   slidesToScroll: 1,
   autoplay: false,
-  adaptiveHeight: true
+  adaptiveHeight: true,
+  swipe: true,
+  touchMove: true
 };
 
 class Obra extends React.Component {

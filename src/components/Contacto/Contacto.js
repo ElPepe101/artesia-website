@@ -58,7 +58,7 @@ export default () => (
               <input
                 alt=""
                 name="submit"
-                onClick="MM_validateForm('Nombre','','R','E-mail','','RisEmail','Teléfono:','','RisNum','Comentarios','','R');return document.MM_returnValue"
+                type="submit"
                 src="contacto/enviar.jpg"
                 width="70"
                 height="31"
