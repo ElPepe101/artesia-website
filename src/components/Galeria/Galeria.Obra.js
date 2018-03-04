@@ -20,6 +20,10 @@ const sliderSettings = {
   touchMove: true
 };
 
+const sliderSettings2 = { ...sliderSettings };
+sliderSettings2.slidesToShow = 2;
+sliderSettings2.slidesToScroll = 2;
+
 class Obra extends React.Component {
   static propTypes;
   SomeMethod = () => {};
@@ -110,7 +114,7 @@ class Obra extends React.Component {
           </div>
 
           <div className={className.sliderWrapper}>
-            <Slider {...sliderSettings}>
+            <Slider {...sliderSettings2}>
               {data.obra2.map(x => (
                 <div key={x.path}>
                   <Image
