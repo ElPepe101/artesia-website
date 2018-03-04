@@ -11,7 +11,6 @@ export default () => (
       <div>
         <p>Diseño que transmite</p>
         <p>comfort y exclusividad</p>
-        <h2>Campos Eliseos.</h2>
         <a className="button button-square-white" href="/conocenos/proyecto">
           Conocer más
         </a>

@@ -10,7 +10,6 @@ export default () => (
       <div>
         <p>Comfort y vida urbana</p>
         <p>en una misma área</p>
-        <h2>Campos Eliseos.</h2>
         <a className="button button-square-white" href="/conocenos/proyecto">
           Conocer más
         </a>

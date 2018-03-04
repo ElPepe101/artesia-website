@@ -11,7 +11,6 @@ export default () => (
       <div>
         <p>38 Departamentos de</p>
         <p>254 m2 hasta 700m2</p>
-        <h2>Campos Eliseos.</h2>
         <a className="button button-square-white" href="/conocenos/proyecto">
           Conocer más
         </a>

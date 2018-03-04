@@ -127,7 +127,6 @@ class Pisos extends React.Component {
           <div>
             <p>Ubicado en la avenida más</p>
             <p>prestigiada de todo Polanco,</p>
-            <h2>Campos Eliseos.</h2>
             <a
               className="button button-square-white"
               href="/conocenos/proyecto"

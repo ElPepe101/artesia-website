@@ -9,7 +9,6 @@ export default () => (
       <div>
         <p>38 Departamentos,</p>
         <p>19 por Torre</p>
-        <h2>Campos Eliseos.</h2>
         <a className="button button-square-white" href="/conocenos/proyecto">
           Conocer más
         </a>

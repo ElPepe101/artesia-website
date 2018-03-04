@@ -31,7 +31,6 @@ class Obra extends React.Component {
           <div>
             <p>Caprichoso diseño que</p>
             <p>transmite una experiencia única,</p>
-            <h2>Campos Eliseos.</h2>
             <a
               className="button button-square-white"
               href="/conocenos/proyecto"

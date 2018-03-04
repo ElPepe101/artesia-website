@@ -10,7 +10,6 @@ export default () => (
       <div>
         <p>Operación que lo acompaña</p>
         <p>en su vida social y privada</p>
-        <h2>Campos Eliseos.</h2>
         <a className="button button-square-white" href="/conocenos/proyecto">
           Conocer más
         </a>

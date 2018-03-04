@@ -12,7 +12,6 @@ export default () => (
       <div>
         <p>Campos Eliseos, Polanco,</p>
         <p>Ciudad de México</p>
-        <h2>Campos Eliseos.</h2>
         <a className="button button-square-white" href="/conocenos/proyecto">
           Conocer más
         </a>
