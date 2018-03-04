@@ -187,6 +187,7 @@ h5 {
 }
 
 #app {
+  position: relative;
   max-width: 1920px;
   margin: 0 auto;
 }
@@ -465,5 +466,11 @@ h5 {
   .wrapper {
     max-width: 1900px;
     padding: 0 calc(2.5% + 10px) 0 2.5%;
+  }
+}
+
+@media (min-width: 1920px) {
+  #app {
+    overflow: hidden;
   }
 }
