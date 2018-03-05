@@ -151,28 +151,24 @@ class Vistas extends React.Component {
 
           <div className={className.optionButtons}>
             <div className={className.column}>
-              <div className="wrapper">
-                <span>
-                  {this.building.replace('-', ' ')} -{' '}
-                  {this.level.replace('-', ' ')}
-                </span>
-              </div>
+              <span>
+                {this.building.replace('-', ' ')} -{' '}
+                {this.level.replace('-', ' ')}
+              </span>
             </div>
             <div className={className.column}>
-              <div className="wrapper">
-                <a
-                  href={`/pisos?lvl=${
-                    data[this.building][this.level][0][0].link
-                  }`}
-                >
-                  Conoce los planos &gt;
-                </a>
-              </div>
+              <a
+                href={`/pisos?lvl=${
+                  data[this.building][this.level][0][0].link
+                }`}
+              >
+                Conoce los planos &gt;
+              </a>
             </div>
           </div>
 
           <div className="flex-column-end">
-            <div>
+            <div className="select-area">
               <select
                 id="building"
                 readOnly

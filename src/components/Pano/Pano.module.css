@@ -18,4 +18,9 @@
 .panoWrapper div[class*='bnwwju'] {
   padding: 5px !important;
   font-size: 0.4rem;
+  background-image: url('/img/tache.png');
+  background-color: transparent;
+  width: 54px;
+  height: 54px;
+  border: 0;
 }

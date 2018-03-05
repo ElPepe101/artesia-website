@@ -192,6 +192,10 @@ h5 {
   margin: 0 auto;
 }
 
+.no-wrap {
+  white-space: nowrap;
+}
+
 /* ###################################### */
 /* ############### FLEX ################# */
 
@@ -377,9 +381,9 @@ h5 {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  .bm-overlay {
-    /* Some issues with this and firefox */
-    display: none;
+  html {
+    font-size: 46px;
+    font-size: 4.5vw;
   }
 
   section {
@@ -391,16 +395,8 @@ h5 {
     padding: 0 calc(1.5% + 10px) 0 1.5%;
   }
 
-  .bm-burger-button {
-    display: none;
-  }
-
   .logo {
     /* max-width: 240px; */
-  }
-
-  .menu {
-    display: inline-block;
   }
 }
 
@@ -409,6 +405,19 @@ h5 {
   html {
     font-size: 100px;
     font-size: 5.5vw;
+  }
+
+  .bm-overlay {
+    /* Some issues with this and firefox */
+    display: none;
+  }
+
+  .bm-burger-button {
+    display: none;
+  }
+
+  .menu {
+    display: inline-block;
   }
 
   select {

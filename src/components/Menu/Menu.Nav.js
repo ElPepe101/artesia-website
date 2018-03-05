@@ -82,7 +82,7 @@ export default ({ list, wideSubmenu, rounded }) => (
           <NavLink
             exact
             to="/galeria/obra"
-            className="menu-item"
+            className="menu-item no-wrap"
             activeClassName="active"
           >
             Proceso de obra

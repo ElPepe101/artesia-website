@@ -17,7 +17,6 @@ export default () => (
         <p>ventas@artesia.mx</p>
         <a href="tel:01525552804764">01 52 55 5280 4764</a>
         <hr />
-        <p>Copyright Artesia 2017. Todos los derechos reservados</p>
         <p className={className.twitter}>
           <a
             href="https://twitter.com/artesiapolanco"
@@ -40,6 +39,10 @@ export default () => (
           rounded={className.rounded}
         />
       </div>
+
+      <p className={className.copyright}>
+        Copyright Artesia 2017. Todos los derechos reservados
+      </p>
     </div>
   </footer>
 );

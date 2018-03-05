@@ -35,7 +35,7 @@ export default class extends React.Component {
               className="logo"
               alt="Artesia logo"
               images={[
-                { path: '/img/artesia-logo-transp.png', minWidth: 992 },
+                { path: '/img/artesia-logo-transp.png', minWidth: 1280 },
                 { path: '/img/artesia-logo.jpg', minWidth: 900 },
                 { path: '/img/artesia-logo.jpg', minWidth: 600 },
                 { path: '/img/artesia-logo.jpg', minWidth: 300 },

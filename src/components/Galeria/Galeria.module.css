@@ -9,6 +9,10 @@
   min-height: fit-content;
 }
 
+.galeria section[name='vistas'] div[class*='select-area'] {
+  height: 42px;
+}
+
 .galeria section[name='vistas'] select {
   display: inline-block;
   width: 50vw;
@@ -19,6 +23,7 @@
   margin: 0;
   border-radius: 0;
   box-shadow: 0 1px 0 1px black inset;
+  vertical-align: top;
 }
 
 .galeria section[name='vistas'] select:first-of-type {
@@ -67,6 +72,8 @@
 
 .level h3 {
   text-transform: uppercase;
+  font-size: 0.5rem;
+  padding: 25px 0 0;
 }
 
 .level a {
@@ -118,7 +125,7 @@
 }
 
 .process {
-  padding: 10% 0;
+  padding: 10% 0 0;
 }
 
 .superText {
@@ -137,16 +144,16 @@
     display: block;
     position: absolute;
     transform: translateY(-100%);
-    width: 45%;
     z-index: 2;
     text-transform: uppercase;
     text-align: center;
+    width: 45%;
+    height: 70px;
   }
 
   .optionButtons > div {
     background-color: black;
     color: white;
-    height: 75px;
   }
 
   .optionButtons > div:nth-of-type(2) {
@@ -157,6 +164,8 @@
   .optionButtons > div span,
   .optionButtons > div a {
     vertical-align: super;
+    font-size: 0.18rem;
+    width: 38%;
   }
 
   .optionButtons > div a {
@@ -204,7 +213,7 @@
     margin: 0;
     padding: 0;
     height: 53px;
-    width: 30%;
+    width: 40%;
     overflow: hidden;
   }
 
@@ -240,6 +249,24 @@
     font-weight: 700;
     margin: 0;
   }
+
+  .process {
+    padding: 10% 0;
+  }
+
+  .process .columnFloatLeft {
+    margin-top: 0;
+  }
+
+  .obraDesc {
+    padding: 0;
+  }
+}
+
+@media (min-width: 1280px) {
+  .process .columnFloatLeft {
+    margin-top: 30px;
+  }
 }
 
 @media (min-width: 1440px) {
@@ -248,8 +275,20 @@
     max-height: 120px;
   }
 
+  .optionButtons {
+    width: 35%;
+  }
+
   .optionButtons > div {
-    height: auto;
-    max-height: 105px;
+    height: 70px;
+    vertical-align: top;
+  }
+
+  .optionButtons div[class*='wrapper'] {
+    padding-top: 30px;
+  }
+
+  .process .columnFloatLeft {
+    margin-top: 60px;
   }
 }

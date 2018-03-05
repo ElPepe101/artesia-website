@@ -49,7 +49,8 @@
   border-bottom: 1px solid rgb(101, 101, 101);
 }
 
-@media (min-width: 992px) {
+/* @media (min-width: 992px) { */
+@media (min-width: 1200px) {
   .list li {
     height: auto;
     padding: 0 8px;
@@ -109,9 +110,7 @@
   .list li[name='contacto']:hover a {
     color: rgb(101, 101, 101);
   }
-}
 
-@media (min-width: 1200px) {
   .list li {
     padding: 0 15px;
   }

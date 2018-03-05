@@ -200,8 +200,7 @@ export default () => (
         <div className={`${className.column}`}>
           <Image
             images={[
-              { path: '/img/artesia-servicios-39-80@3x.jpg', minWidth: 900 },
-              { path: '/img/artesia-servicios-39-80@2x.jpg', minWidth: 600 },
+              { path: '/img/artesia-servicios-39-80@3x.jpg', minWidth: 600 },
               { path: '/img/artesia-servicios-39-80.jpg', minWidth: 300 },
               { path: '/img/artesia-servicios-39-80.jpg', minWidth: 0 }
             ]}
@@ -239,11 +238,6 @@ export default () => (
           </div>
         </div>
       </div>
-
-      <Image
-        className={className.hide}
-        images={[{ path: '/img/artesia-servicios-41-80.jpg', minWidth: 0 }]}
-      />
     </section>
   </div>
 );

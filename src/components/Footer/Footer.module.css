@@ -44,6 +44,10 @@
   margin-top: 15px !important;
 }
 
+.copyright {
+  margin: 15px 0 0 !important;
+}
+
 @media (min-width: 768px) {
   hr {
     display: none;
@@ -90,6 +94,11 @@
   .list > li > a,
   .list > li > span {
     text-transform: uppercase;
+  }
+
+  .copyright {
+    margin: 0;
+    float: right;
   }
 
   .wideSubmenu {

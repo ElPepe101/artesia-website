@@ -43,7 +43,7 @@ class PanoWrapper extends React.Component {
             imagePath={`/img/pano/${this.props.pano}`}
             isDisplayCloseButton
             closeHandler={this.ToggleViewer}
-            closeButtonTitle="X"
+            closeButtonTitle=" "
             showZoomCtrl={false}
             showFullscreenCtrl={false}
             autoLoad

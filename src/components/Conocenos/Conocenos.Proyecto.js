@@ -105,10 +105,12 @@ export default () => (
             { path: '/img/artesia-conocenos-32_horizontal.jpg', minWidth: 900 },
             {
               path: '/img/artesia-conocenos-32_horizontal@0.75x.jpg',
-              minWidth: 600
+              minWidth: 300
             },
-            { path: '/img/artesia-conocenos-29-80.jpg', minWidth: 300 },
-            { path: '/img/artesia-conocenos-29-80.jpg', minWidth: 0 }
+            {
+              path: '/img/artesia-conocenos-32_horizontal@0.75x.jpg',
+              minWidth: 0
+            }
           ]}
         />
       </div>

@@ -12,9 +12,13 @@
 
 .conocenos section[name='respaldo'] h1,
 .conocenos section[name='instalaciones'] h1 {
-  text-align: left;
+  text-align: center;
   text-transform: uppercase;
   font-weight: 700;
+}
+
+.conocenos section[name='respaldo'] h1 {
+  margin-top: 1.6em;
 }
 
 .conocenos section[name='respaldo'] img {
@@ -34,6 +38,10 @@
 
 .conocenos section[name='instalaciones'] > div {
   padding: 0 5%;
+}
+
+.conocenos section[name='certificaciones'] {
+  min-height: unset;
 }
 
 .icons {
@@ -143,6 +151,33 @@
   margin-bottom: 35px;
 }
 
+.conocenos section[name='nosotros'] {
+  margin: 0 auto;
+  display: inline-block;
+  text-align: center;
+}
+
+.conocenos section[name='nosotros'] div[class='wrapper'] {
+  margin-top: 25px;
+}
+
+.conocenos section[name='nosotros'] img {
+  width: auto;
+}
+
+.conocenos section[name='nosotros'] h4 {
+  color: rgb(231, 114, 36);
+  text-align: left;
+}
+
+.conocenos section[name='nosotros'] p {
+  text-align: left;
+}
+
+.conocenos section[name='nosotros'] .column {
+  border: 0;
+}
+
 @media (min-width: 992px) {
   section > div {
     margin: 0;
@@ -174,7 +209,7 @@
   }
 
   .conocenos section[name='end'] {
-    margin: 100px 0;
+    margin: 100px 0 0;
   }
 
   .portrait,

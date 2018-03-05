@@ -164,5 +164,45 @@ export default () => (
         />
       </div>
     </section>
+
+    <section name="nosotros">
+      <div className="wrapper">
+        <div className={className.column}>
+          <img alt="nosotros" src="/img/artesia-nosotros-disenadores.jpg" />
+        </div>
+        <div className={className.column}>
+          <h4>Equipo de construcción</h4>
+          <p>
+            <strong>Dirección:</strong>
+            <br />
+            Arquitecto Carlos Mier
+          </p>
+
+          <p>
+            <strong>Diseño:</strong>
+            <br />
+            Arquitecto Jorge Isaías
+          </p>
+
+          <p>
+            <strong>Arquitecto:</strong>
+            <br />
+            Arquitecto Jose Luís Santillan
+          </p>
+
+          <p>
+            <strong>Diseño de Estructura:</strong>
+            <br />
+            Ingeniero Eleazar Sainz
+          </p>
+
+          <p>
+            <strong>Auditoria:</strong>
+            <br />
+            Arquitecto Ilan Bitterman
+          </p>
+        </div>
+      </div>
+    </section>
   </div>
 );

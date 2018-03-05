@@ -14,7 +14,7 @@ const sliderSettings = {
   speed: 500,
   slidesToShow: 1,
   slidesToScroll: 1,
-  autoplay: false,
+  autoplay: true,
   adaptiveHeight: true,
   swipe: true,
   touchMove: true
@@ -26,7 +26,20 @@ sliderSettings2.slidesToScroll = 2;
 
 class Obra extends React.Component {
   static propTypes;
+
+  state = {
+    slideTitle: ''
+  };
+
+  slider;
+
   SomeMethod = () => {};
+
+  slideBeforeChange = (oldIndex, newIndex) => {
+    this.setState({
+      slideTitle: data.obra1[newIndex].desc
+    });
+  };
 
   render() {
     return (
@@ -45,7 +58,13 @@ class Obra extends React.Component {
         </Hero>
         <section name="obra">
           <div className={className.sliderWrapper}>
-            <Slider {...sliderSettings}>
+            <Slider
+              ref={ref => {
+                this.slider = ref;
+              }}
+              beforeChange={this.slideBeforeChange}
+              {...sliderSettings}
+            >
               {data.obra1.map(x => (
                 <div key={x.path}>
                   <Image
@@ -64,7 +83,7 @@ class Obra extends React.Component {
 
           <div className={className.level}>
             <div className={`${className.column}`}>
-              <h3>Torre piedra - Piso 10</h3>
+              <h3>{this.state.slideTitle}</h3>
             </div>
 
             <div className={`${className.column}`}>
